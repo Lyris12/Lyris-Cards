@@ -1,0 +1,53 @@
+--created by Lyris
+--波動拳設
+local s,id,o=GetID()
+function s.initial_effect(c)
+	--Excavate 3 cards from the bottom of your Deck, and if you do, draw cards equal to the number of excavated LIGHT/Spell/Trap "uken" cards, also, place the excavated cards on top of your Deck in any order after that. You can banish this card from your GY; place up to 3 LIGHT/Spell/Trap "uken" cards from your GY and/or that are banished on the bottom of your Deck in any order, except "Hadoukenstruction". You can only use each effect of "Hadoukenstruction" once per turn.
+	local e1=Effect.CreateEffect(c)
+	e1:SetType(EFFECT_TYPE_ACTIVATE)
+	e1:SetCode(EVENT_FREE_CHAIN)
+	e1:SetCategory(CATEGORY_DRAW)
+	e1:SetTarget(s.target)
+	e1:SetOperation(s.activate)
+	c:RegisterEffect(e1)
+	local e2=Effect.CreateEffect(c)
+	e2:SetType(EFFECT_TYPE_QUICK_O)
+	e2:SetCode(EVENT_FREE_CHAIN)
+	e2:SetRange(LOCATION_GRAVE)
+	e2:SetCategory(CATEGORY_TODECK)
+	e2:SetCost(aux.bfgcost)
+	e2:SetTarget(s.tdtg)
+	e2:SetOperation(s.tdop)
+	c:RegisterEffect(e2)
+end
+function s.target(e,tp,eg,ep,ev,re,r,rp,chk)
+	local ct=3
+	if Duel.IsPlayerAffectedByEffect(tp,102400030) then ct=ct*2 end
+	if chk==0 then return Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)>=ct and Duel.IsPlayerCanDraw(tp) end
+end
+function s.activate(e,tp,eg,ep,ev,re,r,rp)
+	local ct=3
+	if Duel.IsPlayerAffectedByEffect(tp,102400030) then ct=ct*2 end
+	if Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)<ct then return end
+	local g=Group.CreateGroup()
+	for i=0,ct-1 do
+		local tc=Duel.GetFieldCard(tp,LOCATION_DECK,i)
+		if ct<6 then for p=0,1 do Duel.ConfirmCards(p,tc,true) end end
+		g:AddCard(tc)
+	end
+	if ct>5 then for p=0,1 do Duel.ConfirmCards(p,g,true) end end
+	Duel.Draw(tp,g:FilterCount(Card.IsSetCard,nil,0x1d10),REASON_EFFECT)
+	for i=1,ct do Duel.MoveSequence(Duel.GetFieldCard(tp,LOCATION_DECK,0),SEQ_DECKTOP) end
+	Duel.SortDecktop(tp,tp,ct)
+end
+function s.filter(c)
+	return c:IsFaceupEx() and c:IsSetCard(0x1d10) and c:IsAbleToDeck()
+end
+function s.tdtg(e,tp,eg,ep,ev,re,r,rp,chk)
+	if chk==0 then return Duel.IsExistingMatchingCard(s.filter,tp,LOCATION_GRAVE+LOCATION_REMOVED,0,1,e:GetHandler()) end
+	Duel.SetOperationInfo(0,CATEGORY_TODECK,nil,1,tp,LOCATION_GRAVE+LOCATION_REMOVED)
+end
+function s.tdop(e,tp,eg,ep,ev,re,r,rp)
+	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
+	aux.PlaceCardsOnDeckBottom(tp,Duel.SelectMatchingCard(tp,s.filter,tp,LOCATION_GRAVE+LOCATION_REMOVED,0,1,3,e:GetHandler()))
+end
