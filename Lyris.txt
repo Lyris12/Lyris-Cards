@@ -98,93 +98,6 @@ Level 1 LIGHT Fairy/Fusion/Effect Monster
 Cannot be destroyed by battle or your opponent's card effects. Once per turn (Quick Effect): You can shuffle 1 "Inlightened" monster from your GY into the Deck; replace this effect with that monster's effects. Your "Inlightened" monsters can attack directly during the turn you activate this effect.
 ATK 0/DEF 0
 
-Clarissa, Queen of Stellar VINE
-7-Dimensional WATER Fairy/Spatial/Origin/Effect Monster
-1 "Stellar VINE" monster + 1+ "VINE" monsters
-Once per turn (Quick Effect): You can banish 1 Spell/Trap from your hand, then target 1 banished "VINE" monster and 1 card in the GY; Special Summon the first target, then banish the second target. You must control this face-up card that was Spatial Summoned using 2 "Stellar VINE" monsters to activate and to resolve this effect. If this card is banished from the field: You can banish 1 "Stellar VINE" monster from your hand; add 1 "Stellar VINE" monster from your Deck to your hand.
-ATK 2600/DEF 2600
-
-Jackie, Maiden of Stellar VINE
-Level 4 WATER Fairy/Effect Monster
-If a Level 4 monster(s) is Normal or Special Summoned: You can Special Summon this card from your hand, and if you do, it becomes Level 8. Cannot be destroyed by battle, except with monsters with the same Level as this card. If this card on the field is banished: You can return this card to the GY, and if you do, add 1 "Stellar VINE" card from your Deck or that is banished to your hand. You can only use this effect of "Jackie, Maiden of Stellar VINE" once per turn.
-ATK 1200/DEF 1900
-
-Girl of Stellar VINE
-Level 4 WATER Fairy/Effect Monster
-During your Main Phase 1, if you control another face-up "Stellar VINE" monster: You can banish the top 3 cards of your Deck, then if any "Stellar VINE" monsters were banished by this effect, this card gains 200 ATK until the end of your opponent's turn. You can only use this effect of "Girl of Stellar VINE" once per turn. If this card is banished from the hand or Deck: Return it to the GY, then you can draw 1 card.
-ATK 1600/DEF 1200
-
-Seeker of Stellar VINE
-Level 4 WATER Fairy/Effect Monster
-If this card is banished from the hand or Deck: Target 1 of your banished "Stellar VINE" monsters, except "Seeker of Stellar VINE", plus another card if this card was banished from the hand; return this card to the GY, also, Special Summon as many of those targets as possible. If this card is banished from the GY: Special Summon this card. You can only use this effect of "Seeker of Stellar VINE" once per turn.
-ATK 1900/DEF 0
-
-Wyvern of Stellar VINE
-Level 4 WATER Dragon/Effect Monster
-Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect. If this card is banished from the hand, Deck, or GY: Special Summon it in face-up Attack Position. When Summoned this way: Target up to 2 of your banished "Stellar VINE" monsters; return them to the GY, then, banish Spells/Traps your opponent controls, up to the number of monsters returned.
-ATK 2100/DEF 1400
-
-Pegasus of Stellar VINE
-Level 8 WATER Beast/Effect Monster
-You can Normal Summon this card without Tributing by returning up to 3 of your banished "Stellar VINE" monsters to the GY, and it gains 300 ATK for each returned monster. If a "Stellar VINE" monster(s) is banished, except "Pegasus of Stellar VINE": You can Special Summon this card from your hand. Unless this card was Tribute Summoned, its original ATK becomes 1400. If this card is in your GY: You can banish this card, then activate 1 of these effects;
-● Add 1 "Stellar VINE" card from your Deck to your hand. You can only apply this effect of "Pegasus of Stellar VINE" once per turn.
-● Banish 1 "Stellar VINE" monster from your Deck. You can only apply this effect of "Pegasus of Stellar VINE" once per turn.
-ATK 2600/DEF 2000
-
-Necromaster of Stellar VINE
-Level 4 WATER Fairy/Effect Monster
-You can Special Summon this card (from your hand) by returning 1 of your banished "Stellar VINE" monsters to the GY, except "Necromaster of Stellar VINE". You can only Special Summon "Necromaster of Stellar VINE" once per turn this way. You can target this banished card; return it to your GY, and if you do, Special Summon 1 "Stellar VINE" monster from your Deck, except "Necromaster of Stellar VINE", but destroy it during the End Phase. You can only use this effect of "Necromaster of Stellar VINE" once per turn.
-ATK 1800/DEF 1000
-
-Ragna Clarissa of Stellar VINE
-3-Dimensional WATER Fairy/Spatial/Origin/Effect Monster
-1 WATER "VINE" monster + 1+ WATER monsters
-When exactly 1 "Stellar VINE" monster that has a Level (and no other Monster Cards) is sent to the GY: You can banish a number of "Stellar VINE" monsters from your Deck, up to that monster's Level.
-ATK 2400/DEF 2200
-
-Zyphyr, Prince of Stellar VINE
-Level 5 WATER Fairy/Effect Monster
-If this card attacks or is attacked by a monster: You can make that monster become WATER-Attribute, also take control of that monster after damage calculation (these effects last until the end of this turn). If this card is banished by a monster: You can target 1 card on the field; banish that target.
-ATK 2000/DEF 1600
-
-Jeweled Skydancer of Stellar VINE
-Level 4 WATER Fairy/Gemini/Effect Monster
-This card is treated as a Normal Monster while face-up on the field or in the GY. While this card is a Normal Monster on the field, you can Normal Summon it to have it become an Effect Monster with this effect.
-● Once per turn: You can banish 1 card from your hand or Deck; Special Summon 1 banished "Stellar VINE" monster.
-ATK 1800/DEF 1400
-
-Coast Monk of Stellar VINE
-Level 4 WATER Fairy/Effect Monster
-Once per turn, if you control no other monsters: You can Special Summon 1 "Stellar VINE" monster from your Deck or 1 that is banished, except "Coast Monk of Stellar VINE". If your opponent declares a direct attack, while this card is banished: You can Special Summon this card, and if you do, negate the attack and end the Battle Phase. You can only use this effect of "Coast Monk of Stellar VINE" once per Duel.
-ATK 1700/DEF 500
-
-Clarissa, Empress of Stellar VINE
-Stage 8 WATER Fairy/Evolute/Effect Monster
-1+ Fairy monsters + 1+ WATER monsters
-Each time a "Stellar VINE" monster(s) is banished, add 1 Spell Counter to this card. When the 3rd Spell Counter is placed on this card, remove 3 Spell Counters from this card, and if you do, place 1 E Counter on this card (max. 8). If this card would be destroyed, you can remove 1 E Counter from this card instead. Once per turn (Quick Effect): You can remove 2 E Counters from this card; banish 1 random card from your opponent's Extra Deck, then if it was a monster with a Level, Special Summon 1 banished "Stellar VINE" monster.
-ATK 2600/DEF 2600
-
-Osa, Princess of Stellar VINE
-3-Dimensional WATER Fairy/Spatial/Origin/Effect Monster
-2+ WATER monsters
-Once per turn: You can shuffle 1 of your banished monsters into the Deck, then target up to 3 of your banished "Stellar VINE" monsters; return all of those targets to the GY, then draw 1 card.
-ATK 700/DEF 2800
-
-Astral Dragon of Stellar VINE
-7-Dimensional WATER Dragon/Spatial/Origin Monster
-2+ monsters
-ATK 3500/DEF 1400
-
-Clarissa, Knight of Constellar VINE
-7-Dimensional WATER Warrior/Spatial/Origin/Effect Monster
-2+ monsters
-(Quick Effect): You can banish 1 card from your hand, then target 1 card on the field; return it to the hand. During the End Phase of the next turn, banish all cards with the same name as that face-up returned card from the hand and Extra Deck. You can only use this effect of "Clarissa, Knight of Constellar VINE" once per turn.
-ATK 2500/DEF 1500
-
-Stellar VINE Stargazing
-Normal Trap
-Tribute 1 "VINE" monster that has a Level; excavate a number of cards from the top of your Deck equal to the Tributed monster's Level, banish any excavated "Stellar VINE" cards, also place the other cards on the bottom of your Deck in any order. You can only activate 1 "Stellar VINE Stargazing" per turn.
-
 Starry-Eyes Spatial Dragon
 7-Dimensional DARK Dragon/Spatial/Origin/Effect Monster
 2 monsters
@@ -411,7 +324,7 @@ Defense Position monsters your opponent controls cannot change their battle posi
 Winged Swordsmaster Iona
 Points ↘→ LIGHT Warrior/Link/Effect Monster
 2 "Swordsmaster" monsters
-If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster you control. Once while this card is on the field, if a "Swordsmaster" monster this card points to activates its effect, you can Special Summon 1 "Swordsmaster" monster from your GY to either field in face-up Defense Position immediately after that effect resolves.
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster you control. Once while this card is on the field, if a "Swordsmaster" monster this card points to activates its effect, you can Special Summon 1 "Swordsmaster" monster from your GY to either field in face-up Defense Position immediately after that effect resolves. You can only use this effect of "Winged Swordsmaster Iona" once per turn.
 ATK 1700/LINK-2
 
 Swordsmasterror Siegfried
@@ -479,145 +392,116 @@ Level 7 FIRE Dragon/Effect Monster
 During your opponent's turn, if a Spell/Trap Card or effect is activated (Quick Effect): You can Special Summon this card from your hand. Other cards on the field cannot be destroyed by battle or card effects.
 ATK 3000/DEF 2000
 
-Clarissa, Queen of Stellar VINE
-7-Dimensional WATER Fairy/Spatial/Altered/Effect Monster
-1 "Stellar VINE" monster + 1+ "VINE" monsters
-Once per turn: You can banish 1 "VINE" monster you control, then target 1 of your banished cards; shuffle it into the Deck. If this card is banished from the field: You can banish 1 "Stellar VINE" monster from your hand; add 1 "Stellar VINE" monster from your Deck to your hand.
-ATK 2600/DEF 2600
-
-Ragna Clarissa of Stellar VINE
-3-Dimensional WATER Fairy/Spatial/Altered/Effect Monster
-1 WATER "VINE" monster + 1 WATER monsters
-When exactly 1 "Stellar VINE" monster that has a Level (and no other Monster Cards) is banished (Quick Effect): You can return a number of your banished "Stellar VINE" monsters to the GY, up to that monster's Level.
-ATK 2200/DEF 2400
-
-Osa, Princess of Stellar VINE
-3-Dimensional WATER Fairy/Spatial/Altered/Effect Monster
-2+ WATER monsters
-Once per turn: You can shuffle 1 of your banished monsters into the Deck, then target up to 3 of your banished "Stellar VINE" monsters; return all of those targets to the GY, then draw 1 card.
-ATK 2100/DEF 1400
-
-Astral Dragon of Stellar VINE
-7-Dimensional WATER Wyrm/Spatial/Altered Monster
-2+ monsters
-ATK 1600/DEF 3400
-
-Clarissa, Knight of Constellar VINE
-7-Dimensional WATER Fairy/Spatial/Altered/Effect Monster
-2+ monsters
-(Quick Effect): You can banish 1 card from your hand, then target 1 card on the field; return it to the hand. During the End Phase of the next turn, banish all cards with the same name as that face-up returned card from the hand and Extra Deck. You can only use this effect of "Clarissa, Knight of Constellar VINE" once per turn.
-ATK 2500/DEF 2000
-
 Blitzkrieg Dragon - Light
-Level 3 Scale 2/2 LIGHT Dragon/Pendulum/Effect Monster
+Level 3 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Light": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; Set it. You can only use this effect of "Blitzkrieg Dragon - Light" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Light": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; Set it. You can only use this effect of "Blitzkrieg Dragon - Light" once per turn.
 ATK 900/DEF 2000
 
 Blitzkrieg Dragon - Dark
-Level 4 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: -n/a-
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls.
 ATK 2000/DEF 0
 
 Blitzkrieg Meklight - Dawn
-Level 3 Scale 2/2 LIGHT Dragon/Pendulum/Effect Monster
+Level 3 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meklight - Dawn": You can add 1 "Blitzkrieg" monster from your Deck to your hand, except "Blitzkrieg Meklight - Dawn". You can only use this effect of "Blitzkrieg Meklight - Dawn" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meklight - Dawn": You can add 1 "Blitzkrieg" monster from your Deck to your hand, except "Blitzkrieg Meklight - Dawn". You can only use this effect of "Blitzkrieg Meklight - Dawn" once per turn.
 ATK 1050/DEF 1850
 
 Blitzkrieg Meknight - Dusk
-Level 4 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meknight - Dusk": You can target 1 DARK "Blitzkrieg" monster in your GY; Special Summon that target. You can only use this effect of "Blitzkrieg Meknight - Dusk" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meknight - Dusk": You can target 1 LIGHT "Blitzkrieg" monster in your GY; Special Summon that target. You can only use this effect of "Blitzkrieg Meknight - Dusk" once per turn.
 ATK 1650/DEF 0
 
 Blitzkrieg Dragon - Glass
-Level 4 Scale 2/2 LIGHT Dragon/Pendulum/Effect Monster
+Level 4 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Glass": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Glass"; destroy this card, then Special Summon that target. You can only use this effect of "Blitzkrieg Dragon - Glass" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Glass": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Glass"; Special Summon that target, but destroy it at the end of this turn. You can only use this effect of "Blitzkrieg Dragon - Glass" once per turn.
 ATK 1100/DEF 2500
 
 Blitzkrieg Meknight - O'Dark
-Level 3 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 3 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meknight - O'Dark": You can target 1 other card you control and 1 card your opponent controls; return them to the hand. You can only use this effect of "Blitzkrieg Meknight - O'Dark" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meknight - O'Dark": You can target 1 other card you control and 1 card your opponent controls; return them to the hand. You can only use this effect of "Blitzkrieg Meknight - O'Dark" once per turn.
 ATK 1400/DEF 1500
 
 Blitzkrieg Meklight - Afternoon
-Level 4 Scale 5/5 FIRE Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 FIRE Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meklight - Afternoon": You can target 1 "Blitzkrieg" monster in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meklight - Afternoon" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meklight - Afternoon": You can target 1 "Blitzkrieg" monster in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meklight - Afternoon" once per turn.
 ATK 2000/DEF 1000
 
 Blitzkrieg Meknight - Evening
-Level 3 Scale 2/2 WATER Dragon/Pendulum/Effect Monster
+Level 3 Scale 2 WATER Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meknight - Evening": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meknight - Evening" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meknight - Evening": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meknight - Evening" once per turn.
 ATK 900/DEF 1800
 
 Blitzkrieg Element - Flame
-Level 4 Scale 5/5 FIRE Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 FIRE Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Element - Flame": You can target 1 monster your opponent controls; destroy that target, then inflict damage to your opponent equal to half the destroyed monster's DEF on the field. You can only use this effect of "Blitzkrieg Element - Flame" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Element - Flame": You can target 1 monster your opponent controls; destroy that target, then inflict damage to your opponent equal to half the destroyed monster's ATK on the field. You can only use this effect of "Blitzkrieg Element - Flame" once per turn.
 ATK 1800/DEF 1300
 
 Blitzkrieg Element - Water
-Level 3 Scale 2/2 WATER Dragon/Pendulum/Effect Monster
+Level 3 Scale 2 WATER Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Element - Water": You can add 1 face-up "Blitzkrieg" Pendulum Monster from your Extra Deck to your hand. You can only use this effect of "Blitzkrieg Element - Water" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Element - Water": You can add 1 face-up "Blitzkrieg" Pendulum Monster from your Extra Deck to your hand. You can only use this effect of "Blitzkrieg Element - Water" once per turn.
 ATK 1500/DEF 2000
 
 Blitzkrieg Dragon - Sun
-Level 4 Scale 5/5 FIRE Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 FIRE Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Sun": You can destroy 2 face-up "Blitzkrieg" Pendulum Monsters in your Extra Deck, then draw 1 card. You can only use this effect of "Blitzkrieg Dragon - Sun" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Sun": You can destroy 2 face-up "Blitzkrieg" Pendulum Monsters in your Extra Deck, then draw 1 card. You can only use this effect of "Blitzkrieg Dragon - Sun" once per turn.
 ATK 1800/DEF 0
 
 Blitzkrieg Dragon - Moon
-Level 3 Scale 2/2 WATER Dragon/Pendulum/Effect Monster
+Level 3 Scale 2 WATER Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Moon": You can target 1 WATER "Blitzkrieg" monster in your GY; Special Summon it. You can only use this effect of "Blitzkrieg Dragon - Moon" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Moon": You can target 1 FIRE "Blitzkrieg" monster in your GY; Special Summon it. You can only use this effect of "Blitzkrieg Dragon - Moon" once per turn.
 ATK 0/DEF 2300
 
 Blitzkrieg Element - PSYph
-Level 3 Scale 2/2 LIGHT Dragon/Pendulum/Effect Monster
+Level 3 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed: You can Fusion Summon 1 "Blitzkrieg" Fusion Monster from your Extra Deck, by destroying this card as Fusion Material, as well as other monsters on your field and/or face-up in your Extra Deck. You can only use this effect of "Blitzkrieg Element - PSYph" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. During your opponent's turn, after damage calculation: You can destroy this card and 1 other "Blitzkrieg" monster in your hand (except "Blitzkrieg Element - PSYph"), and if you do, destroy all Attack Position monsters.
 ATK 1200/DEF 2100
 
 Blitzkrieg Element - Infernil
-Level 4 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: -n/a-
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed: You can Fusion Summon 1 "Blitzkrieg" Fusion Monster from your Extra Deck, by banishing this card as Fusion Material, as well as destroying other monsters on your field and/or face-up in your Extra Deck. You can only use this effect of "Blitzkrieg Element - Infernil" once per turn.
 ATK 1600/DEF 1200
 
 Blitzkrieg Dragon - Steel
-Level 4 Scale 2/2 LIGHT Dragon/Pendulum/Effect Monster
+Level 4 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Steel": You can add 1 "Blitzkrieg" Spell/Trap or "Blitz Field" from your Deck to your hand. You can only use this effect of "Blitzkrieg Dragon - Steel" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Steel": You can add 1 "Blitzkrieg" Spell/Trap or "Blitz Field" from your Deck to your hand. You can only use this effect of "Blitzkrieg Dragon - Steel" once per turn.
 ATK 1000/DEF 2200
 
 Blitzkrieg Dragon - Gold
-Level 4 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Gold": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Gold"; Special Summon that target, but it cannot attack. You can only use this effect of "Blitzkrieg Dragon - Gold" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Gold": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Gold"; Special Summon that target, but it cannot attack. You can only use this effect of "Blitzkrieg Dragon - Gold" once per turn.
 ATK 1600/DEF 0
 
 Blitzkrieg Dragon - Obsidian
-Level 4 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Obsidian": You can Special Summon this card from your Pendulum Zone, then place 1 "Blitzkrieg" monster from your Deck in your Pendulum Zone. You can only use this effect of "Blitzkrieg Dragon - Obsidian" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Obsidian": You can place 1 "Blitzkrieg" monster from your Deck in your Pendulum Zone. You can only use this effect of "Blitzkrieg Dragon - Obsidian" once per turn.
 ATK 1700/DEF 1100
 
 Blitzkrieg Dragon - Galaxic
-Level 4 Scale 5/5 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed: You can Special Summon this card from your Pendulum Zone, and if you do, any "Blitzkrieg" monster that leaves the field for the rest of this turn is treated as being destroyed.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls.
 ATK 1900/DEF 1000
 
 Blitzkrieg Dragon - Silver
-Level 4 Scale 2/2 DARK Dragon/Pendulum/Effect Monster
+Level 4 Scale 2 DARK Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Silver": You can Special Summon 1 "Blitzkrieg" monster from your hand in Defense Position, except "Blitzkrieg Dragon - Silver". You can only use this effect of "Blitzkrieg Dragon - Silver" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Silver": You can Special Summon 1 "Blitzkrieg" monster from your hand in Defense Position, except "Blitzkrieg Dragon - Silver". You can only use this effect of "Blitzkrieg Dragon - Silver" once per turn.
 ATK 0/DEF 2300
@@ -836,7 +720,7 @@ Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand or Deck)
 ATK 3400/DEF 2900
 
 Lyris, Blitzkrieg Tactician of YC.Org
-Level 4 Scale 2/2 LIGHT Dragon/Pendulum/Effect Monster
+Level 4 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
 Pendulum Effect: If a "YC.Org" or "Blitzkrieg" monster(s) you control is banished or destroyed by a card effect: You can Special Summon this card from your Pendulum Zone. You cannot Special Summon monsters the turn you activate this effect, except "YC.Org" / "Blitzkrieg" monsters. You can only use this effect of "Lyris, Blitzkrieg Tactician of YC.Org" once per turn.
 Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is Special Summoned OR if this face-up card is destroyed or banished: You can shuffle 3 "YC.Org" / "Blitzkrieg" cards from your GY and/or face-up Extra Deck into your Deck, and if you do, draw 1 card. You can only this effect of "Lyris, Blitzkrieg Tactician of YC.Org" once per turn.
 ATK 1000/DEF 2100
@@ -861,7 +745,7 @@ ATK 800/DEF 800
 
 Cyberdark Conductor
 Level 4 DARK Machine/Effect Monster
-If this card is Summoned: Equip 1 Level 3 or lower Dragon monster from your Deck to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. You can target 1 Machine "Cyberdark" monster in your GY; return it to the hand, then immediately after this effect resolves, you can Normal Summon it. You can only use this effect of "Cyberdark Conductor" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+If this card is Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. You can target 1 Machine "Cyberdark" monster in your GY; return it to the hand, then immediately after this effect resolves, you can Normal Summon it. You can only use this effect of "Cyberdark Conductor" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
 ATK 800/DEF 800
 
 Cyberdark Receptor
@@ -1174,13 +1058,13 @@ You can Special Summon this card (from your hand) by banishing 1 "YC.Org" or "Vo
 ATK 2000/DEF 1400
 
 Kyrie, YC.Org Naval Gear Admiral
-Level 5 Scale 9/9 WATER Machine/Pendulum/Effect Monster
+Level 5 Scale 9 WATER Machine/Pendulum/Effect Monster
 Pendulum Effect: When this card is activated: You can place 1 "Naval Gear" or "YC.Org" monster from your hand or GY in your Spell & Trap Card Zone as a Continuous Spell. If you Link Summon a "Naval Gear" or "YC.Org" monster: You can tribute 1 other "YC.Org" or "Naval Gear" Spell you control; Special Summon 1 "Naval Gear" or "YC.Org" monster from your Deck to a zone that monster points to. You can only use each effect of "Kyrie, YC.Org Naval Gear Admiral" once per turn.
 Monster Effect: If this card is used as Link Material for the Link Summon of a "Naval Gear " or "YC.Org" Link Monster: You can activate this card in your Pendulum Zone. You can only use this effect of "Kyrie, YC.Org Naval Gear Admiral" once per turn.
 ATK 1500/DEF 2100
 
 Chahine, Paintress of YC.Org
-Level 4 Scale 2/2 LIGHT Fairy/Pendulum/Normal Monster
+Level 4 Scale 2 LIGHT Fairy/Pendulum/Normal Monster
 Pendulum Effect: You can reveal 2 "Paintress" and/or "YC.Org" cards in your hand with different names: Destroy this card, and if you do, add 1 "Paintress" or "YC.Org" card from your Deck to your hand, also for the rest of this turn you cannot Special Summon monsters, except "Paintress" and "YC.Org" monsters. You can only use this effect of "Chahine, Paintress of YC.Org" once per turn.
 Monster Effect: Fervently Passionate, they stand by their decisions despite all protest.
 ATK 1000/DEF 1000
@@ -1364,6 +1248,43 @@ Armarine Lighthouse
 Continuous Spell
 When this card is activated: Add 1 "Armarine" monster from your Deck to your hand. If an attack is declared involving your "Armarine" monster: Add 1 "Armarine" monster with a different name than that monster from your Deck to your hand, also for the rest of this turn, you cannot add monsters from your Deck to your hand with that name with this effect of "Armarine Lighthouse". You can only activate 1 "Armarine Lighthouse" per turn.
 
+Alex Cimooo
+Grade 2 Effect-Gate LIGHT Spellcaster/Xros/Effect Monster
+Gate Effect: [You control a DARK monster] All your monsters gain 600 ATK/DEF, also they cannot be destroyed by card effects.
+Monster Effect: 2 monsters with different owners
+If this card is Xros Summoned: You can target 1 monster your opponent controls; take control of it, and if you do, take 2000 damage. You can only use this effect of "Alex Cimooo" once per turn.
+ATK 600/DEF 600
+
+MBT Joe
+Grade 2 Effect-Gate LIGHT Fiend/Xros/Effect Monster
+Gate Effect: [You do not control another "MBT Joe"] All your monsters gain 600 DEF, also your opponent cannot target other monsters on your field with card effects.
+Monster Effect: 3 monsters
+You can target 1 monster in the GY; Special Summon it, and if you do, take damage equal to its original ATK or DEF (whichever is higher). You can only use this effect of "MBT Joe" once per turn.
+ATK 900/DEF 300
+
+Nyhm Nim
+Grade 2 Effect-Gate DARK Dragon/Xros/Effect Monster
+Gate Effect: [You control a LIGHT monster] All your monsters gain 600 ATK, also if they attack, your opponent cannot activate cards or effects until the end of the Damage Step.
+Monster Effect: 2 monsters
+You can target 1 monster your opponent controls; destroy it. You can only use this effect of "Nyhm Nim" once per turn.
+ATK 300/DEF 900
+
+Stardust Medium
+Level 4 LIGHT Spellcaster/Effect Monster
+You can discard this card; Special Summon 1 "Stardust Token" (Dragon/LIGHT/Level 1/ATK 0/DEF 0), then you can banish any number of Spells/Traps from your GY. (Increase the Level of this Token by the number of cards banished by this effect.) You can banish this card from your GY; Special Summon 1 "Stardust Token". You can only use each effect of "Stardust Medium" once per turn.
+ATK 1400/DEF 1600
+
+Stardust Astronomer
+Level 4 LIGHT Spellcaster/Tuner/Effect Monster
+You can discard this card; add 1 "Stardust" monster from your Deck to your hand, except "Stardust Astronomer". If you use this card for a Synchro Summon, you can treat it as a non-Tuner. You can banish this card from your GY; excavate the top 3 cards of your Deck, you can Special Summon 1 excavated "Stardust" monster, also, send the rest to the GY after that. You can only activate each effect of "Stardust Astronomer" once per turn.
+ATK 1800/DEF 1500
+
+Stardust Envoy
+Level 5 WIND Spellcaster/Synchro/Tuner/Effect Monster
+1 Tuner + 1+ non-Tuner monsters
+Once per turn: You can increase or reduce this card's Level by up to 4. If you use this card for a Synchro Summon, you can treat it as a non-Tuner. Once per Chain, during the Main Phase, you can (Quick Effect): Immediately after this effect resolves, Synchro Summon using this card you control.
+ATK 2300/DEF 1100
+
 Dark Tuner Raven Hood
 Level 1 DARK Winged Beast/Dark Tuner/Effect Monster
 If this card is Normal or Special Summoned: You can target any number of monsters in the GYs; increase this card's Level by the total Levels of those targets. Cannot be used as Synchro Material, except for the Synchro Summon of a Dark Synchro Monster.
@@ -1374,3 +1295,53 @@ Level -9 DARK Winged Beast/Dark Synchro/Effect Monster
 1 non-Tuner monster - 1 Dark Tuner
 You can target any number of Winged Beast monsters in your GY; Special Summon them, but their effects are negated, also they cannot be used as Fusion, Xyz, or Link Material for a Summon. You can only use this effect of "Raven of the Starless Night" once per turn.
 ATK 2600/DEF 2200
+
+Rose Tender
+Level 1 EARTH Plant/Tuner/Effect Monster
+You can discard this card; add 1 Level 4 or lower "Rose" monster from your Deck to your hand, except "Rose Tender". You can only use this effect of "Rose Tender" once per turn.
+ATK 200/DEF 1800
+
+Rose Mage
+Level 3 EARTH Spellcaster/Effect Monster
+If you control a "Rose" or Plant monster: You can Special Summon this card from your hand. You can only use this effect of "Rose Mage" once per turn. Other "Rose" and Plant monsters cannot be destroyed by your opponent's card effects. If a "Rose" or Plant monster(s) you control would be destroyed, you can banish this card from your GY instead.
+ATK 1400/DEF 1000
+
+Rose Rebirth
+Normal Spell
+Target 1 "Rose" or Plant monster with a Level in your GY; Special Summon that target, and after that, if it is Level 5 or higher, banish monsters from your GY whose total Levels equal that monster's Level. It cannot be destroyed by battle or card effects this turn.
+
+Rose Vertigo
+Quick-Play Spell
+Special Summon 1 Level 4 or lower "Rose" monster from your Deck, but negate its effects. You can only activate 1 "Rose Vertigo" per turn.
+
+Blanc Rose Dragon
+Level 7 LIGHT Dragon/Synchro/Effect Monster
+1 Tuner + 1+ non-Tuner monsters
+If this card is Synchro Summoned: You can banish this card until the End Phase; negate the effects of all cards currently on the field. Once per turn: You can banish 1 Plant monster from your GY, then target 1 Attack Position monster your opponent controls; change that target to face-down Defense Position, also if this card attacks a Defense Position monster this turn, inflict piercing battle damage to your opponent.
+ATK 2400/DEF 1600
+
+Distant Coder
+Grade 1 Effect-Gate DARK Cyberse/Xros/Effect Monster
+Gate Effect: [This card is in Attack Position] Your opponent takes any battle damage you would have taken involving this card.
+Monster Effect: 2 monsters
+If this card is Xros Summoned: You can banish this card (until the End Phase), and if you do, you take no damage until the end of the next turn.
+ATK 0/DEF 1200
+
+X the Dark One
+Grade 2 Effect-Gate DARK Warrior/Xros/Effect Monster
+Gate Effect: [Your opponent controls a face-down monster] Your opponent's monsters cannot change their Battle Position.
+Monster Effect: 1 monster
+You can target 1 monster your opponent controls; change it to face-down Defense Position. You can only use this effect of "X the Dark One" once per turn.
+ATK 1200/DEF 0
+
+Cyber Angel Kalani
+Points ↙↘ LIGHT Fairy/Link/Effect Monster
+2 Fairy monsters
+Once per turn: You can target 1 Level 5 or higher Fairy monster in your GY; Special Summon it. If your other Fairy monster(s) is Tributed: You can add 1 Ritual Monster or 1 Ritual Spell from your GY to your hand.
+ATK 1800/LINK-2
+
+Table Flipper
+Level 4 DARK Warrior/Flip/Effect Monster
+Cannot be Special Summoned.
+FLIP: Destroy all cards the turn player's opponent controls, then for each card destroyed by this effect, they add the bottom card of their GY to their hand, also the turn player skips their next Battle Phase this turn. (End the Battle Phase instead, if this effect was activated during the Battle Phase.)
+ATK 0/DEF 2100

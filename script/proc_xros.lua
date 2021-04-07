@@ -24,50 +24,19 @@ table.insert(aux.CannotBeEDMatCodes,EFFECT_CANNOT_BE_XROS_MATERIAL)
 --Track
 g_Reserve={0}
 g_Reserve[0]=0
+g_State={0}
+g_State[0]=0
 
 --overwrite functions
-local get_rank, get_orig_rank, prev_rank_field, is_rank, is_rank_below, is_rank_above, get_type, get_orig_type, get_prev_type_field, get_level, is_level, is_level_above, is_level_below, get_stage, is_stage, is_stage_above, is_stage_below, get_stability, is_stability, is_stability_above, is_stability_below, get_dimension, is_dimension, is_dimension_above, is_dimension_below, get_future, is_future, is_future_above, is_future_below, get_cell, is_cell, is_cell_above, is_cell_below, card_overlay_group, card_overlay_count, duel_overlay_group, duel_overlay_count = 
-	Card.GetRank, Card.GetOriginalRank, Card.GetPreviousRankOnField, Card.IsRank, Card.IsRankBelow, Card.IsRankAbove, Card.GetType, Card.GetOriginalType, Card.GetPreviousTypeOnField, Card.GetLevel, Card.IsLevel, Card.IsLevelAbove, Card.IsLevelBelow, Card.GetStage, Card.IsStage, Card.IsStageAbove, Card.IsStageBelow, Card.GetStability, Card.IsStability, Card.IsStabilityAbove, Card.IsStabilityBelow, Card.GetDimensionNo, Card.IsDimensionNo, Card.IsDimensionNoAbove, Card.IsDimensionNoBelow, Card.GetFuture, Card.IsFuture, Card.IsFutureAbove, Card.IsFutureBelow, Card.GetCell, Card.IsCell, Card.IsCellAbove, Card.IsCellBelow,
-		Card.GetOverlayGroup, Card.GetOverlayCount, Duel.GetOverlayGroup, Duel.GetOverlayCount
+local get_rank, get_orig_rank, prev_rank_field, is_rank, is_rank_below, is_rank_above, get_type, get_orig_type, get_prev_type_field = 
+	Card.GetRank, Card.GetOriginalRank, Card.GetPreviousRankOnField, Card.IsRank, Card.IsRankBelow, Card.IsRankAbove, Card.GetType, Card.GetOriginalType, Card.GetPreviousTypeOnField
 
-Card.GetRank=function(c)
-	if Auxiliary.Xroses[c] then return c:GetCoreGroup():IsExists(Card.IsRankAbove,1,nil,1) and c:GetGrade() or 0 end
-	return get_rank(c)
-end
-Card.GetOriginalRank=function(c)
-	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return 0 end
-	return get_orig_rank(c)
-end
-Card.GetPreviousRankOnField=function(c)
-	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return 0 end
-	if c:GetCoreGroup():IsExists(Card.IsRankAbove,1,nil,1) then return c:GetGrade() end
-	return prev_rank_field(c)
-end
-Card.IsRank=function(c,...)
-	if Auxiliary.Xroses[c] and not (Auxiliary.Xroses[c]() or (c:GetCoreGroup():IsExists(Card.IsRankAbove,1,nil,1) and c:IsGradeBelow(rk))) then return false end
-	local funs={...}
-	for key,value in pairs(funs) do
-		if c:GetCoreGroup():IsExists(Card.IsRankAbove,1,nil,1) and c:GetGrade()==value or c:GetRank()==value then return true end
-	end
-	return false
-end
-Card.IsRankBelow=function(c,rk)
-	if Auxiliary.Xroses[c] and not (Auxiliary.Xroses[c]() or (c:GetCoreGroup():IsExists(Card.IsRankAbove,1,nil,1) and c:IsGradeBelow(rk))) then return false end
-	return is_rank_below(c,rk)
-end
-Card.IsRankAbove=function(c,rk)
-	if Auxiliary.Xroses[c] and not (Auxiliary.Xroses[c]() or (c:GetCoreGroup():IsExists(is_rank_above,1,nil,1) and c:IsGradeAbove(rk))) then return false end
-	return is_rank_above(c,rk)
-end
 Card.GetType=function(c,scard,sumtype,p)
 	local tpe=scard and get_type(c,scard,sumtype,p) or get_type(c)
 	if Auxiliary.Xroses[c] then
 		tpe=tpe|TYPE_XROS
 		if not Auxiliary.Xroses[c]() then
 			tpe=tpe&~TYPE_XYZ
-		end
-		for tc in aux.Next(c:GetCoreGroup()) do
-			tpe=tpe|get_type(c)&0x401e30
 		end
 	end
 	return tpe
@@ -89,153 +58,37 @@ Card.GetPreviousTypeOnField=function(c)
 		if not Auxiliary.Xroses[c]() then
 			tpe=tpe&~TYPE_XYZ
 		end
-		for tc in aux.Next(c:GetCoreGroup()) do
-			tpe=tpe|c:GetType()&0x401e30
-		end
 	end
 	return tpe
 end
-Card.GetLevel=function(c)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsLevelAbove,1,nil,1) then return c:GetGrade() end
-	return get_level(c)
+Card.GetRank=function(c)
+	if Auxiliary.Xroses[c] then return 0 end
+	return get_rank(c)
 end
-Card.IsLevel=function(c,...)
-	local funs={...}
-	for key,value in pairs(funs) do
-		if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsLevelAbove,1,nil,1) and c:GetGrade()==value or c:GetLevel()==value then return true end
-	end
-	return false
+Card.GetOriginalRank=function(c)
+	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return 0 end
+	return get_orig_rank(c)
 end
-Card.IsLevelAbove=function(c,lv)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(is_level_above,1,nil,1) then return c:IsGradeAbove(lv) end
-	return is_level_above(c,lv)
+Card.GetPreviousRankOnField=function(c)
+	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return 0 end
+	return prev_rank_field(c)
 end
-Card.IsLevelBelow=function(c,lv)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsLevelAbove,1,nil,1) then return c:IsGradeBelow(lv) end
-	return is_level_below(c,lv)
+Card.IsRank=function(c,...)
+	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return false end
+	return is_rank(c,...)
 end
-Card.GetStage=function(c)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsStageAbove,1,nil,1) then return c:GetGrade() end
-	return get_stage(c)
+Card.IsRankBelow=function(c,rk)
+	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return false end
+	return is_rank_below(c,rk)
 end
-Card.IsStage=function(c,...)
-	for key,value in pairs({...}) do
-		if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsStageAbove,1,nil,1) and c:GetGrade()==value or c:GetStage()==value then return true end
-	end
-	return false
-end
-Card.IsStageAbove=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(is_stage_above,1,nil,1) then return c:IsGradeAbove(val) end
-	return is_stage_above(c,val)
-end
-Card.IsStageBelow=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsStageAbove,1,nil,1) then return c:IsGradeBelow(val) end
-	return is_stage_below(c,val)
-end
-Card.GetStability=function(c)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsStabilityAbove,1,nil,1) then return c:GetGrade() end
-	return get_stability(c)
-end
-Card.IsStability=function(c,...)
-	for key,value in pairs({...}) do
-		if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsStabilityAbove,1,nil,1) and c:GetGrade()==value or c:GetStability()==value then return true end
-	end
-	return false
-end
-Card.IsStabilityAbove=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(is_stability_above,1,nil,1) then return c:IsGradeAbove(val) end
-	return is_stability_above(c,val)
-end
-Card.IsStabilityBelow=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsStabilityAbove,1,nil,1) then return c:IsGradeBelow(val) end
-	return is_stability_below(c,val)
-end
-Card.GetDimensionNo=function(c)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsDimensionNoAbove,1,nil,1) then return c:GetGrade() end
-	return get_dimension(c)
-end
-Card.IsDimensionNo=function(c,...)
-	for key,value in pairs({...}) do
-		if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsDimensionNoAbove,1,nil,1) and c:GetGrade()==value or c:GetDimensionNo()==value then return true end
-	end
-	return false
-end
-Card.IsDimensionNoAbove=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(is_dimension_above,1,nil,1) then return c:IsGradeAbove(val) end
-	return is_dimension_above(c,val)
-end
-Card.IsDimensionNoBelow=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsDimensionNoAbove,1,nil,1) then return c:IsGradeBelow(val) end
-	return is_dimension_below(c,val)
-end
-Card.GetFuture=function(c)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsFutureAbove,1,nil,1) then return c:GetGrade() end
-	return get_future(c)
-end
-Card.IsFuture=function(c,...)
-	for key,value in pairs({...}) do
-		if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsFutureAbove,1,nil,1) and c:GetGrade()==value or c:GetFuture()==value then return true end
-	end
-	return false
-end
-Card.IsFutureAbove=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(is_future_above,1,nil,1) then return c:IsGradeAbove(val) end
-	return is_stability_above(c,val)
-end
-Card.IsFutureBelow=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsFutureAbove,1,nil,1) then return c:IsGradeBelow(val) end
-	return is_stability_below(c,val)
-end
-Card.GetCell=function(c)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsCellAbove,1,nil,1) then return c:GetGrade() end
-	return get_cell(c)
-end
-Card.IsCell=function(c,...)
-	for key,value in pairs({...}) do
-		if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsCellAbove,1,nil,1) and c:GetGrade()==value or c:GetCell()==value then return true end
-	end
-	return false
-end
-Card.IsCellAbove=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(is_cell_above,1,nil,1) then return c:IsGradeAbove(val) end
-	return is_cell_above(c,val)
-end
-Card.IsCellBelow=function(c,val)
-	if Auxiliary.Xroses[c] and c:GetCoreGroup():IsExists(Card.IsCellAbove,1,nil,1) then return c:IsGradeBelow(val) end
-	return is_cell_below(c,val)
-end
-Card.GetOverlayGroup=function(c)
-	if Auxiliary.Xroses[c] then return Group.CreateGroup() end
-	return card_overlay_group(c)
-end
-Card.GetOverlayCount=function(c)
-	return #c:GetOverlayGroup()
-end
-Duel.GetOverlayGroup=function(tp,s,o)
-	return duel_overlay_group(tp,s,o):Filter(function(c) return not Auxiliary.Xroses[c:GetOverlayTarget()] end,nil)
-end
-Duel.GetOverlayCount=function(tp,s,o)
-	return #Duel.GetOverlayGroup(tp,s,o)
+Card.IsRankAbove=function(c,rk)
+	if Auxiliary.Xroses[c] and not Auxiliary.Xroses[c]() then return false end
+	return is_rank_above(c,rk)
 end
 
 --Custom Functions
-function Card.GetCoreGroup(c,typ)
-	if not Auxiliary.Xroses[c] then return Group.CreateGroup() end
-	local t={["Main"]=c:GetMaterial(),
-	["Extra"]=card_overlay_group(c)-c:GetMaterial()}
-	return not typ and card_overlay_group(c) or t[typ]
-end
-function Card.GetCoreCount(c,typ)
-	return #c:GetCoreGroup(typ)
-end
-function Duel.GetCoreGroup(tp,s,o,typ)
-	local g=duel_overlay_group(tp,s,o):Filter(function(c) return Auxiliary.Xroses[c:GetOverlayTarget()] end,nil)
-	local t={["Main"]=g:Filter(function(c) return c:GetMaterial():IsContains(c) end,nil),
-	["Extra"]=g:Filter(function(c) return not c:GetMaterial():IsContains(c) end,nil)}
-	return not typ and g or t[typ]
-end
-function Duel.GetCoreCount(tp,s,o,typ)
-	return #Duel.GetCoreGroup(tp,s,o,typ)
+function Duel.GetState(tp)
+	return g_State[tp]
 end
 function Duel.ChangeReserve(tp,ct)
 	g_Reserve[tp]=g_Reserve[tp]+ct
@@ -246,17 +99,19 @@ function Duel.CheckReserve(tp)
 end
 function Auxiliary.LoadCondition(e,c)
 	if c==nil then return true end
-	local tp=c:GetControler()
-	if not Auxiliary.HasLoad then return false end
-	return c:IsAbleToDeck() and c:IsLocation(LOCATION_HAND)
-		or Duel.IsExistingMatchingCard(aux.AND(Card.IsFaceup,Card.IsType),tp,LOCATION_MZONE,0,1,c,TYPE_XROS)
+	return Auxiliary.HasLoad and c:IsAbleToDeck()
 end
 function Auxiliary.LoadOperation(e,tp,eg,ep,ev,re,r,rp,c,sg)
-	local g=Duel.GetMatchingGroup(aux.AND(Card.IsFaceup,Card.IsType),tp,LOCATION_MZONE,0,c,TYPE_XROS)
-	if #g>0 and Duel.SelectOption(tp,1000,1007)~=0 then
-		Duel.Overlay(g:Select(tp,1,1,nil):GetFirst(),c)
-	else Duel.SendtoDeck(c,nil,1,REASON_RULE) end
+	Duel.SendtoDeck(c,nil,1,REASON_RULE)
 	Duel.ChangeReserve(tp,5)
+	local ctyp=c:GetType()
+	for i=4,52 do
+		if 2^i&(0xb0|TYPE_EXTRA|TYPE_PENDULUM|TYPE_PANDEMONIUM)>0 and c:IsType(2^i) then
+			g_State[c:GetControler()]=2^i
+		end
+		ctyp=ctyp&~2^i
+		if ctyp<16 then break end
+	end
 end
 
 local ge2=Effect.GlobalEffect()
@@ -313,7 +168,7 @@ function Card.IsGradeBelow(c,gd)
 	return grade>0 and grade<=gd
 end
 function Card.IsCanBeXrosMaterial(c,xsc)
-	if c:IsOnField() and c:IsFacedown() or not c:IsCanOverlay(xsc:GetControler()) then return false end
+	if c:IsOnField() and c:IsFacedown() then return false end
 	local tef={c:IsHasEffect(EFFECT_CANNOT_BE_XROS_MATERIAL)}
 	for _,te in ipairs(tef) do
 		if (type(te:GetValue())=="function" and te:GetValue()(te,xsc)) or te:GetValue()==1 then return false end
@@ -326,8 +181,8 @@ function Auxiliary.AddOrigXrosType(c,isxyz)
 	local isxyz=isxyz==nil and false or isxyz
 	Auxiliary.Xroses[c]=function() return isxyz end
 end
-function Auxiliary.AddXrosProc(c,xscheck,gd,...)
-	--xscheck - extra check after everything is settled, djn - Xros "level"
+function Auxiliary.AddXrosProc(c,xscheck,gd,gt,...)
+	--xscheck - extra check after everything is settled, gd - Xros "level", gt - Xros Gate(s)
 	--... format - material filter, minimum-of, maximum-of; use aux.TRUE for generic materials
 	if c:IsStatus(STATUS_COPYING_EFFECT) then return end
 	local t={...}
@@ -366,23 +221,11 @@ function Auxiliary.AddXrosProc(c,xscheck,gd,...)
 	ge2:SetOperation(Auxiliary.XrosOperation)
 	ge2:SetValue(SUMMON_TYPE_XROS)
 	c:RegisterEffect(ge2)
-	local ge3=Effect.CreateEffect(c)
-	ge3:SetType(EFFECT_TYPE_SINGLE)
-	ge3:SetCode(EFFECT_ADD_RACE)
-	ge3:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
-	ge3:SetValue(function(e,c)
-		local rc=0
-		for tc in aux.Next(c:GetCoreGroup()) do rc=rc|tc:GetRace() end
-		return rc
-	end)
-	c:RegisterEffect(ge3)
 end
-function Auxiliary.XrosEffectCon(f,...)
-	local ext_params={...}
+function Auxiliary.XrosEffectCon(gt,f,...)
+	local exargs={...}
 	return	function(e)
-				local c=e:GetHandler()
-				if f then return c:GetCoreGroup("Extra"):IsExists(f,1,nil,table.unpack(ext_params)) end
-				return c:GetCoreGroup():IsExists(Card.IsType,1,nil,TYPE_EFFECT)
+				return Duel.GetState(e:GetHandlerPlayer())&gt>0 and (not f or f(table.unpack(exargs)))
 			end
 end
 function Auxiliary.GradeVal(gd)
@@ -393,14 +236,13 @@ function Auxiliary.GradeVal(gd)
 			end
 end
 function Auxiliary.XrosMatFilter(c,xsc,tp,...)
-	if c:IsFacedown() or not c:IsCanBeXrosMaterial(xsc) then return false end
+	if not c:IsCanBeXrosMaterial(xsc) then return false end
 	for _,f in ipairs({...}) do
 		if f(c,xsc,tp) then return true end
 	end
 	return false
 end
 function Auxiliary.XsCheckRecursive(c,tp,sg,mg,xsc,ct,djn,xscheck,...)
-	if not c:IsLevelAbove(1) and not c:IsRankAbove(1) then return false end
 	sg:AddCard(c)
 	ct=ct+1
 	local funs,max,chk={...},0
@@ -526,7 +368,7 @@ function Auxiliary.XrosOperation(e,tp,eg,ep,ev,re,r,rp,c)
 	if Duel.SetSummonCancelable then Duel.SetSummonCancelable(true) end
 	local g=e:GetLabelObject()
 	c:SetMaterial(g)
-	Duel.Overlay(c,g)
+	Duel.SendtoGrave(g,REASON_MATERIAL+REASON_XROS)
 	Duel.ChangeReserve(tp,-c:GetGrade())
 	g:DeleteGroup()
 end
