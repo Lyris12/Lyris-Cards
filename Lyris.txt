@@ -740,7 +740,7 @@ ATK 0/DEF 2000
 
 Cyberdark Fang
 Level 4 DARK Machine/Effect Monster
-If this card is Summoned: Target 1 Level 3 or lower Dragon monster in the GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. You can send 1 of your "Cyberdark" Equip cards to the GY; add 1 Dragon "Cyberdark" monster from your Deck to your hand. You can only use this effect of "Cyberdark Fang" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+If this card is Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. You can send 1 of your "Cyberdark" Equip cards to the GY; add 1 Dragon "Cyberdark" monster from your Deck to your hand. You can only use this effect of "Cyberdark Fang" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
 ATK 800/DEF 800
 
 Cyberdark Conductor
@@ -750,7 +750,7 @@ ATK 800/DEF 800
 
 Cyberdark Receptor
 Level 4 DARK Machine/Effect Monster
-If this card is Summoned: Target 1 Level 3 or lower Dragon monster in the GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. During your Main Phase: You can send 1 Machine "Cyberdark" monster from your Deck to the GY, and if you do, this card's name becomes that monster's. You can only use this effect of "Cyberdark Receptor" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+If this card is Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. During your Main Phase: You can send 1 Machine "Cyberdark" monster from your Deck to the GY, and if you do, this card's name becomes that monster's. You can only use this effect of "Cyberdark Receptor" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
 ATK 800/DEF 800
 
 Cyberdarkness Dogma
@@ -1345,3 +1345,8 @@ Level 4 DARK Warrior/Flip/Effect Monster
 Cannot be Special Summoned.
 FLIP: Destroy all cards the turn player's opponent controls, then for each card destroyed by this effect, they add the bottom card of their GY to their hand, also the turn player skips their next Battle Phase this turn. (End the Battle Phase instead, if this effect was activated during the Battle Phase.)
 ATK 0/DEF 2100
+
+Code Importer
+Level 2 LIGHT Cyberse/Effect Monster
+If a Cyberse monster would be used as Link Material for a "Code Talker" monster, this card in your hand can also be used as material. If this card is in your hand (Quick Effect): You can banish 1 other Cyberse monster from your hand; immediately after this effect resolves, Link Summon 1 Cyberse Link Monster using this card and materials you control. You can only use each effect of "Code Importer" once per turn.
+ATK 200/DEF 1800
