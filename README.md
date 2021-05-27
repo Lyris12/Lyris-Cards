@@ -291,11 +291,11 @@ created by Inti of Discord, coded by Lyris
 ## `102400165` T.G. Scythe Snake
 created & coded by Lyris, art by Silverdart99 of DeviantArt
 ## `102400166` Cyberdark Fang
-created & coded by Lyris, art from "Degenerate Circuit" & at http://www.elasmo-research.org/education/evolution/evol-image/c_taurus
+created & coded by Lyris, art by Ray-V-Xyz of DeviantArt
 ## `102400167` Cyberdark Conductor
 created & coded by Lyris, art from "Degenerate Circuit"
 ## `102400168` Cyberdark Receptor
-created & coded by Lyris, art from "Degenerate Circuit" & Yu-Gi-Oh! GX Episode 95
+created & coded by Lyris, art by Ray-V-Xyz of DeviantArt
 ## `102400169` Cyberdarkness Dogma
 created & coded by Lyris, art from "Degenerate Circuit", "Loop of Destruction", & "Cyberdark Inferno"
 ## `102400170` Cyberdark Origin
