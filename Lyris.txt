@@ -1032,7 +1032,7 @@ You can target 1 "YC.Org" monster in your GY; Banish it, and if you do, Special 
 
 YC.Org Headquarters
 Field Spell
-If you control no monsters in your Main Monster Zones: You can Special Summon 1 "YC.Org" monster from your hand. You can target 1 other "YC.Org" card you control; Destroy it, and if you do, add 1 "YC.Org" Spell/Trap card from your Deck to your hand. If a "YC.Org" Link Monster you control woud be destroyed by your opponent's card effect, you can destroy this card instead. You can only use each effect of "YC.Org Headquarters" once per turn.
+If you control no monsters in your Main Monster Zones: You can Special Summon 1 "YC.Org" monster from your hand. You can target 1 other "YC.Org" card you control; Destroy it, and if you do, add 1 "YC.Org" Spell/Trap card from your Deck to your hand. If a "YC.Org" Link Monster you control would be destroyed by your opponent's card effect, you can destroy this card instead. You can only use each effect of "YC.Org Headquarters" once per turn.
 
 YC.Org Researcher - Archeology
 Normal Spell
@@ -1348,5 +1348,5 @@ ATK 0/DEF 2100
 
 Code Importer
 Level 2 LIGHT Cyberse/Effect Monster
-If a Cyberse monster would be used as Link Material for a "Code Talker" monster, this card in your hand can also be used as material. If this card is in your hand (Quick Effect): You can banish 1 other Cyberse monster from your hand; immediately after this effect resolves, Link Summon 1 Cyberse Link Monster using this card and materials you control. You can only use each effect of "Code Importer" once per turn.
+If a Cyberse monster would be used as Link Material for a "Code Talker" monster, this card in your hand can also be used as material. If this card is in your hand (Quick Effect): You can banish 1 other Cyberse monster from your hand; this card is also treated as being on the field for the rest of this turn, also immediately after this effect resolves, Link Summon 1 Cyberse Link Monster using both this card and materials you control. You can only use each effect of "Code Importer" once per turn.
 ATK 200/DEF 1800

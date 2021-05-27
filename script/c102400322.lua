@@ -1,3 +1,5 @@
+--created & coded by Lyris, art by Xeno aka Code Coral of Discord
+--サイバー・エンジェル・カラニ
 local s,id=GetID()
 function s.initial_effect(c)
 	c:EnableReviveLimit()
