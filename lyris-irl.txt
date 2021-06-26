@@ -1,0 +1,1199 @@
+Soulcharge
+Continuous Spell
+You can only control 1 "Soulcharge". Destroy this card if both of the following effects are activated in the same turn.
+● Up to thrice per turn, if an Xyz Monster you control activates its effect: Attach the top card of your Deck to that card as a material.
+● Up to thrice per turn, if an Xyz Monster your opponent controls activates its effect: Attach the top card of their Deck to that card as a material.
+
+Premature Decision
+Normal Spell
+Send 2 monsters from your Deck to the GY, then add 1 monster with the same name as both monsters in the GY from your Deck to your hand, but until your 2nd Standby Phase after this card's activation, you cannot activate cards, or the effects of cards, with that name. You can only activate 1 "Premature Decision" per turn.
+
+Overray Fusion
+Normal Spell
+Fusion Summon 1 LIGHT Machine Fusion Monster from your Extra Deck, using your banished monsters or monsters you control as Fusion Materials, then, take damage equal to half of that monster's original ATK, and if you do, it gains ATK equal to the damage you took.
+
+Intercept Signal
+Counter Trap
+Activate as Chain Link 3 or higher when your opponent activates a card or effect: Negate the activations of all cards/effects activated that include an effect that Special Summons a monster(s) before this card in this Chain, and if you do, place them on the bottom of the Deck. If your opponent Special Summons a monster from the Deck, while this card is in the GY: You can Set this card, but banish it when it leaves the field.
+
+Accel Burst Dragon
+Level 7 WATER Dragon/Synchro/Effect Monster
+1 Tuner + 1+ non-Tuner monsters
+You can only Synchro Summon "Accel Burst Dragon" once per turn. When this card is Synchro Summoned: You can Special Summon 1 Level 4 or lower Tuner from your Extra Deck. Once per turn: You can target 1 card on the field that was originally a monster you own; Special Summon it to your field. When this card leaves the field, destroy all cards in your Spell & Trap Zones that were originally monsters.
+ATK 2700/DEF 2100
+
+Inlightened Eatos Wings
+Level 1 LIGHT Fairy/Effect Monster
+Once while face-up on the field, when your "Inlightened" monster declares an attack: You can make the attack a direct attack instead. If your other monster attacked directly this turn, this card cannot attack. If your other "Inlightened" monster attacks: Target 1 card your opponent controls; destroy it, then if it was a monster and you attacked directly, inflict damage to your opponent equal to half its ATK on the field. You can only use this effect of "Inlightened Eatos Wings" once per turn.
+ATK 0/DEF 0
+
+Inlightened Psychic Helmet
+Level 1 LIGHT Psychic/Tuner/Effect Monster
+Cannot attack. Once per your Standby Phase, if this card is in your GY: You can Special Summon it in Attack Position, then Special Summon 1 "Inlightened" monster from your hand or GY. You cannot Special Summon monsters the turn you use this effect, except "Inlightened" monsters. Cannot be targeted for attacks, while you control another "Inlightened" monster. You can only control 1 "Inlightened Psychic Helmet".
+ATK 0/DEF 0
+
+Inlightened Kay'est Tail
+Level 1 LIGHT Fish/Effect Monster
+If your "Inlightened" monster attacks, your opponent's cards and effects cannot be activated until the end of the Damage Step. If your other "Inlightened" monster attacks: Target 1 Spell/Trap your opponent controls, also if you attacked directly, you can target an additional Spell/Trap; banish that target(s). You can only use this effect of "Inlightened Kay'est Tail" once per turn.
+ATK 0/DEF 0
+
+Inlightened Elma Arms
+Level 1 LIGHT Warrior/Effect Monster
+You can discard this card; Special Summon 1 "Inlightened Psychic Helmet" from your hand or GY. If your other "Inlightened" monster attacks: Target your opponent's battling monster; destroy that target(s). If you attacked directly, target another monster your opponent controls instead. You can only use this effect of "Inlightened Elma Arms" once per turn.
+ATK 0/DEF 0
+
+Inlightened Lunar Shield
+Level 1 LIGHT Rock/Effect Monster
+You can discard this card; add 1 "Inlightened Psychic Helmet" from your Deck to your hand. Your other "Inlightened" monsters cannot be destroyed by battle. If your other "Inlightened" monster attacks: You take no effect damage, also if you attacked directly, you take no battle damage. These changes last until the end of the next turn.
+ATK 0/DEF 0
+
+Inlightened Divine Spear
+Level 1 LIGHT Dragon/Tuner/Effect Monster
+You take no battle damage from battles involving your "Inlightened" monsters. If your other "Inlightened" monster attacks: Target 1 monster your opponent controls; send that target to the GY, also, after that, if you attacked directly, banish 1 monster from your opponent's GY. You can only use this effect of "Inlightened Divine Spear" once per turn.
+ATK 0/DEF 0
+
+Inlightened Graceful Fan
+Level 1 LIGHT Winged Beast/Effect Monster
+You can discard this card; add 1 "Inlightened Psychic Helmet" from your Deck to your hand. Your opponent cannot target your "Inlightened" monsters with their card effects. If your other "Inlightened" monster attacks: Return 1 of your opponent's Spells/Traps to the hand, then if you attacked directly, you can return 1 of your opponent's monsters to the hand. You can only use this effect of "Inlightened Graceful Fan" once per turn.
+ATK 0/DEF 0
+
+Inlightened Aerial Laser
+Level 1 LIGHT Thunder/Effect Monster
+You can discard this card; Special Summon 1 "Inlightened Psychic Helmet" from your hand or GY. If your other "Inlightened" monster attacks: Target your opponent's battling monster; banish that target. If you attacked directly, target another monster your opponent controls with 1500 or more ATK instead. You can only use this effect of "Inlightened Aerial Laser" once per turn.
+ATK 0/DEF 0
+
+Inlightened Golden Headset
+Level 1 LIGHT Machine/Tuner/Effect Monster
+You can discard this card; add 1 "Inlightened Psychic Helmet" from your Deck to your hand. Your other "Inlightened" monsters cannot be destroyed by card effects. If your other "Inlightened" monster attacks: Add 1 Level 1 "Inlightened" monster from your Deck to your hand, then if you attacked directly, you can add 1 "Inlightened Ultima" monster from your Deck to your hand. You can only use this effect of "Inlightened Golden Headset" once per turn.
+ATK 0/DEF 0
+
+Inlightened All-Seeing Scepter
+Level 1 LIGHT Spellcaster/Effect Monster
+You can discard this card; Special Summon 1 "Inlightened Psychic Helmet" from your hand or GY. You take no battle damage from battles involving your other "Inlightened" monsters. If your other "Inlightened" monster attacks: Target 1 face-up monster you control; send 1 "Inlightened" monster from your hand or Deck to the GY, and if you do, that target's name becomes the sent monster's name while on the field. This change lasts until the end of the turn unless you attacked directly.
+ATK 0/DEF 0
+
+Inlightened Ultima - Eatos
+Level 2 LIGHT Fairy/Effect Monster
+Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by shuffling 3 "Inlightened" monsters from your GY into the Deck and Tributing 1 "Inlightened Eatos Wings". If this card is Special Summoned: You can target 1 of You can target 1 monster in your opponent's GY or that they have banished; equip it to this card. This card can attack directly. If this card attacks: Inflict damage to your opponent equal to half the total ATK of all monsters equipped to this card. You can only control 1 "Inlightened Ultima" monster.
+ATK 1000/DEF 1000
+
+Inlightened Ultima - Kay'est
+Level 2 LIGHT Sea Serpent/Effect Monster
+Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by Tributing 2 "Inlightened" monsters, including at least 1 "Inlightened Kay'est Tail". You take no battle damage from direct attacks. If this card attacks: Send as many of your opponent's Spells/Traps to the GY as possible, then if you attacked directly, banish those cards. You can only control 1 "Inlightened Ultima" monster.
+ATK 1000/DEF 1000
+
+Inlightened Ultima - Elma
+Level 2 LIGHT Warrior/Effect Monster
+Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by sending 1 other "Inlightened" monster from your hand to the GY and Tributing 1 "Inlightened Elma Arms". If this card attacks: This card gains 1000 ATK, also destroy all of your opponent's monsters if you attacked directly. You can only control 1 "Inlightened Ultima" monster.
+ATK 1000/DEF 1000
+
+Inlightened Assembly
+Normal Spell
+At the start of your Main Phase 1: Special Summon 1 "Inlightened" monster from your Deck. During your Main Phase, except the turn this card was sent to the GY: You can banish this card from your GY; Fusion Summon 1 "Inlightened" monster from your Extra Deck, using monsters from your hand or field as Fusion Material. If your opponent controls a Special Summoned monster, you can also use monsters in your Deck as Fusion Materials. You can only use this effect of "Inlightened Assembly" once per turn.
+
+Inlightening the Avatar
+Level 1 LIGHT Fairy/Fusion/Effect Monster
+5 "Inlightened" monsters
+(This card is always treated as an "Inlightened" card.)
+Cannot be destroyed by battle or your opponent's card effects. Once per turn (Quick Effect): You can shuffle 1 "Inlightened" monster from your GY into the Deck; replace this effect with that monster's effects. Your "Inlightened" monsters can attack directly during the turn you activate this effect.
+ATK 0/DEF 0
+
+Inlightened Ascension
+Normal Spell
+Special Summon 1 "Inlightened" monster from your GY. You can only activate 1 "Inlightened Ascension" per turn.
+
+Ennigmaformer Ringmaster
+Level 4 DARK Psychic/Effect Monster
+If you control no monsters: You can Special Summon this card from your hand. During your Main Phase: You can attach this card to your "Ennigmaforemost" Xyz Monster as material, then you can Special Summon 2 "Ennigmaformer" monsters with different names from your hand or Deck, but they have their effects negated. You can only use each effect of "Ennigmaformer Ringmaster" once per turn.
+ATK 0/DEF 2000
+
+Rabbit Ennigmaformer
+Level 4 DARK Beast-Warrior/Effect Monster
+If all your monsters are "Ennigmaf" monsters (min. 1): You can Special Summon this card from your hand. If your "Ennigmaf" monster destroys a card(s) by battle or effect: You can attach this card to 1 of your Xyz Monsters, then Special Summon 1 "Ennigmaf" monster attached to an Xyz Monster you control, except "Rabbit Ennigmaformer".
+ATK 1500/DEF 1000
+
+Hypnotic Ennigmaformer
+Level 4 DARK Fiend/Effect Monster
+During damage calculation, if your "Ennigmaf" monster is attacked: You can attach this card from your hand to your Xyz Monster, then banish the attacking monster until the end of the next turn. An "Ennigmaforemost" Xyz Monster who has this card as material gains this effect.
+● Once per turn (Quick Effect): You can banish 1 of your opponent's Defense Position monsters until the end of the next turn.
+ATK 1000/DEF 500
+
+Turquoise Ennigmaformer
+Level 4 DARK Aqua/Effect Monster
+All your monsters gain 200 ATK for each "Ennigmaf" monster with different names attached to your Xyz Monsters. Once per turn (Quick Effect): You can attach this card from your hand or field to 1 of your Xyz Monsters, then that monster gains 400 ATK/DEF for each "Ennigmaf" monster with different names attached to your Xyz Monsters until the end of this turn.
+ATK 1400/DEF 1000
+
+Crimson Ennigmaformer
+Level 4 DARK Pyro/Effect Monster
+Gains 200 ATK for each "Ennigmaf" monster with different names attached to your Xyz Monsters. Once per turn (Quick Effect): You can attach this card from your hand or field to 1 of your Xyz Monsters, then all your monsters gain 400 ATK/DEF for each "Ennigmaf" monster with different names attached to your Xyz Monsters until the end of this turn.
+ATK 1700/DEF 1000
+
+Mirror Ennigmaformer
+Level 4 DARK Psychic/Effect Monster
+If all your monsters are "Ennigmaf" monsters (min. 1): You can Special Summon this card from your hand. If this card destroys a card by battle or inflicts battle damage to your opponent: You can attach this card to 1 of your Xyz Monsters, then Special Summon 1 "Ennigmaf" monster attached to an Xyz Monster you control, except "Mirror Ennigmaformer".
+ATK 1700/DEF 1000
+
+Cereberus Ennigmaformer
+Level 4 DARK Beast/Effect Monster
+If this card is Special Summoned from being attached to your Xyz Monster: You can Special Summon 1 "Ennigmaf" monster attached to an Xyz Monster on the field (except "Cereberus Ennigmaformer"), then attach the top card of your Deck to that Xyz Monster.
+ATK 1800/DEF 1000
+
+Alice the Ennigmaformer
+Level 4 DARK Fairy/Effect Monster
+If this card destroys a card by battle or inflicts battle damage to your opponent: You can attach this card to 1 of your Xyz Monsters, then Special Summon 1 "Ennigmaf" monster attached to an Xyz Monster you control, except "Alice the Ennigmaformer". An "Ennigmaforemost" Xyz Monster who has this card as material gains this effect.
+● If this card destroys a card(s) by battle or effect: You can Special Summon 1 "Ennigmaf" monster attached to this card, except "Alice the Ennigmaformer".
+ATK 1900/DEF 500
+
+Ennigmaforemost Hari
+Rank 4 DARK Spellcaster/Xyz/Effect Monster
+2+ Level 4 "Ennigmaf" monsters
+Once per turn, during your Standby Phase: Attach the top card of your Deck to this card as material. Once per turn: You can detach 2 or more materials from this card, but not more than the number of monsters with Levels your opponent controls +1; attach as many of your opponent's monsters with Levels as possible to this card as material, but not more than the number of materials you detached to activate this effect -1.
+ATK 2400/DEF 2000
+
+Ennigmaforemost Huricane
+Rank 5 DARK Winged Beast/Xyz/Effect Monster
+3 Level 5 "Ennigmaf" monsters
+You can also Xyz Summon this card using 1 Rank 4 "Ennigmaforemost" Xyz Monster you control. (Transfer its materials to this card.) If this card is Xyz Summoned: You can Special Summon 1 "Ennigmaformer" monster attached to this card. You can only use this effect of "Ennigmaforemost Huricane" once per turn. Gains 100 ATK/DEF for each "Ennigmaf" monster attached to your Xyz Monsters. Once per battle, during damage calculation, if this card attacks an Attack Position monster (Quick Effect): You can apply its DEF for damage calculation.
+ATK 2800/DEF 2000
+
+Nitro Ennigmaformer
+Level 4 DARK Warrior/Effect Monster
+If this card is Summoned: Target 1 Xyz Monster you control; attach the top card of your Deck to it as material, then if that card was an "Ennigmaf" card, you can destroy 1 monster your opponent controls.
+ATK 1700/DEF 1000
+
+Darkmetal Ennigmaformer
+Level 4 DARK Beast/Effect Monster
+An "Ennigmaforemost" Xyz Monster who has this card as material gains this effect.
+● Once per turn (Quick Effect): You can Special Summon 1 "Darkmetal Ennigmaformer" attached to this card, and if you do, attach the top card of your Deck to this card as material.
+ATK 1600/DEF 1000
+
+Skull Ennigmaformer
+Level 4 DARK Zombie/Effect Monster
+If this card is Summoned: Target 1 Xyz Monster you control; attach the top card of your Deck to it as material, then Special Summon 1 "Ennigmaformer" monster from your GY in Defense Position, except "Skull Ennigmaformer".
+ATK 1400/DEF 1000
+
+Dynamite Ennigmaformer
+Level 4 DARK Zombie/Effect Monster
+An "Ennigmaforemost" Xyz Monster who has this card as material gains this effect.
+● Once per turn (Quick Effect): You can target 1 card your opponent controls; Special Summon 1 "Dynamite Ennigmaformer" attached to this card, then destroy that target.
+ATK 100/DEF 2000
+
+Spiral Ennigmaformance
+Normal Spell
+Target 5 "Ennigmaf" monsters in your GY; shuffle 3 of them into the Deck, then draw 2 cards, and if you do that, attach the remaining targets to your Xyz Monsters as materials. If your "Ennigmaf" monster would be destroyed, you can banish this card from your GY instead.
+
+Fusion Exboom
+Quick-Play Spell
+Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Materials, then if any face-up cards are on the field other than this card and the monster Summoned by it, they become unaffected by card effects, except their own. You can only activate 1 "Fusion Exboom" per turn.
+
+Freyr, Lord of the Vanir
+Level 10 DARK Warrior/Synchro/Effect Monster
+1 "Nordic" Tuner + 2+ non-Tuner monsters
+(This monster is always treated as an "Aesir" card.)
+Once per turn, during the Battle Phase (Quick Effect): You can make the ATK of all monsters your opponent controls become equal to their original ATK. During the End Phase, if this face-up card on the field was destroyed and sent to the GY this turn: You can banish 1 "Nordic" Tuner from your GY; Special Summon this card. When Summoned this way: You can return all Field and face-up Continuous Spells and Traps on the field to the hand, but neither player can activate Field or Continuous Spells or Traps until the end of your next turn.
+ATK 3400/DEF 2800
+
+Cyber Dragon Mach
+Level 3 LIGHT Machine/Effect Monster
+This card's name becomes "Cyber Dragon" while on the field or in the GY. During the turn this card was sent to the GY, all monsters on the field become Machine monsters. If your "Cyber Dragon" monster(s) leaves the field, while this card is in your GY: You can banish this card; add 1 "Cyber Dragon" monster from your Deck to your hand. You can only use this effect of "Cyber Dragon Mach" once per turn.
+ATK 1600/DEF 1100
+
+Cyberdark Extension Cords
+Equip Spell
+Activate this card by targeting 1 Level 3 or lower Dragon monster in the GY; Special Summon 1 "Cyberdark" Machine monster from your Deck, then equip this card and that target in the GY to the Summoned monster, as if it were equipped by that monster's effect. If exactly 1 "Cyberdark" Machine monster is Summoned: You can target 1 Dragon monster in the GY, plus another Level 3 or lower Dragon monster unless you Summoned a Fusion Monster; unless the Summoned monster activated an effect that targets a card, equip the newest target to it, as if it were equipped by that monster's effect. Otherwise, that effect now targets the newest target. You can only use this effect of "Cyberdark Extension Cords" once per turn.
+
+Cyber Dragon Timaeus
+Normal Spell
+Declare 1 number from 2 to 6, then target 1 "Cyber Dragon" you control; Fusion Summon 1 Fusion Monster from your Extra Deck that lists "Cyber Dragon" as a Fusion Material, using it as the Fusion Material (That target is treated as up to the declared number of monsters.), then if you activated this card by declaring 2 or 3, you can double the Summoned monster's ATK, but you cannot Special Summon other monsters for the rest of this turn, except Machine monsters. At the end of the turn this card is activated, if the Summoned monster's ATK is higher than its original ATK, you take damage equal to the amount of ATK gained from this effect at the time of the Summon. You can only activate 1 "Cyber Dragon Timaeus" per turn. If you Fusion Summon a Fusion Monster, this card can be treated as a monster with the same name as "Cyber Dragon".
+
+Neo Space Barrier
+Level 4 LIGHT Warrior/Effect Monster
+During the turn a Fusion Monster that lists "Elemental HERO Neos" as material was returned to the Extra Deck (Quick Effect): You can reveal this card in your hand; Special Summon this card, and it cannot be destroyed by battle or card effects, also you take no battle damage (these changes last until the end of the next turn).
+ATK 1300/DEF 2000
+
+Cold Dominance
+Normal Spell
+Target 1 monster your opponent controls; place 1 Ice Counter on it. While that monster has an Ice Counter on it, take control of it, also replace its effects with "Cannot attack, or be Tributed or used as a material. Once per turn: You can remove 1 Ice Counter from anywhere on the field, then target 1 other monster on the field; it loses 1500 ATK, then if it has 0 ATK, send it to the GY, and if you do, place 1 Ice Counter on this card.".
+
+Khione the Snow Fairy
+Level 4 LIGHT Fairy/Effect Monster
+Each time a Spell/Trap is activated, place 1 Ice Counter on this card immediately after it resolves. (Quick Effect): You can remove 2 Ice Counters from anywhere on the field; draw 1 card. You can only use this effect of "Khione the Snow Fairy" once per turn.
+ATK 700/DEF 1100
+
+Aura of Light
+Counter Trap
+When your opponent activates a monster effect or declares an attack: Negate the activation (if any) and effects of that monster, and if you do, take damage equal to that negated monster's original ATK, and if you do that, 1 monster you control gains ATK equal to the damage you took.
+
+Aura of the New Light
+Equip Spell
+The equipped monster becomes LIGHT-Attribute. If the equipped monster attacks, monster effects in your opponent's possession are negated until the end of the Damage Step. The equipped monster cannot be targeted by your card effects during the Damage Step.
+
+Raymond the Swordsmaster
+Level 4 EARTH Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each other "Swordsmaster" monster you control. If a Defense Position monster your opponent controls is changed to face-up Attack Position: You can Special Summon this card from your hand in face-up Attack Position. If this card is Special Summoned: Target 1 Attack Position monster your opponent controls; change it to face-up Defense Position.
+ATK 1900/DEF 1000
+
+Linc the Swordsmaster
+Level 4 EARTH Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster you control. If this card is Normal Summoned: You can Special Summon 1 "Swordsmaster" monster from your hand, then if your opponent controls more monsters than you do, you can Special Summon 1 "Swordsmaster" monster from your Deck.
+ATK 1800/DEF 1200
+
+Nathyn the Swordsmaster
+Level 4 EARTH Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster you control. If this card is Normal Summoned: You can target 1 "Swordsmaster" monster in your GY, except "Nathyn the Swordsmaster"; Special Summon it in face-up Attack Position. If this card is Special Summoned: You can add 1 "Swordsmaster" Spell/Trap from your Deck to your hand.
+ATK 1750/DEF 1300
+
+Exyte the Swordsmaster
+Level 4 EARTH Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 200 ATK for each "Swordsmaster" monster you control. If this card attacks: Target 1 Attack Position monster your opponent controls; change it to face-up Defense Position.
+ATK 1750/DEF 1400
+
+Alexiand the Swordsmaster
+Rank 4 EARTH Warrior/Xyz/Effect Monster
+2 Level 4 "Swordsmaster" monsters
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 200 ATK and DEF for each material attached to this card. Once per turn: You can detach 1 material from this card, then target 1 face-up monster your opponent controls; change that target to face-up Defense Position, then you can Special Summon 1 "Swordsmaster" monster from your hand in face-up Attack Position. If this Xyz Summoned card is destroyed: You can target 2 "Swordsmaster" monsters with the same Level in your GY; Special Summon them, but you cannot Special Summon monsters until the end of the next turn, except "Swordsmaster" monsters.
+ATK 2400/DEF 2100
+
+Sorel the Swordsmaster
+Rank 4 EARTH Warrior/Xyz/Effect Monster
+2 Level 4 "Swordsmaster" monsters
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each other "Swordsmaster" monster you control. All other "Swordsmaster" monsters you control gain 200 ATK for each material attached to this card. Once per turn: You can Special Summon 1 "Swordsmaster" monster attached to this card to your opponent's field in Attack Position. If this card is in your GY, except the turn this card was sent to the GY: You can banish this card, then target 1 "Swordsmaster" monster in your GY; Special Summon it.
+ATK 2600/DEF 0
+
+Swordsmaster's Beckoning
+Continuous Spell
+Activate this card if you control no monsters: Special Summon 1 "Swordsmaster" monster from your Deck, but it has its effects negated, and target it with this card. When this card leaves the field, destroy that target. When that target leaves the field, destroy this card. You can only activate 1 "Swordsmaster's Beckoning" per turn.
+
+Swordsmaster's Guidance
+Quick-Play Spell
+When an attack is declared involving a "Swordsmaster" monster you control and an opponent's monster: That monster you control gains ATK equal to the DEF of the opponent's monster, until the end of the Damage Step. You can only activate 1 "Swordsmaster's Guidance" per turn. When an Attack Position "Swordsmaster" monster you control is targeted for an attack while this card is in your GY: You can banish this card; change that Attack Position monster to face-up Defense Position.
+
+Swordsmaster Training
+Continuous Spell
+When this card is activated: You can add 1 "Swordsmaster" monster from your GY to your hand. If a "Swordsmaster" monster you control attacks an opponent's monster, that monster's effect is negated during the Battle Phase only. You can only control 1 "Swordsmaster Training".
+
+Oath of the Swordsmasters
+Quick-Play Spell
+Special Summon 1 "Swordsmaster" monster attached to an Xyz Monster you control. You can only activate 1 "Oath of the Swordsmasters" per turn.
+
+Winged Swordsmaster Shinob
+Level 4 LIGHT Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. If you take battle damage: You can Special Summon this card from your hand. If Summoned this way: You can end the Battle Phase. You can only use this effect of "Winged Swordsmaster Shinob" once per Duel.
+ATK 1900/DEF 0
+
+Winged Swordsmaster Tara
+Level 4 LIGHT Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. If this card is Summoned: You can shuffle 3 "Swordsmaster" cards from your hand and/or GY into the Deck, and if you do, draw 1 card. You can only use this effect of "Winged Swordsmaster Tara" once per turn.
+ATK 1800/DEF 1100
+
+Winged Swordsmaster Brynhildr
+Level 4 LIGHT Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. If this card is Summoned: You can Special Summon 1 "Swordsmaster" monster from your hand, except "Winged Swordsmaster Brynhildr". An Xyz Summon of a "Swordsmaster" monster using this card as a material cannot be negated, also your opponent's cards and effects cannot be activated when that monster is Special Summoned.
+ATK 1800/DEF 1200
+
+Winged Swordsmaster Dawning
+Rank 4 LIGHT Warrior/Xyz/Effect Monster
+2 Level 4 "Swordsmaster" monsters / If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each other "Swordsmaster" monster you control. Once per turn, if your opponent activates a card or effect (Quick Effect): You can detach 1 material from this card; destroy that card, and if you do, change 1 monster your opponent controls to face-down Defense Position. Monsters changed to face-down Defense Position with this effect cannot change their battle positions until the end of the turn. If this card is in your GY, except the turn this card was sent to the GY: You can banish this card, then target 1 "Swordsmaster" monster in your GY; Special Summon it.
+ATK 2500/DEF 2000
+
+Winged Swordsmaster's Advantage
+Normal Spell
+Discard 1 "Swordsmaster" monster; draw 1 card, plus another card if you control more monsters than your opponent does. You can only activate 1 "Winged Swordsmaster's Advantage" per turn.
+
+Winged Swordsmaster's Flight
+Continuous Trap
+Defense Position monsters your opponent controls cannot change their battle position. "Swordsmaster" monsters you control cannot be destroyed by your opponent's card effects. Once per turn, when a Spell, Trap, or Spell/Trap effect targets a "Swordsmaster" monster(s) you control: You can return 1 of those targets to the hand, then you can Special Summon 1 monster from your hand with a different name than the returned monster.
+
+Winged Swordsmaster Iona
+Points ↘→ LIGHT Warrior/Link/Effect Monster
+2 "Swordsmaster" monsters
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster you control. Once while this card is on the field, if a "Swordsmaster" monster this card points to activates its effect, you can Special Summon 1 "Swordsmaster" monster from your GY to either field in face-up Defense Position immediately after that effect resolves. You can only use this effect of "Winged Swordsmaster Iona" once per turn.
+ATK 1700/LINK-2
+
+Swordsmasterror Siegfried
+Level 4 DARK Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster in the GY. If this card is sent to the GY: Target 1 Spell/Trap you control and 1 "Swordsmaster" monster in your GY, except "Swordsmasterror Siegfried"; destroy the first target and Special Summon the second target.
+ATK 1700/DEF 0
+
+Swordsmasterror Tiberius
+Level 4 DARK Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster in the GY. If this card is sent to the GY: Add 1 "Swordsmaster" monster from your Deck to your hand. You must have another "Swordsmaster" monster in your GY in order to resolve this effect.
+ATK 1550/DEF 0
+
+Swordsmasterror Dharc
+Level 4 DARK Warrior/Effect Monster
+If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 100 ATK for each "Swordsmaster" monster in the GY. If this card is sent to the GY: Apply this effect, depending on the number of "Swordsmasterror Dharc" in your GY.
+● 1: Send 1 "Swordsmaster" monster from your Deck to the GY, except "Swordsmasterror Dharc". You must have another "Swordsmaster" monster in your GY in order to resolve this effect.
+● 2+: Target 1 "Swordsmaster" monster in your GY, except "Swordsmasterror Dharc"; return that target to your hand.
+ATK 1500/DEF 0
+
+CXyz Swordsmasterror Genghis
+Rank 5 DARK Warrior/Xyz/Effect Monster
+3 Level 5 monsters / If this card attacks a Defense Position monster, inflict piercing battle damage. Gains 200 ATK for each material attached to it and 100 ATK for each "Swordsmaster" monster in the GY. If this card is sent to the GY: You can target up to 2 "Swordsmaster" Xyz Monsters in your GY, except "CXyz Swordsmasterror Genghis"; Special Summon those targets, then you can attach 1 "Swordsmaster" monster from your GY to each target as a material, except "CXyz Swordsmasterror Genghis". Gains this effect, while it has a "Swordsmaster" monster as a material.
+● Once per turn, if a "Swordsmaster" monster is sent to the GY while you control this face-up card: You can detach 1 material from this card, then target 1 "Swordsmaster" monster in your GY, except "CXyz Swordsmasterror Genghis"; Special Summon that target.
+ATK 2500/DEF 0
+
+Rank-Up-Magic - The Cursed Swordsmaster
+Quick-Play Spell
+Target 1 Warrior-Type Xyz Monster you control; Special Summon from your Extra Deck, 1 DARK Warrior-Type monster that is 1 Rank higher than that target by using that target as the material. (This Special Summon is treated as an Xyz Summon. Transfer its materials to the Summoned monster.) You can banish this card from your GY, then target 1 DARK Warrior-Type Xyz Monster you control; detach 1 material from a monster your opponent controls and attach it to that monster you control as a material.
+
+Splash Back
+Quick-Play Spell
+Target 1 card you control; return it to the hand.
+
+Tidal Lift
+Quick-Play Spell
+Discard 1 card, then target up to 2 cards you control; return them to the hand. You can only use the effect of "Tidal Lift" once per turn.
+
+Heartbreaker Dragon
+Level 7 WATER Dragon/Effect Monster
+If a monster(s) on the field is destroyed while there is another card with the same name as that monster(s) on the field: You can Special Summon this card from your hand. If Summoned this way: Negate the effects of all face-up cards your opponent controls, then you can change all your opponent's monsters to Defense Position.
+ATK 2500/DEF 2000
+
+Stonebreaker Dragon
+Level 7 EARTH Dragon/Effect Monster
+If a card(s) on the field is destroyed, except "Stonebreaker Dragon": You can Special Summon this card from your hand in Defense Position. If Summoned this way: Target 1 monster in your GY; Special Summon it in Defense Position, then destroy this card, and if you do that, banish this card. You can only use this effect of "Stonebreaker Dragon" once per turn.
+ATK 2500/DEF 3000
+
+Skybreaker Dragon
+Level 7 WIND Dragon/Effect Monster
+If another card(s) is returned from the field to the hand or Deck: You can Special Summon this card from your hand. If Summoned this way: Both players destroy the top 5 cards of their Decks.
+ATK 2500/DEF 2000
+
+Nightbreaker Dragon
+Level 8 LIGHT Dragon/Effect Monster
+If there are 5 or more Set cards on the field, you can Special Summon this card (from your hand). If Summoned this way: Flip all monsters on the field face-up, also destroy all Set Spells/Traps on the field.
+ATK 2500/DEF 2100
+
+Daybreaker Dragon
+Level 8 DARK Dragon/Effect Monster
+If there are 5 or more face-up cards on the field, you can Special Summon this card (from your hand). If Summoned this way: Destroy all other Special Summoned monsters monsters on the field.
+ATK 2800/DEF 2000
+
+Heatbreaker Dragon
+Level 7 FIRE Dragon/Effect Monster
+During your opponent's turn, if a Spell/Trap Card or effect is activated (Quick Effect): You can Special Summon this card from your hand. Other cards on the field cannot be destroyed by battle or card effects.
+ATK 3000/DEF 2000
+
+Blitzkrieg Dragon - Light
+Level 3 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Light": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; Set it. You can only use this effect of "Blitzkrieg Dragon - Light" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Light": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; Set it. You can only use this effect of "Blitzkrieg Dragon - Light" once per turn.
+ATK 900/DEF 2000
+
+Blitzkrieg Dragon - Dark
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: -n/a-
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls.
+ATK 2000/DEF 0
+
+Blitzkrieg Meklight - Dawn
+Level 3 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meklight - Dawn": You can add 1 "Blitzkrieg" monster from your Deck to your hand, except "Blitzkrieg Meklight - Dawn". You can only use this effect of "Blitzkrieg Meklight - Dawn" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meklight - Dawn": You can add 1 "Blitzkrieg" monster from your Deck to your hand, except "Blitzkrieg Meklight - Dawn". You can only use this effect of "Blitzkrieg Meklight - Dawn" once per turn.
+ATK 1050/DEF 1850
+
+Blitzkrieg Meknight - Dusk
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meknight - Dusk": You can target 1 DARK "Blitzkrieg" monster in your GY; Special Summon that target. You can only use this effect of "Blitzkrieg Meknight - Dusk" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meknight - Dusk": You can target 1 LIGHT "Blitzkrieg" monster in your GY; Special Summon that target. You can only use this effect of "Blitzkrieg Meknight - Dusk" once per turn.
+ATK 1650/DEF 0
+
+Blitzkrieg Dragon - Glass
+Level 4 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Glass": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Glass"; destroy this card, then Special Summon that target. You can only use this effect of "Blitzkrieg Dragon - Glass" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Glass": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Glass"; Special Summon that target, but destroy it at the end of this turn. You can only use this effect of "Blitzkrieg Dragon - Glass" once per turn.
+ATK 1100/DEF 2500
+
+Blitzkrieg Meknight - O'Dark
+Level 3 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meknight - O'Dark": You can target 1 other card you control and 1 card your opponent controls; return them to the hand. You can only use this effect of "Blitzkrieg Meknight - O'Dark" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meknight - O'Dark": You can target 1 other card you control and 1 card your opponent controls; return them to the hand. You can only use this effect of "Blitzkrieg Meknight - O'Dark" once per turn.
+ATK 1400/DEF 1500
+
+Blitzkrieg Meklight - Afternoon
+Level 4 Scale 5 FIRE Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meklight - Afternoon": You can target 1 "Blitzkrieg" monster in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meklight - Afternoon" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meklight - Afternoon": You can target 1 "Blitzkrieg" monster in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meklight - Afternoon" once per turn.
+ATK 2000/DEF 1000
+
+Blitzkrieg Meknight - Evening
+Level 3 Scale 2 WATER Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Meknight - Evening": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meknight - Evening" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Meknight - Evening": You can target 1 "Blitzkrieg" Spell/Trap or "Blitz Field" in your GY; add it to your hand. You can only use this effect of "Blitzkrieg Meknight - Evening" once per turn.
+ATK 900/DEF 1800
+
+Blitzkrieg Element - Flame
+Level 4 Scale 5 FIRE Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Element - Flame": You can target 1 monster your opponent controls; destroy that target, then inflict damage to your opponent equal to half the destroyed monster's DEF on the field. You can only use this effect of "Blitzkrieg Element - Flame" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Element - Flame": You can target 1 monster your opponent controls; destroy that target, then inflict damage to your opponent equal to half the destroyed monster's ATK on the field. You can only use this effect of "Blitzkrieg Element - Flame" once per turn.
+ATK 1800/DEF 1300
+
+Blitzkrieg Element - Water
+Level 3 Scale 2 WATER Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Element - Water": You can add 1 face-up "Blitzkrieg" Pendulum Monster from your Extra Deck to your hand. You can only use this effect of "Blitzkrieg Element - Water" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Element - Water": You can add 1 face-up "Blitzkrieg" Pendulum Monster from your Extra Deck to your hand. You can only use this effect of "Blitzkrieg Element - Water" once per turn.
+ATK 1500/DEF 2000
+
+Blitzkrieg Dragon - Sun
+Level 4 Scale 5 FIRE Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Sun": You can destroy 2 face-up "Blitzkrieg" Pendulum Monsters in your Extra Deck, then draw 1 card. You can only use this effect of "Blitzkrieg Dragon - Sun" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Sun": You can destroy 2 face-up "Blitzkrieg" Pendulum Monsters in your Extra Deck, then draw 1 card. You can only use this effect of "Blitzkrieg Dragon - Sun" once per turn.
+ATK 1800/DEF 0
+
+Blitzkrieg Dragon - Moon
+Level 3 Scale 2 WATER Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Moon": You can target 1 WATER "Blitzkrieg" monster in your GY; Special Summon it. You can only use this effect of "Blitzkrieg Dragon - Moon" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Moon": You can target 1 FIRE "Blitzkrieg" monster in your GY; Special Summon it. You can only use this effect of "Blitzkrieg Dragon - Moon" once per turn.
+ATK 0/DEF 2300
+
+Blitzkrieg Element - PSYph
+Level 3 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed: You can Fusion Summon 1 "Blitzkrieg" Fusion Monster from your Extra Deck, by destroying this card as Fusion Material, as well as other monsters on your field and/or face-up in your Extra Deck. You can only use this effect of "Blitzkrieg Element - PSYph" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. During your opponent's turn, after damage calculation: You can destroy this card and 1 other "Blitzkrieg" monster in your hand (except "Blitzkrieg Element - PSYph"), and if you do, destroy all Attack Position monsters.
+ATK 1200/DEF 2100
+
+Blitzkrieg Element - Infernil
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: -n/a-
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed: You can Fusion Summon 1 "Blitzkrieg" Fusion Monster from your Extra Deck, by banishing this card as Fusion Material, as well as destroying other monsters on your field and/or face-up in your Extra Deck. You can only use this effect of "Blitzkrieg Element - Infernil" once per turn.
+ATK 1600/DEF 1200
+
+Blitzkrieg Dragon - Steel
+Level 4 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Steel": You can add 1 "Blitzkrieg" Spell/Trap or "Blitz Field" from your Deck to your hand. You can only use this effect of "Blitzkrieg Dragon - Steel" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Steel": You can add 1 "Blitzkrieg" Spell/Trap or "Blitz Field" from your Deck to your hand. You can only use this effect of "Blitzkrieg Dragon - Steel" once per turn.
+ATK 1000/DEF 2200
+
+Blitzkrieg Dragon - Gold
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Gold": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Gold"; Special Summon that target, but it cannot attack. You can only use this effect of "Blitzkrieg Dragon - Gold" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Gold": You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Dragon - Gold"; Special Summon that target, but it cannot attack. You can only use this effect of "Blitzkrieg Dragon - Gold" once per turn.
+ATK 1600/DEF 0
+
+Blitzkrieg Dragon - Obsidian
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Obsidian": You can Special Summon this card from your Pendulum Zone, then place 1 "Blitzkrieg" monster from your Deck in your Pendulum Zone. You can only use this effect of "Blitzkrieg Dragon - Obsidian" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Obsidian": You can place 1 "Blitzkrieg" monster from your Deck in your Pendulum Zone. You can only use this effect of "Blitzkrieg Dragon - Obsidian" once per turn.
+ATK 1700/DEF 1100
+
+Blitzkrieg Dragon - Galaxic
+Level 4 Scale 5 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed: You can Special Summon this card from your Pendulum Zone, and if you do, any "Blitzkrieg" monster that leaves the field for the rest of this turn is treated as being destroyed.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 Spell/Trap your opponent controls.
+ATK 1900/DEF 1000
+
+Blitzkrieg Dragon - Silver
+Level 4 Scale 2 DARK Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "Blitzkrieg" Monster Card(s) is destroyed, except during the turn you activated the second monster effect of "Blitzkrieg Dragon - Silver": You can Special Summon 1 "Blitzkrieg" monster from your hand in Defense Position, except "Blitzkrieg Dragon - Silver". You can only use this effect of "Blitzkrieg Dragon - Silver" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is destroyed, except during the turn you activated the Pendulum Effect of "Blitzkrieg Dragon - Silver": You can Special Summon 1 "Blitzkrieg" monster from your hand in Defense Position, except "Blitzkrieg Dragon - Silver". You can only use this effect of "Blitzkrieg Dragon - Silver" once per turn.
+ATK 0/DEF 2300
+
+Blitzkrieg Mekdragon Ni
+Level 4 LIGHT Dragon/Effect Monster
+If a "Blitzkrieg" monster(s) you control was destroyed by a card effect (except during the Damage Step): You can Special Summon this card from your hand. Cannot attack. If this card is targeted for an attack: Destroy this card. If this card is destroyed by a card effect and sent to the GY: You can target 1 face-up monster on the field; return that target to the hand. You can only use this effect of "Blitzkrieg Mekdragon Ni" once per turn.
+ATK 2100/DEF 1600
+
+Blitzkrieg Mekdragon Ichi
+Level 4 LIGHT Dragon/Effect Monster
+If this card is in your hand: You can target 1 "Blitzkrieg" monster you control; destroy that target, then Special Summon this card. If this card is targeted for an attack: Destroy this card. If this card is destroyed by a card effect: You can target 1 "Blitzkrieg" monster in your GY, except "Blitzkrieg Mekdragon Ichi"; Special Summon that target. You can only use this effect of "Blitzkrieg Mekdragon Ichi" once per turn.
+ATK 2000/DEF 1000
+
+Blitzkrieg Meknight Dragon - Big Bang Eon
+Level 6 DARK Dragon/Fusion/Effect Monster
+1 "Blitzkrieg" monster + 1 "Blitzkrieg" monster with lower ATK (max. 400) / Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. When your opponent activates a card or effect (Quick Effect): You can negate the activation, and if you do, shuffle both that card and 1 "Blitzkrieg" Pendulum Monster in your GY into the Deck. You can only use this effect of "Blitzkrieg Meknight Dragon - Big Bang Eon" once per turn.
+ATK 2700/DEF 2200
+
+Blitzkrieg Meklight Dragon - Noon
+Level 6 LIGHT Dragon/Fusion/Effect Monster
+1 "Blitzkrieg" monster + 1 LIGHT Dragon monster
+Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. If another "Blitzkrieg" monster(s) you control is destroyed: You can banish that monster(s); destroy the top card of your Deck, and if you do, draw 1 card if the destroyed card was a "Blitzkrieg" monster.
+ATK 2300/DEF 3000
+
+Blitzkrieg Meknight Dragon - Midnight
+Level 6 DARK Dragon/Fusion/Effect Monster
+1 "Blitzkrieg" monster + 1 DARK Dragon monster / Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. If another "Blitzkrieg" Monster Card(s) is destroyed: You can Special Summon 1 "Blitzkrieg" monster from your Deck or GY, except "Blitzkrieg Meknight Dragon - Midnight", but it has its effects negated. You can only use this effect of "Blitzkrieg Meknight Dragon - Midnight" once per turn.
+ATK 2700/DEF 2100
+
+Blitzkrieg Meklight Dragon - Morning
+Level 6 LIGHT Dragon/Fusion/Effect Monster
+2 "Blitzkrieg" monsters / Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. When a "Blitzkrieg" monster attacks: You can target 1 monster your opponent controls; change its battle position (Flip monsters' effects are not activated at this time), also until the end of the next turn, if your monster attacks a Defense Position monster, inflict piercing battle damage.
+ATK 2400/DEF 3000
+
+Blitzkrieg Meknight Dragon - Eclipse
+Points ↙↘←→ DARK Dragon/Link/Effect Monster
+2+ Dragon monsters, including at least 1 LIGHT and 1 DARK monster
+Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. If another "Blitzkrieg" Monster Card(s) is destroyed: You can target Spells/Traps your opponent controls, up to the number of monsters this card points to; destroy monsters on the field equal to the number of Spells/Traps you targeted. You can only use this effect of "Blitzkrieg Meknight Dragon - Eclipse" once per turn.
+ATK 3500/LINK-4
+
+Blitzkrieg Meklight Dragon - Big Bang
+Level 6 LIGHT Dragon/Fusion/Effect Monster
+1 "Blitzkrieg" monster + 1 "Blitzkrieg" monster with lower ATK (max. 400) / Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. Each time another "Blitzkrieg" Monster Card is destroyed, place 1 Lightning Counter on this card for each of those cards. Destroy this card if there are 5 or more Lightning Counters on the field. If destroyed this way: Destroy all monsters your opponent controls.
+ATK 2200/DEF 2700
+
+Blitzkrieg Dragon - Spark Tsunami
+Level 8 WATER Dragon/Fusion/Effect Monster
+2 LIGHT and/or "Blitzkrieg" monsters / Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. When this card is Fusion Summoned: You lose 3000 LP. If another monster(s) on the field is destroyed, except by the effect of "Blitzkrieg Dragon - Spark Tsunami": Gain LP equal to the ATK of that monster(s), also if you gained 3000 or more LP with this effect this turn, destroy 1 "Blitzkrieg" monster you control.
+ATK 2100/DEF 3000
+
+Blitzkrieg Dragon - Ignister
+Level 8 FIRE Dragon/Fusion/Effect Monster
+2 "Blitzkrieg" monsters with 1600 or more ATK
+Must be Fusion Summoned with the above materials. Once per turn (Quick Effect): You can destroy this card, and if you do, negate the next attack this turn from a monster your opponent controls, also Special Summon 1 Level 5 or lower "Blitzkrieg" monster from your hand or GY. Unaffected by card effects that target it and cannot be targeted for attacks, while you control a Level 5 or lower "Blitzkrieg" monster. If another "Blitzkrieg" Monster Card(s) is destroyed: You can target 1 card on each player's field; destroy them. You can only use this effect of "Blitzkrieg Dragon - Ignister" once per turn.
+ATK 3100/DEF 2100
+
+Blitzkrieg Dragon - Horos
+Points ←→ LIGHT Dragon/Link/Effect Monster
+2 "Blitzkrieg" monsters with different Attributes
+If your opponent declares an attack that targets this card: Negate the attack, also destroy this card and draw 1 card after that. If this card attacks or is attacked during the turn a card on the field is destroyed, your opponent takes no battle damage. If this card or a "Blitzkrieg" monster(s) this card points to is destroyed: For the rest of this turn, other "Blitzkrieg" monsters are unaffected by your opponent's card effects that do not target them.
+ATK 2600/LINK-2
+
+Blitzkrieg Dragon - Planck
+Points ↙↘ LIGHT Dragon/Link/Effect Monster
+2 "Blitzkrieg" monsters
+If your opponent declares an attack that targets this card: Negate the attack, also destroy this card and draw 1 card after that. If another "Blitzkrieg" Monster Card(s) is destroyed: You can Special Summon 1 "Blitzkrieg" Pendulum Monster from your GY or face-up from your Extra Deck in Defense Position to a zone this card points to, but it has its effect(s) negated, also destroy it at the end of this turn. You can only use this effect of "Blitzkrieg Dragon - Planck" once per turn.
+ATK 2500/LINK-2
+
+Cyber Dragon Blitzkrieg
+Rank 5 LIGHT Machine/Xyz/Effect Monster
+2 Level 5 Machine monsters
+You can detach 1 material from this card, then target 1 monster your opponent controls; both that target and this card gain 800 ATK until the end of this turn. If this card is destroyed by battle or card effect: You can Special Summon 1 Level 8 or higher Machine Fusion Monster from your Extra Deck. (This Special Summon is treated as a Special Summon with "Cyber Dragon Nova".)
+ATK 2500/DEF 1800
+
+Rank-Up-Magic Prime Lyris Force
+Quick-Play Spell
+If a "Blitzkrieg" Xyz Monster was destroyed and sent to the GY this turn while you controlled it: Target 1 "Blitzkrieg" Xyz Monster in your GY; Special Summon it, then Special Summon from your Extra Deck, 1 LIGHT Dragon or Machine Xyz Monster that is 1 or 2 Ranks higher than that monster, by using it as the Xyz Material. (This is treated as an Xyz Summon.)
+
+Blitzkrieg Sky
+Field Spell
+While only your opponent controls a monster, halve all damage you take. During your Main Phase: You can destroy 1 "Blitzkrieg" monster in your hand, and if you do, add 1 "Blitzkrieg" monster from your Deck to your hand. You can only use this effect of "Blitzkrieg Sky" once per turn. The first time a "Blitzkrieg" monster(s) would be destroyed each turn, except as material or by the effect of "Blitzkrieg Sky", destroy 1 "Blitzkrieg" monster in your Deck instead.
+
+Blitzkrieg Bombardment
+Continuous Spell
+Once per turn, during the End Phase: Destroy all monsters that were Special Summoned from the Extra Deck, except LIGHT, DARK, and Fusion Monsters. If a monster(s) you control is destroyed by battle or card effect: You can Special Summon 1 "Blitzkrieg" monster from your Deck. You can only use this effect of "Blitzkrieg Bombardment" once per turn.
+
+Blitzkrieg Convergence
+Normal Spell
+During the End Phase of the turn this card was activated, draw a number of cards equal to the number of "Blitzkrieg" monsters with different names that were destroyed this turn (max. 2). You can only activate 1 "Blitzkrieg Convergence" per turn.
+
+Blitzkrieg Rush
+Normal Spell
+Destroy as many cards in your Pendulum Zones as possible and destroy face-up "Blitzkrieg" Pendulum Monsters with different names in your Extra Deck until you destroyed 3 "Blitzkrieg" monsters with this effect, then draw 2 cards. You can only activate 1 "Blitzkrieg Rush" per turn.
+
+Blitzkrieg Strike
+Quick-Play Spell
+Destroy 1 "Blitzkrieg" monster in your Pendulum Zone, and if you do, place 1 "Blitzkrieg" Pendulum Monster from your Deck in your Pendulum Zone.
+
+Blitzkrieg Monsoon
+Quick-Play Spell
+Target 2 Spell/Traps your opponent controls and 1 "Blitzkrieg" card you control; destroy them.
+
+Blitzkrieg Downpour
+Continuous Spell
+When this card is activated: Add 1 "Blitzkrieg" monster from your Deck to your hand. Once per turn: You can target 1 monster on the field; destroy it and 1 other "Blitzkrieg" card you control.
+
+Blitzkrieg Calling Ritual
+Normal Spell
+Target 1 monster you control; destroy it, and if you do, Special Summon 1 "Blitzkrieg" monster from your Deck with the same Level as the destroyed monster's Level on the field. You can only activate 1 "Blitzkrieg Calling Ritual" per turn.
+
+Blitzkrieg Samsara Bolt
+Quick-Play Spell
+Target 1 "Blitzkrieg" monster you control and 1 "Blitzkrieg" monster in your GY with a different name from that target; destroy that first target, then Special Summon that other target. You can only activate 1 "Blitzkrieg Samsara Bolt" per turn.
+
+Blitz Field
+Field Spell
+During your Main Phase: You can destroy 1 "Blitzkrieg" monster in your hand or face-up in your Monster Zone, then apply 1 of the following effects.
+● Add 1 "Blitzkrieg" monster from your Deck to your hand, except a monster with the same name as the monster destroyed by this effect.
+● Destroy 1 Spell/Trap on the field.
+● Shuffle 1 of your banished "Blitzkrieg" monsters into the Deck.
+If this card is destroyed: Destroy all monsters you control. You can only use each effect of "Blitz Field" once per turn.
+
+Rank-Up-Magic Lyris Force
+Normal Spell
+Target 1 Xyz Monster you control; Special Summon from your Extra Deck, 1 "Blitzkrieg" Xyz Monster with the same Type as that monster but 1 Rank higher by using that target as the material. (This Special Summon is treated as an Xyz Summon. Transfer its materials to the Summoned monster.) If a monster that was Summoned by this card's effect is destroyed and sent to the GY: You can add this card from your GY to your hand. You can only use this effect of "Rank-Up-Magic Lyris Force" once per Duel.
+
+Rank-Up-Magic Lyris Force II
+Quick-Play Spell
+Target 1 "Blitzkrieg" Xyz Monster in your GY; Special Summon it, then Special Summon 1 LIGHT Dragon or Machine Xyz Monster from your Extra Deck with 2 Ranks higher using it as the Xyz Material. (This is treated as an Xyz Summon.)
+
+Blitzkrieg Artillery
+Normal Trap
+Draw 2 cards, then destroy 1 "Blitzkrieg" monster in your hand, or, if you don't have any in your hand, destroy all cards in your hand. If this card in its owner's possession is destroyed by an opponent's card: You can target 1 card your opponent controls; destroy that target, then inflict 500 damage to your opponent.
+
+Blitzkrieg Deity - Zeus
+Continuous Trap
+If you control exactly 2 "Blitzkrieg" cards (and no other cards), you can activate this card from your hand. All monsters must attack, if able. Each time an attack is declared involving a "Blitzkrieg" monster, place 1 Lightning Counter on this card. If a "Blitzkrieg" monster declares an attack: Destroy the attacking monster. You can only use this effect of "Blitzkrieg Deity - Zeus" once per turn. If this face-up card with a Lightning Counter on it is destroyed: End the Main Phase.
+
+Blitzkrieg Vortex
+Counter Trap
+When your opponent's card or effect is activated: Destroy 1 "Blitzkrieg" card you control, and if you do, negate the effect.
+
+Ennigmaforemost Sarrah
+Rank 4 DARK Aqua/Xyz/Effect Monster
+2 Level 4 monsters with different Types
+Gains 800 ATK while you control an "Ennigmaformer" monster. At the start of the Damage Step, if this card attacks: You can attach 1 of your other Xyz Monsters and its materials to this card as material, then Special Summon 1 "Ennigmaf" monster attached to your Xyz Monster. During damage calculation, if this card battles a monster with less ATK than this card's original ATK (Quick Effect): You can destroy 1 monster your opponent controls.
+ATK 2200/DEF 2000
+
+Rainbow Ennigmaformer
+Level 4 DARK Spellcaster/Effect Monster
+If you draw this card while you control an "Ennigmaf" monster: You can Special Summon it in face-up Defense Position. Once per Chain, if all monsters you control are "Ennigmaf" monsters (Quick Effect): You can discard this card and 1 other "Ennigmaf" card from your hand (except "Rainbow Ennigmaformer"), then draw 2 cards. You can only use this effect of "Rainbow Ennigmaformer" once per turn. An "Ennigmaforemost" Xyz Monster who has this card as material gains this effect.
+● Once per turn (Quick Effect): You can attach 1 "Ennigmaformer" monster from your hand to this card, then draw 2 cards.
+ATK 1000/DEF 1000
+
+Skydiving Ennigmaformance
+Quick-Play Spell
+Detach 1 material from 1 of your "Ennigmaforemost" Xyz Monsters, and if you do, it can make a second attack during each Battle Phase this turn.
+
+Hoop Ennigmaformance
+Normal Spell
+Add 1 "Ennigmaformer" monster from your Deck to your hand. You can banish this card from your GY, then target 1 "Ennigmaforemost" Xyz Monster you control; attach 1 "Ennigmaformer" monster from your Deck to it as material.
+
+Crossing Ennigmaformance
+Quick-Play Spell
+Activate 1 of these effects.
+● Special Summon in Defense Position, 1 "Ennigmaformer" monster attached to your Xyz Monster, then attach 1 "Ennigmaformer" monster from your hand to that Xyz Monster.
+● When a card or effect is activated that targets an "Ennigmaf" monster(s) you control: Negate the activation, then you can attach that card to 1 of your "Ennigmaforemost" Xyz Monsters.
+
+Ennigmaforemost Lucy
+Rank 5 DARK Warrior/Xyz/Effect Monster
+3 Level 5 monsters with different Types
+You can also Xyz Summon this card using 1 Rank 4 "Ennigmaforemost" Xyz Monster you control. (Transfer its materials to this card.) (Quick Effect): You can Special Summon any number of "Ennigmaformer" monsters with different Types attached to your Xyz Monsters, also for the rest of this turn after this effect Summons more than 1 monster, you can only Special Summon a non-"Ennigmaforemost" monster from the Extra Deck once. You can only use this effect of "Ennigmaforemost Lucy" once per turn. If this card attacks a Defense Position monster, inflict piercing battle damage.
+ATK 2600/DEF 2000
+
+Ennigmaforemost Farrah
+Rank 4 DARK Aqua/Xyz/Effect Monster
+2 Level 4 monsters with different Types
+If this card is Xyz Summoned: You can add 1 "Ennigmaformer" monster from your Deck to your hand, then you can destroy 1 Spell/Trap your opponent controls. (Quick Effect): You can Tribute 1 other "Ennigmaf" monster from your hand or field; attach the top 2 cards of your Deck to 1 of your "Ennigmaforemost" Xyz Monsters, then Special Summon 1 "Ennigmaformer" monster attached to your Xyz Monster, and it gains 800 ATK. You can only use each effect of "Ennigmaforemost Farrah" once per turn.
+ATK 2500/DEF 2100
+
+Rank-Up-Magic Wondrous Force
+Normal Spell
+Xyz Summon 1 Xyz Monster using monsters you control as materials, then Special Summon from your Extra Deck, 1 Xyz Monster with the same Type and Attribute as that monster you control but 1 Rank higher, using it as the Xyz Material. (This is treated as an Xyz Summon. Transfer its materials to the Summoned monster.)
+
+Mystery Keeper Spharia
+Level 5 LIGHT Fairy/Effect Monster
+(This card is always treated as an "Artifact" card.)
+You can Set this card from your hand to your Spell & Trap Zone as a Spell. During your opponent's turn, if this Set card in the Spell & Trap Zone is destroyed and sent to your GY: Special Summon it. If this card is Special Summoned during your opponent's turn: Set 1 "Artifact" monster directly from your Deck to your Spell & Trap Zone as a Spell. (Quick Effect): You can target any number of your Set Spells/Traps; Special Summon this card from your hand, then shuffle them into the Deck, or destroy them.
+ATK 1000/DEF 2500
+
+Anonymize
+Normal Trap
+Target 1 face-up card on the field; that target's name becomes "Anonymize" until the end of this turn.
+
+Storming Data Link Dragon
+Points ↙↓↘ DARK Dragon/Link/Effect Monster
+2+ Effect Monsters
+If this card is Link Summoned: Send the top 3 cards of your Deck to the GY; this card gains 500 ATK for each Spell/Trap sent to the GY by this effect. Once per turn: You can banish 1 monster this card points to; this card gains 1000 ATK until the end of this turn. Once per turn: You can target 1 Level 6 or lower Dragon monster on your GY; Special Summon it, but it cannot be used as a material for the Summon of a monster in the Extra Deck.
+ATK 2500/LINK-3
+
+Whirling Data Link Dragon
+Points ↓↘→↖ DARK Dragon/Link/Effect Monster
+2+ Effect Monsters
+If this card is Link Summoned: Destroy all other cards in the same column as monsters this card points to. If this attacking card battles an opponent's monster (Quick Effect): Excavate the top 4 cards of your Deck, then if you excavated a Dragon monster(s), this card gains ATK equal to half the ATK of that monster(s) until the end of the Damage Step. If this Link Summoned card leaves the field because it was destroyed by battle or because of an opponent's card effect: Special Summon 2 Level 8 or lower Dragon monsters with the same Level but different names from your GY, but negate their effects, also their ATK becomes 3000. You can only use each effect of "Whirling Data Link Dragon" once per turn.
+ATK 3000/LINK-4
+
+Galaxy-Eyes Solid Photon Dragon
+Level 9 LIGHT Machine/Effect Monster
+Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand or Deck) by Tributing 2 monsters with 2000 or more ATK, including a "Galaxy-Eyes Photon Dragon" equipped with "Metalmorph". (Quick Effect): You can activate this effect; until the end of this turn, this card gains 500 ATK for each material that was used to Special Summon 1 monster on the field from the Extra Deck, also it is unaffected by your opponent's Spell effects. You can only use this effect of "Galaxy-Eyes Solid Photon Dragon" once per turn. If this card in the Monster Zone leaves the field: You can Special Summon 1 "Galaxy-Eyes" Dragon monster from your GY, and if you do, activate 1 "Metalmorph" from your GY by targeting that Summoned monster.
+ATK 3400/DEF 2900
+
+Lyris, Blitzkrieg Tactician of YC.Org
+Level 4 Scale 2 LIGHT Dragon/Pendulum/Effect Monster
+Pendulum Effect: If a "YC.Org" or "Blitzkrieg" monster(s) you control is banished or destroyed by a card effect: You can Special Summon this card from your Pendulum Zone. You cannot Special Summon monsters the turn you activate this effect, except "YC.Org" / "Blitzkrieg" monsters. You can only use this effect of "Lyris, Blitzkrieg Tactician of YC.Org" once per turn.
+Monster Effect: If your opponent declares an attack that targets this card: Negate the attack, also destroy this card, then destroy 1 monster your opponent controls. If this card is Special Summoned OR if this face-up card is destroyed or banished: You can shuffle 3 "YC.Org" / "Blitzkrieg" cards from your GY and/or face-up Extra Deck into your Deck, and if you do, draw 1 card. You can only this effect of "Lyris, Blitzkrieg Tactician of YC.Org" once per turn.
+ATK 1000/DEF 2100
+
+Rank-Up-Magic Chain Force
+Normal Spell
+Pay half your LP, and target 1 Xyz Monster you control: Special Summon, from your Extra Deck, 1 Xyz Monster with the same Type and Attribute as that monster, but up to 2 Ranks higher, by using it as the material, then you can immediately target the Summoned monster and apply this effect again in a row (This Special Summon is treated as an Xyz Summon, also transfer its materials to the Summoned Monster). If you control no Xyz Monsters when you activate this card: You can Special Summon 1 Xyz Monster from your Extra Deck, before applying this card's effect. You can only activate "Rank-Up-Magic Chain Force" once per Duel.
+
+Whirlwind Strike
+Normal Trap
+Target 1 card you control and 1 card your opponent controls; return both cards to the hand.
+
+T.G. Scythe Snake
+Level 4 LIGHT Reptile/Tuner/Effect Monster
+During your opponent's turn (Quick Effect): You can target 1 Level 4 or lower "T.G." monster in your GY, except "T.G. Scythe Snake"; Special Summon both that target and this card from your hand, and if you do, immediately after this effect resolves, you can Synchro Summon using monsters you control. You can banish this card from your GY; add 1 "T.G." monster from your Deck to your hand, except "T.G. Scythe Snake". You can only use 1 "T.G. Scythe Snake" effect per turn, and only once that turn.
+ATK 0/DEF 2000
+
+Cyberdark Fang
+Level 4 DARK Machine/Effect Monster
+If this card is Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. You can send 1 of your "Cyberdark" Equip cards to the GY; add 1 Dragon "Cyberdark" monster from your Deck to your hand. You can only use this effect of "Cyberdark Fang" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+ATK 800/DEF 800
+
+Cyberdark Conductor
+Level 4 DARK Machine/Effect Monster
+If this card is Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. You can target 1 Machine "Cyberdark" monster in your GY; return it to the hand, then immediately after this effect resolves, you can Normal Summon it. You can only use this effect of "Cyberdark Conductor" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+ATK 800/DEF 800
+
+Cyberdark Receptor
+Level 4 DARK Machine/Effect Monster
+If this card is Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. During your Main Phase: You can send 1 Machine "Cyberdark" monster from your Deck to the GY, and if you do, this card's name becomes that monster's. You can only use this effect of "Cyberdark Receptor" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+ATK 800/DEF 800
+
+Cyberdarkness Dogma
+Continuous Trap
+When this card is activated: You can send 1 Level 3 or lower Dragon monster from your Deck to the GY. You can send 1 of your Equip Cards to the GY, then target 1 card your opponent controls; destroy it. You can return 1 "Cyberdark" monster from your GY or that is banished to the Deck; draw 1 card. You can only use 1 "Cyberdarkness Dogma" effect per turn, and only once that turn.
+
+Cyberdark Origin
+Level 3 DARK Dragon/Effect Monster
+If this card is Summoned: Target 1 "Cyberdark" monster in your GY; Special Summon it, then equip it with this card, as if it were equipped by that monster's effect. During the Standby Phase, if this card is in the GY because it was destroyed on the field: Special Summon it. You can only use this effect of "Cyberdark Origin" once per turn.
+ATK 1600/DEF 800
+
+Cyberdark Dragonstrike
+Level 5 DARK Machine/Fusion/Effect Monster
+"Cyberdark Fang" + "Cyberdark Conductor"
+If this card is Special Summoned: Target 1 Level 5 or lower Dragon or Machine monster in your GY or that is banished; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. During your Main Phase, if you control this Fusion Summoned card: You can target 1 monster your opponent controls; return as many monsters equipped to this card to the hand as possible, then equip that target to 1 of your Machine "Cyberdark" monsters, as if it were a Dragon monster equipped by that monster's effect. You can only use this effect of "Cyberdark Dragonstrike" once per turn. If this card would be destroyed by battle, destroy that equipped monster, instead.
+ATK 800/DEF 2100
+
+Rigil Kentaurus
+Level 6 LIGHT Beast-Warrior/Effect Monster
+You can Special Summon this card (from your hand) to your opponent's field in Attack Position by Tributing 1 monster they control, then shift control to this card's owner during the End Phase. If Summoned this way: Special Summon 1 "Mirage Token" (Beast-Warrior-Type/LIGHT/Level 6/ATK 2200/DEF 1600) in Defense Position to your opponent's field, also negate the effect of your next Trap Card or effect that resolves this turn, and if you do, Set that card face-down. You can only use this effect of "Rigil Kentaurus" once per turn.
+ATK 2200/DEF 1600
+
+Rigil Mintaurus
+Level 4 EARTH Beast-Warrior/Effect Monster
+You can Special Summon this card (from your hand) to your opponent's field in Attack Position, then shift control to this card's owner during the End Phase. If Summoned this way: Activate this effect; your opponent can add 1 "Rigil" card from their Deck to their hand, except "Rigil Mintaurus", also negate the next effect of a monster you own that resolves this turn. You can only use this effect of "Rigil Mintaurus" once per turn.
+ATK 1700/DEF 1000
+
+Rigil Rintaurus
+Level 4 EARTH Beast-Warrior/Effect Monster
+You can Special Summon this card (from your hand) to your opponent's field in Attack Position, then shift control to this card's owner during the End Phase. If Summoned this way: Your opponent targets 1 other card you control; destroy it, also negate the effect of your next Spell Card or effect that resolves this turn. You can only use this effect of "Rigil Rintaurus" once per turn.
+ATK 1800/DEF 600
+
+Angel O8
+Level 8 LIGHT Fairy/Effect Monster
+You can Tribute Summon this card by Tributing 1 "Angel O7". This Tribute Summoned card gains these effects.
+● Monsters cannot activate their effects. Negate the attacks of Level 7 or lower monsters.
+ATK 3000/DEF 1700
+
+YC.Org Token
+Level 1 EARTH Rock/Token/Normal Monster
+Summoned by the effect of "Leon, Architect of YC.Org".
+ATK 100/DEF 100
+
+Fated Hero's Ritual Art
+Quick-Play Spell
+Fusion Summon 1 "Fated Hero" Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material. You can only activate 1 "Fated Hero's Ritual Art" per turn.
+
+Fated Hero Doomed Monger
+Level 4 LIGHT Warrior/Effect Monster
+If this card is Summoned: You can add 1 "Fated Hero" monster from your GY to your hand, except "Fated Hero Doomed Monger". If this card is used as Fusion Material: You can Special Summon 1 "Fated Hero" monster from your GY, except "Fated Hero Doomed Monger".
+ATK 1000/DEF 1000
+
+Fated Hero Necro Lord
+Level 3 LIGHT Warrior/Effect Monster
+If this card is Summoned: You can add 1 "Fated Hero" Spell/Trap from your GY to your hand. If this card is used as Fusion Material: You can banish 1 card your opponent controls until the end of the next turn. You can only use this effect of "Fated Hero Necro Lord" once per turn.
+ATK 1600/DEF 600
+
+Fated Hero Hardy Mise
+Level 3 LIGHT Warrior/Effect Monster
+If this card is Summoned: You can add 1 "Fated Hero" Spell/Trap from your Deck to your hand. If this card is used as Fusion Material: You can Set 1 "Fated Hero" Spell/Trap directly from your Deck. You can only use each effect of "Fated Hero Hardy Mise" once per turn.
+ATK 600/DEF 400
+
+Fated Hero Magic Stargazer
+Level 4 LIGHT Warrior/Effect Monster
+If this card is Summoned: You can destroy 1 Spell/Trap on the field. If this card is used as Fusion Material: You can destroy 1 monster on the field.
+ATK 1700/DEF 1100
+
+Fated Hero World Judge
+Level 7 LIGHT Warrior/Fusion/Effect Monster
+1 "Fated Hero" monster + 1 Warrior monster
+The total Levels of this card's Fusion Materials must equal or exceed this card's Level. Once per turn (Quick Effect): You can target 1 "Fated Hero" monster in your GY, except "Fated Hero World Judge"; shuffle it into the Deck, and if you do, negate the effects of 1 face-up card your opponent controls until the end of this turn.
+ATK 2700/DEF 1300
+
+Fated Hero Pair Puzzler
+Level 4 LIGHT Warrior/Effect Monster
+If this card is Summoned: You can add 1 "Fated Hero" monster from your Deck to your hand, except "Fated Hero Pair Puzzler". If this card is used as Fusion Material: You can Special Summon 1 "Fated Hero" monster from your Deck, except "Fated Hero Pair Puzzler". You can only use each effect of "Fated Hero Pair Puzzler" once per turn.
+ATK 1600/DEF 1000
+
+Fated Hero Poison Prohibitor
+Level 6 LIGHT Warrior/Effect Monster
+If this card is used as Fusion Material: You can shuffle 1 "Fated Hero" monster from your GY into the Deck, except "Fated Hero Poison Prohibitor", then apply its effect when it is used as Fusion Material.
+ATK 2400/DEF 2400
+
+Fated Hero Dainty Diaduke
+Level 4 LIGHT Warrior/Effect Monster
+During the turn this card is Summoned, "Fated Hero" monsters you control cannot be targeted or destroyed by card effects. If this card is used as Fusion Material: You can target 1 "Fated Hero" monster in your GY, except "Fated Hero Dainty Diaduke"; shuffle it into the Deck, then destroy 1 card your opponent controls.
+ATK 1500/DEF 1200
+
+Fated Hero Joker
+Level 4 LIGHT Warrior/Effect Monster
+If this card is Summoned: You can add 1 of your banished "Fated Hero" cards to your hand, except "Fated Hero Joker". If this card is used as Fusion Material: You can Special Summon 1 of your banished "Fated Hero" monsters, except "Fated Hero Joker".
+ATK 1500/DEF 1000
+
+Fated Hero Twilight Mistress
+Level 7 LIGHT Warrior/Fusion/Effect Monster
+1 "Fated Hero" monster + 1 LIGHT monster
+The total Levels of this card's Fusion Materials must equal or exceed this card's Level. Once per turn (Quick Effect): You can target 1 LIGHT or DARK monster in either GY, except "Fated Hero Twilight Mistress"; Tribute 1 "Fated Hero" monster, and if you do, Special Summon it, but banish it when it leaves the field. Banish it during the End Phase.
+ATK 2800/DEF 2800
+
+Fated Hero Blue Lightning
+Level 8 LIGHT Warrior/Fusion/Effect Monster
+1 "Fated Hero" monster + 1 monster with 1900 or more ATK
+The total Levels of this card's Fusion Materials must equal or exceed this card's Level. If this card is Fusion Summoned: You can target 1 other monster you control or in your opponent's GY; inflict damage to your opponent equal to its original ATK. You can only use this effect of "Fated Hero Blue Lightning" once per turn. Once per turn (Quick Effect): You can target 1 "Fated Hero" Spell in your GY with an effect that Fusion Summons a Fusion Monster; shuffle it into the Deck, then apply 1 of its effects that Fusion Summons a Fusion Monster.
+ATK 1900/DEF 600
+
+Fated Hero Chaos Deity
+Level 10 LIGHT Warrior/Fusion/Effect Monster
+1+ "Fated Hero" monsters + 1+ monsters without Levels
+The total Levels of this card's Fusion Materials must equal or exceed this card's Level. Once per turn (Quick Effect): You can target cards in your opponent's GY, up to the number of materials used for this card's Fusion Summon; banish them.
+ATK 3500/DEF 2500
+
+Fated Hero Desizer
+Level 6 LIGHT Warrior/Effect Monster
+If this card is used as Fusion Material: All your "Fated Hero" monsters gain 1000 ATK.
+ATK 1000/DEF 2100
+
+Fated Hero Illusioner
+Level 1 LIGHT Warrior/Effect Monster
+During the turn this card is Summoned, your opponent cannot activate cards and effects in response to your "Fated Hero" card and effect activations. If this card is used as Fusion Material: You can Special Summon 1 "Fated Hero" monster from your hand, and if you do, it is unaffected by your opponent's monster effects this turn.
+ATK 0/DEF 1800
+
+Fated Hero Hopeful Dusk
+Level 10 LIGHT Warrior/Fusion/Effect Monster
+1 Level 5 or higher monster + 2 "Fated Hero" monsters
+The total Levels of this card's Fusion Materials must equal or exceed this card's Level. The first time a monster(s) you control would be destroyed by battle or card effects each turn, that monster(s) is not destroyed. (Quick Effect): You can Fusion Summon 1 "Fated Hero" Fusion monster from your Extra Deck, by banishing the Fusion Materials listed on it from your hand or GY. You can only use this effect of "Fated Hero Hopeful Dusk" once per turn.
+ATK 3000/DEF 3000
+
+Fated Hero Despairful Light
+Level 8 LIGHT Warrior/Fusion/Effect Monster
+2+ "Fated Hero" monsters
+The total Levels of this card's Fusion Materials must equal or exceed this card's Level. (Quick Effect): You can destroy cards your opponent controls, up to the number of materials used for this card's Fusion Summon. You can only use this effect of "Fated Hero Despairful Light" once per turn.
+ATK 2400/DEF 1800
+
+Fated Hero's Ritual
+Normal Spell
+Fusion Summon 1 "Fated Hero" Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material. You can also use 1 monster in your Deck as Fusion Material. You can only activate 1 "Fated Hero's Ritual" per turn.
+
+Fated Hero's Decision
+Quick-Play Spell
+Fusion Summon 1 "Fated Hero" Fusion Monster from your Extra Deck, by banishing the Fusion Materials listed on it from either GY. You can only activate 1 "Fated Hero's Decision" per turn.
+
+Fated Hero's Charity
+Normal Spell
+If you control a "Fated Hero" monster: Draw 2 cards and reveal them, then banish cards from your hand equal to the number of non-"Fated Hero" cards drawn by this effect. You can only use 1 "Fated Hero's Charity" per turn
+
+A Fated Hero's Encounter
+Normal Spell
+During your 1st Standby Phase after this card's activation, show 1 "Fated Hero" Fusion Monster in your Extra Deck and send the Fusion Materials listed on it from your hand or either field to the GY. During your 2nd Standby Phase after this card's activation, Fusion Summon 1 Fusion Monster of the same name from your Extra Deck.
+
+Fated Hero's Ascension
+Normal Spell
+Fusion Summon 1 "Fated Hero" Fusion Monster from your Extra Deck, by banishing the Fusion Materials listed on it from your field or GY.
+
+Fated Hero's Task Divider
+Normal Spell
+Add 1 "Fated Hero" monster from your Deck to your hand. You can only activate 1 "Fated Hero's Task Divider" per turn. You can banish from your GY, this card and 1 Spell with an effect that Fusion Summons a Fusion Monster; you cannot Fusion Summon monsters for the rest of this turn, except "Fated Hero" monsters, also apply 1 of that other banished card's effects that Fusion Summons a Fusion Monster.
+
+Tweilight of Chroman Keys
+Normal Spell
+Add 1 "Roman Keys" monster from your Deck to your hand. You can banish this card from your GY; Special Summon 1 "Roman Keys" monster from your hand. You can only use this effect of "Tweilight of Chroman Keys" once per turn.
+
+Roman Keys - XXXVI
+Level 4 LIGHT Thunder/Effect Monster
+(Quick Effect): You can banish this card from your GY; Fusion Summon any number of "Roman Keys" Fusion monsters from your Extra Deck, by banishing "Roman Keys" monsters from the GYs as the materials, but you cannot Summon monsters whose total Levels exceed the total Levels of the materials this way. You can only use this effect of "Roman Keys - XXXVI" once per turn.
+ATK 1400/DEF 1600
+
+Roman Keys - VI
+Level 4 LIGHT Thunder/Effect Monster
+This card's Level is doubled during the turn it is Summoned. When this card is Summoned: You can return up to 5 "Roman Keys" monsters from your GY into the Deck, and if you do, apply these effects (simultaneously), based on the number of cards returned to the Deck this way.
+● 3+: Draw 1 card.
+● 5: Add 1 "Roman Keys" monster from your Deck to your hand.
+ATK 1400/DEF 1000
+
+Roman Keys - XII
+Level 4 LIGHT Thunder/Effect Monster
+This card's Level is doubled during the turn it is Summoned. When this card is Summoned: It gains 1200 ATK/DEF. "Roman Keys" monsters on the field cannot be targeted or destroyed by your opponent's card effects.
+ATK 1600/DEF 1000
+
+Roman Keys - XVIII
+Level 4 LIGHT Thunder/Effect Monster
+(Quick Effect): You can banish this card you control; Fusion Summon any number of "Roman Keys" Fusion monsters from your Extra Deck, using "Roman Keys" monsters from your field as the materials, which can also include 1 face-up monster your opponent controls, but you cannot Summon monsters whose total Levels exceed the total Levels of the materials this way. You can only use this effect of "Roman Keys - XVIII" once per turn.
+ATK 1500/DEF 1500
+
+Roman Keys - XXIV
+Level 4 LIGHT Thunder/Effect Monster
+This card's Level is doubled during the turn it is Summoned. When this card is Summoned: You can Special Summon 1 "Roman Keys" monster from your hand or Deck, except "Roman Keys - XXIV". You cannot Special Summon monsters from the Extra Deck the turn you use this effect, except "Roman Keys" monsters.
+ATK 1600/DEF 1800
+
+Roman Keys - XXX
+Level 4 LIGHT Thunder/Effect Monster
+(Quick Effect): You can banish this card from your hand or field; Fusion Summon any number of "Roman Keys" Fusion monsters from your Extra Deck, using "Roman Keys" monsters from your hand or field as the materials, but you cannot Summon monsters whose total Levels exceed the total Levels of the materials this way. You cannot Special Summon monsters from the Extra Deck the turn you use this effect, except "Roman Keys" monsters. You can only use this effect of "Roman Keys - XXX" once per turn.
+ATK 1500/DEF 500
+
+Roman Keys - III
+Level 8 FIRE Thunder/Fusion/Effect Monster
+Must first be Fusion Summoned with a "Roman Keys" card effect. If this card is Fusion Summoned: Inflict 1000 damage to your opponent. You can only use this effect of "Roman Keys - III" once per turn. During the turn this card is Summoned, its ATK is doubled, also it will inflict piercing battle damage.
+ATK 1800/DEF 0
+
+Roman Keys - IX
+Level 4 LIGHT Thunder/Fusion/Effect Monster
+Must first be Fusion Summoned with a "Roman Keys" card effect. When this card is Summoned: You can negate the effects of 1 face-up card currently on the field. (Quick Effect): You can Tribute this card; banish all cards on the field that have their effects negated. You can only use each effect of "Roman Keys - IX" once per turn.
+ATK 1000/DEF 1000
+
+Roman Keys - XV
+Level 8 EARTH Thunder/Fusion/Effect Monster
+Must first be Fusion Summoned with a "Roman Keys" card effect. When this card is Summoned: You can destroy 1 monster on the field. (Quick Effect): You can Tribute this card; Special Summon 1 "Roman Keys" monster from your hand or Deck, but you cannot Summon from the Deck with this effect of "Roman Keys - XV" for the rest of this turn.
+ATK 1800/DEF 1300
+
+Roman Keys - XXI
+Level 12 WIND Thunder/Fusion/Effect Monster
+Must first be Fusion Summoned with a "Roman Keys" card effect. When this card is Fusion Summoned: You can target 1 monster on the field; shuffle it into the Deck. Once per turn (Quick Effect): You can Special Summon 1 "Roman Keys" monster that you have banished or in the GY, except "Roman Keys - XXI".
+ATK 1600/DEF 1100
+
+Roman Keys - XXVII
+Level 4 WATER Thunder/Fusion/Effect Monster
+Must first be Fusion Summoned with a "Roman Keys" card effect. If this card is Fusion Summoned: Gain LP equal to the ATK of the monster on the field with the highest ATK (your choice, if tied). This card can attack while in face-up Defense Position. If it does, apply its DEF for damage calculation.
+ATK 1000/DEF 2500
+
+Roman Keys - XXXIII
+Level 12 DARK Thunder/Fusion/Effect Monster
+Must first be Fusion Summoned with a "Roman Keys" card effect. At the end of your Battle Phase, if all other monsters you control are "Roman Keys" monsters (min. 1) (Quick Effect): You can banish this card you control, then target 1 monster your opponent controls; banish it, then, immediately after this effect resolves, skip to the Battle Phase of your next turn. Neither player can activate cards or effects in response to this effect's activation. You can only use this effect of "Roman Keys - XXXIII" once per Duel.
+ATK 1500/DEF 1200
+
+Leon, Architect of YC.Org
+Points ↓ EARTH Spellcaster/Link/Effect Monster
+1 "YC.Org" monster, except "Leon, Architect of YC.Org"
+When this card is Link Summoned: place 1 Design Counter on it. Each time a "YC.Org" Spell/Trap card is activated, place 1 Design Counter on this card after it resolves. You can remove 3 Design Counters from this card; Special Summon 1 "YC.Org Token" (Level 1/Earth/Rock/100ATK/100DEF). You cannot Special Summon monsters the turn you activate this effect, except "YC.Org" monsters.
+ATK 1000/LINK-1
+
+Slient, YC.Org Sky Angel
+Points ↓→ LIGHT Machine/Link/Effect Monster
+2 "YC.Org" monsters
+"YC.Org" monsters co-linked to this card cannot be targeted by your opponent's card effects. When your opponent activates a monster effect while this card is co-linked to a "YC.Org" monster (Quick Effect): You can negate that activation, and if you do, destroy it and inflict 400 damage to your opponent's LP. If this card is banished or sent to the GY by a card effect: You can target 1 non-Link "YC.Org" monster in your GY; Special Summon it. You can only use each effect of "Slient, YC.Org Sky Angel" once per turn.
+ATK 1500/LINK-2
+
+Kyrie, Navarch of YC.Org
+Points ↓←→↑ WATER Machine/Link/Effect Monster
+2+ "YC.Org" monsters
+You can only control 1 "Kyrie, Navarch of YC.Org". "YC.Org" monsters co-linked to this card cannot be destroyed by battle. Gains 1000 ATK for each "YC.Org" monster co-linked to this card. If this card is co-linked to a "YC.Org" monster (Quick Effect): You can target 1 card your opponent controls; Banish it. If this card is co-linked to a "YC.Org" monster: You can activate this effect: This card can make a second attack during each Battle Phase this turn. You can only activate 1 "Kyrie, Navarch of YC.Org" effect per turn, and only once that turn.
+ATK 2900/LINK-4
+
+Terpsichore, YC.Org Overseer
+Points ←→ DARK Warrior/Link/Effect Monster
+2 "YC.Org" monsters
+"YC.Org" monsters co-linked to this card cannot be destroyed by your opponent's card effects. When your opponent activates a Spell/Trap card or effect while this card is co-linked to a "YC.Org" monster (Quick Effect): You can negate that activation, and if you do, destroy it. If this card is banished or sent to the GY by a card effect: You can target 1 "YC.Org" Spell/Trap in your GY; add it to your hand. You can only use each effect of "Terpsichore, YC.Org Overseer" once per turn.
+ATK 1500/LINK-2
+
+Glitchy, Angelic Guardian of YC.Org
+Level 7 LIGHT Fairy/Synchro/Effect Monster
+1 "YC.Org" Tuner + 1+ non-Tuner monsters
+When this card is Synchro Summoned: You can banish 1 "YC.Org" monster from your Deck or GY; Special Summon 1 "YC.Org" monster with a different name from your hand or that is banished, also for the rest of this turn you cannot Special Summon monster, except "YC.Org" monsters. If this card is linked to a "YC.Org" monster: You can banish 1 "YC.Org" card from your hand and 1 "YC.Org" card from your GY; your opponent discards 1 card. You can only use each effect of "Glitchy, Angelic Guardian of YC.Org" once per turn.
+ATK 2500/DEF 2800
+
+Remnance, YC.Org Vassault Daimyo
+Rank 4 FIRE Warrior/Xyz/Effect Monster
+2 Level 4 "YC.Org" and/or "Vassault" monsters
+You can also Xyz Summon this card using 2 "YC.Org" monsters with different levels as Xyz Material. If this card is Xyz Summoned: You can detach 1 material from this card, then target 1 "Vassault" or "YC.Org" monster in your GY; Special Summon it. You cannot Special Summon monsters the turn you activate this effect, except "Vassault" and/or "YC.Org" monsters. You can only use this effect of "Remnance, YC.Org Vassault Daimyo" once per turn.
+ATK 2000/DEF 1800
+
+YC.Org Registration
+Continuous Spell
+When this card is activated: You can add 1 "YC.Org" monster from your Deck to your hand. If this card is destroyed: You can Special Summon 1 "YC.Org" monster from your hand or GY. If a non-Link "YC.Org" monster you control would be destroyed by your opponent's card effect, you can destroy this card instead. You can only activate 1 "YC.Org Registration" per turn.
+
+YC.Org Research Database
+Continuous Spell
+You can target 1 "YC.Org" monster in your GY; Banish it, and if you do, Special Summon 1 "YC.Org" monster from your hand. If this card or a "YC.Org" monster you control is destroyed or banished: You can excavate the top 3 cards of your Deck, add 1 excavated "YC.Org" card from among them to your hand, also shuffle the rest into the Deck. You cannot Special Summon monsters the turn you activate this effect, except "YC.Org" monsters. You can only use each effect of "YC.Org Research Database" once per turn.
+
+YC.Org Headquarters
+Field Spell
+If you control no monsters in your Main Monster Zones: You can Special Summon 1 "YC.Org" monster from your hand. You can target 1 other "YC.Org" card you control; Destroy it, and if you do, add 1 "YC.Org" Spell/Trap card from your Deck to your hand. If a "YC.Org" Link Monster you control would be destroyed by your opponent's card effect, you can destroy this card instead. You can only use each effect of "YC.Org Headquarters" once per turn.
+
+YC.Org Researcher - Archeology
+Normal Spell
+Target 1 "YC.Org" monster in your GY; Special Summon it. You can banish this card from your GY, then target 1 "YC.Org" Spell/Trap in your GY; add it to your hand. You cannot Special Summon monsters the turn you activate this effect, except "YC.Org" monsters. You can only use this effect of "YC.Org Researcher - Archeology" once per turn.
+
+YC.Org Emergency Defenses
+Counter Trap
+When a card or effect is activated that would destroy 2 or more "YC.Org" cards you control: Negate that effect, and if you do, shuffle it into the Deck. If this card is destroyed by your opponent's card effect: You can Special Summon 1 "YC.Org" monster from your hand, Deck, or GY. You can only use each effect of "YC.Org Emergency Defenses" once per turn.
+
+Stratauramram, YC.Org Pilot
+Level 3 LIGHT Warrior/Effect Monster
+If this card or another "Strata" or "YC.Org" is Normal or Special Summoned under your control: You can send 1 "Strata" or "YC.Org" card from your Deck to the GY. If you control this card: You can Special Summon up to 1 "Strata" or "YC.Org" monster from your hand. You can activate this effect as a Quick Effect by tributing this card. You can only use each effect of "Stratauramram, YC.Org Pilot" once per turn.
+ATK 1200/DEF 1200
+
+Remnance, YC.Org Vassault Cavalier
+Level 4 FIRE Warrior/Effect Monster
+If this card is Normal or Special Summoned: You can target 1 of your banished "Vassault" or "YC.Org" monsters; Special Summon it. You cannot Special Summon monsters the turn you activate this effect, except "Vassault" and/or "YC.Org" monsters. If you control a "Vassault" or "YC.Org" monster that was Special Summoned from the Extra Deck this turn (Quick Effect): You can banish this card from your GY; Destroy 1 monster your opponent controls. You can only use each effect of "Remnance, YC.Org Vassault Cavalier" once per turn.
+ATK 1800/DEF 1600
+
+Walrus, Voidictator of YC.Org
+Level 6 DARK Fiend/Effect Monster
+You can Special Summon this card (from your hand) by banishing 1 "YC.Org" or "Voidictator" monster from your hand. You can only Special Summon 1 "Walrus, Voidictator of YC.Org" per turn this way. If this card is banished: You can target 1 "Voidictator" or "YC.Org" monster you control; Banish it, and if you do, Special Summon this card, then draw 1 card. You cannot Special Summon monsters the turn you activate this effect, except "Voidictator and/or "YC.Org" monsters. You can only use this effect of "Walrus, Voidictator of YC.Org" once per turn.
+ATK 2000/DEF 1400
+
+Kyrie, YC.Org Naval Gear Admiral
+Level 5 Scale 9 WATER Machine/Pendulum/Effect Monster
+Pendulum Effect: When this card is activated: You can place 1 "Naval Gear" or "YC.Org" monster from your hand or GY in your Spell & Trap Card Zone as a Continuous Spell. If you Link Summon a "Naval Gear" or "YC.Org" monster: You can tribute 1 other "YC.Org" or "Naval Gear" Spell you control; Special Summon 1 "Naval Gear" or "YC.Org" monster from your Deck to a zone that monster points to. You can only use each effect of "Kyrie, YC.Org Naval Gear Admiral" once per turn.
+Monster Effect: If this card is used as Link Material for the Link Summon of a "Naval Gear " or "YC.Org" Link Monster: You can activate this card in your Pendulum Zone. You can only use this effect of "Kyrie, YC.Org Naval Gear Admiral" once per turn.
+ATK 1500/DEF 2100
+
+Chahine, Paintress of YC.Org
+Level 4 Scale 2 LIGHT Fairy/Pendulum/Normal Monster
+Pendulum Effect: You can reveal 2 "Paintress" and/or "YC.Org" cards in your hand with different names: Destroy this card, and if you do, add 1 "Paintress" or "YC.Org" card from your Deck to your hand, also for the rest of this turn you cannot Special Summon monsters, except "Paintress" and "YC.Org" monsters. You can only use this effect of "Chahine, Paintress of YC.Org" once per turn.
+Monster Effect: Fervently Passionate, they stand by their decisions despite all protest.
+ATK 1000/DEF 1000
+
+Swaggy, YC.Org Scion of Terradication
+Points ↓ FIRE Dinosaur/Link/Effect Monster
+1 non-Link "Terradication" or "YC.Org" monster
+When this card is Link Summoned: You can add 1 "YC.Org" or "Terradication" Spell/Trap card from your Deck to your hand. You cannot Special Summon monsters the turn you activate this effect, except "Terradication" and/or "YC.Org" monsters. If this card is destroyed or banished: You can destroy 1 card your opponent controls. You can only use each effect of "Swaggy, YC.Org Scion of Terradication" once per turn.
+ATK 0/LINK-1
+
+Moon's Dream of YC.Org
+Level 3 DARK Beast/Effect Monster
+If you control no monsters in your Main Monster Zone, You can Special Summon this card (from your hand). You can only Special Summon "Moon's Dream of YC.Org" once per turn this way. You can discard 1 card; Return this card to your hand, and if you do, send 1 "YC.Org" or "Moon's Dream" card from your Deck to the GY. If this card is sent to the GY by the effect of a "Moon's Dream" or "YC.Org" card: You can excavate the top 3 cards of your Deck, add 1 excavated "Moon's Dream" or "YC.Org" card from among them to your hand, also shuffle the rest into the Deck. You can only use each effect of "Moon's Dream of YC.Org" once per turn.
+ATK 1500/DEF 1500
+
+Disstonant Meed, YC.Org Spymaster
+Level 7 DARK Spellcaster/Effect Monster
+If you control a "Disstonant" or "YC.Org" monster: You can banish this card from your hand and target 1 "Disstonant" or "YC.Org" card in your GY; send 1 "YC.Org" or "Disstonant" monster from your Deck to the GY, except "Disstonant Meed, YC.Org Spymaster", and if you do, add that card to your hand. You can only use this effect of "Disstonant Meed, YC.Org Spymaster" once per turn.
+ATK 2500/DEF 2000
+
+Newtrix Maryl
+Level 4 WATER Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; rotate its Link Arrows by 2 spaces clockwise. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Maryl" once per turn this way. If this card is Summoned: You can target 1 "Newtrix" monster in your GY; Special Summon it.
+ATK 1700/DEF 1100
+
+Newtrix Beck
+Level 4 EARTH Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; rotate its Link Arrows by 1 space clockwise. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Beck" once per turn this way. If this card is Summoned: You can target 2 "Newtrix" cards in your GY; shuffle them into the Deck, then draw 1 card for each card returned this way.
+ATK 1400/DEF 1500
+
+Newtrix Holly
+Level 4 LIGHT Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; scroll its Link Arrows downwards once. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Holly" once per turn this way. If this card is Summoned: You can have all your "Newtrix" monsters gain 500 ATK for each Link Monster on the field pointing in the same direction(s).
+ATK 1600/DEF 1000
+
+Newtrix Karla
+Level 4 DARK Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; scroll its Link Arrows to the right once. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Karla" once per turn this way. If this card is Summoned: You can destroy monsters your opponent controls, up to the number of Link Monsters on the field pointing in the same direction(s).
+ATK 1300/DEF 200
+
+Newtrix Myst
+Level 4 DARK Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; scroll its Link Arrows to the left once. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Myst" once per turn this way. If this card is Summoned: You can destroy Spells/Traps your opponent controls, up to the number of Link Monsters on the field pointing in the same direction(s).
+ATK 1200/DEF 800
+
+Newtrix Amnesty
+Level 4 WIND Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; scroll its Link Arrows upwards once. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Amnesty" once per turn this way. If this card is Summoned: You can target 1 "Newtrix" card in your GY, except "Newtrix Amnesty"; add it to the hand.
+ATK 1600/DEF 600
+
+Newtrix Flare
+Level 4 FIRE Cyberse/Effect Monster
+(Quick Effect): You can banish this card from your hand or GY, then target 1 Link Monster on the field; flip its Link Arrows vertically. If you have a Monster Zone which a Link card points to and/or are adjacent to a "Newtrix" monster, you can Special Summon this card (from your hand) to that zone. You can only Special Summon "Newtrix Flare" once per turn this way. If this card is Summoned: You can banish cards from your opponent's GY, up to the number of Link Monsters on the field pointing in the same direction(s).
+ATK 1600/DEF 800
+
+Newtrix Cadence
+Points ↘ LIGHT Cyberse/Link/Effect Monster
+1 Link Monster, except "Newtrix Cadence"
+Your monsters cannot be destroyed by battle, while there there are 2 or more Link Monsters on the field pointing in the same direction(s). (Quick Effect): You can return this card you control to the Extra Deck, then target 1 "Newtrix" monster in your GY; Special Summon it, then if it was a Link Monster, you can flip its Link Arrows horizontally.
+ATK 1200/LINK-1
+
+Newtrix Ice
+Points ↙↘↑↗ WATER Cyberse/Link/Effect Monster
+3+ monsters with the same Type and/or Attribute but different names
+Negate the activated effects of monsters in your opponent's possession, while there there are 2 or more Link Monsters on the field pointing in the same direction(s). (Quick Effect): You can return this card you control to the Extra Deck, then target 1 "Newtrix" monster in your GY; Special Summon it, then if it was a Link Monster, you can scroll its Link Arrows to any direction (Up, Right, Down, or Left) once.
+ATK 2500/LINK-4
+
+Newtrix Darc
+Points ↙↘↑ DARK Cyberse/Link/Effect Monster
+2+ monsters with the same Type and/or Attribute but different names
+All your opponent's monsters lose ATK equal to half their original ATK, while there there are 2 or more Link Monsters on the field pointing in the same direction(s). (Quick Effect): You can return this card you control to the Extra Deck, then target 1 "Newtrix" monster in your GY; Special Summon it, then if it was a Link Monster, you can flip its Link Arrows horizontally, and if you do that, flip its Link Arrows vertically.
+ATK 2300/LINK-3
+
+Newtrix Storm
+Points ↙↘↗ WIND Cyberse/Link/Effect Monster
+2+ monsters with the same Type and/or Attribute but different names
+All your opponent's monsters lose DEF equal to half their original DEF, while there there are 2 or more Link Monsters on the field pointing in the same direction(s). (Quick Effect): You can return this card you control to the Extra Deck, then target 1 "Newtrix" monster in your GY; Special Summon it, then if it was a Link Monster, you can flip its Link Arrows vertically, and if you do that, flip its Link Arrows horizontally.
+ATK 2300/LINK-3
+
+Newtrix Red
+Points ↙↑ FIRE Cyberse/Link/Effect Monster
+2 monsters with the same Type and/or Attribute but different names
+All your monsters gain 400 ATK for each Link Monster on the field pointing in the same direction(s). (Quick Effect): You can return this card you control to the Extra Deck, then target 1 "Newtrix" monster in your GY; Special Summon it, then if it was a Link Monster, you can rotate its Link Arrows by up to 3 spaces clockwise.
+ATK 1700/LINK-2
+
+Newtrix Skydance
+Points ↙↘ EARTH Cyberse/Link/Effect Monster
+2 monsters with the same Type and/or Attribute but different names
+Monsters you control cannot be destroyed by card effects, while there there are 2 or more Link Monsters on the field pointing in the same direction(s). (Quick Effect): You can return this card you control to the Extra Deck, then target 1 "Newtrix" monster in your GY; Special Summon it, then if it was a Link Monster, you can rotate its Link Arrows by up to 3 spaces counterclockwise.
+ATK 1700/LINK-2
+
+Newtrix Club
+Field Spell
+When this card is activated: You can add 1 "Newtrix" monster from your Deck or GY to your hand. All your "Newtrix" monsters gain 300 ATK for each Link Monster on the field pointing in the same direction(s). While resolving a "Newtrix" monster's Quick Effect that targets a Link Monster on the field, you can make that effect also affect any number of Link Monsters the turn player controls. You can only activate 1 "Newtrix Club" per turn.
+
+Newtrix Veil
+Quick-Play Spell
+After this card's activation, it remains on the field as a Link Spell pointing to as many "Newtrix" monsters as it can, but if it cannot, destroy it. "Newtrix" monsters this card points to are unaffected by your opponent's card effects. If this card leaves the field while it points to a monster(s), negate the effects of all those monsters (including off the field).
+
+Stardust Medium
+Level 4 LIGHT Spellcaster/Effect Monster
+You can discard this card; Special Summon 1 "Stardust Token" (Dragon/LIGHT/Level 1/ATK 0/DEF 0), then you can banish any number of Spells/Traps from your GY. (Increase the Level of this Token by the number of cards banished by this effect.) You can banish this card from your GY; Special Summon 1 "Stardust Token". You can only use each effect of "Stardust Medium" once per turn.
+ATK 1400/DEF 1600
+
+Stardust Astronomer
+Level 4 LIGHT Spellcaster/Tuner/Effect Monster
+You can discard this card; add 1 "Stardust" monster from your Deck to your hand, except "Stardust Astronomer". If you use this card for a Synchro Summon, you can treat it as a non-Tuner. You can banish this card from your GY; excavate the top 3 cards of your Deck, you can Special Summon 1 excavated "Stardust" monster, also, send the rest to the GY after that. You can only activate each effect of "Stardust Astronomer" once per turn.
+ATK 1800/DEF 1500
+
+Stardust Envoy
+Level 5 WIND Spellcaster/Synchro/Tuner/Effect Monster
+1 Tuner + 1+ non-Tuner monsters
+Once per turn: You can increase or reduce this card's Level by up to 4. If you use this card for a Synchro Summon, you can treat it as a non-Tuner. Once per Chain, during the Main Phase, you can (Quick Effect): Immediately after this effect resolves, Synchro Summon using this card you control.
+ATK 2300/DEF 1100
+
+Dark Tuner Raven Hood
+Level 1 DARK Winged Beast/Dark Tuner/Effect Monster
+If this card is Normal or Special Summoned: You can target any number of monsters in the GYs; increase this card's Level by the total Levels of those targets. Cannot be used as Synchro Material, except for the Synchro Summon of a Dark Synchro Monster.
+ATK 0/DEF 0
+
+Raven of the Starless Night
+Level -9 DARK Winged Beast/Dark Synchro/Effect Monster
+1 non-Tuner monster - 1 Dark Tuner
+You can target any number of Winged Beast monsters in your GY; Special Summon them, but their effects are negated, also they cannot be used as Fusion, Xyz, or Link Material for a Summon. You can only use this effect of "Raven of the Starless Night" once per turn.
+ATK 2600/DEF 2200
+
+Rose Tender
+Level 1 EARTH Plant/Tuner/Effect Monster
+You can discard this card; add 1 Level 4 or lower "Rose" monster from your Deck to your hand, except "Rose Tender". You can only use this effect of "Rose Tender" once per turn.
+ATK 200/DEF 1800
+
+Rose Mage
+Level 3 EARTH Spellcaster/Effect Monster
+If you control a "Rose" or Plant monster: You can Special Summon this card from your hand. You can only use this effect of "Rose Mage" once per turn. Other "Rose" and Plant monsters cannot be destroyed by your opponent's card effects. If a "Rose" or Plant monster(s) you control would be destroyed, you can banish this card from your GY instead.
+ATK 1400/DEF 1000
+
+Rose Rebirth
+Normal Spell
+Target 1 "Rose" or Plant monster with a Level in your GY; Special Summon that target, and after that, if it is Level 5 or higher, banish monsters from your GY whose total Levels equal that monster's Level. It cannot be destroyed by battle or card effects this turn.
+
+Rose Vertigo
+Quick-Play Spell
+Special Summon 1 Level 4 or lower "Rose" monster from your Deck, but negate its effects. You can only activate 1 "Rose Vertigo" per turn.
+
+Blanc Rose Dragon
+Level 7 LIGHT Dragon/Synchro/Effect Monster
+1 Tuner + 1+ non-Tuner monsters
+If this card is Synchro Summoned: You can banish this card until the End Phase; negate the effects of all cards currently on the field. Once per turn: You can banish 1 Plant monster from your GY, then target 1 Attack Position monster your opponent controls; change that target to face-down Defense Position, also if this card attacks a Defense Position monster this turn, inflict piercing battle damage to your opponent.
+ATK 2400/DEF 1600
+
+Cyber Angel Kalani
+Points ↙↘ LIGHT Fairy/Link/Effect Monster
+2 Fairy monsters
+Once per turn: You can target 1 Level 5 or higher Fairy monster in your GY; Special Summon it. If your other Fairy monster(s) is Tributed: You can add 1 Ritual Monster or 1 Ritual Spell from your GY to your hand.
+ATK 1800/LINK-2
+
+Table Flipper
+Level 4 DARK Warrior/Flip/Effect Monster
+Cannot be Special Summoned.
+FLIP: Destroy all cards the turn player's opponent controls, then for each card destroyed by this effect, they add the bottom card of their GY to their hand, also the turn player skips their next Battle Phase this turn. (End the Battle Phase instead, if this effect was activated during the Battle Phase.)
+ATK 0/DEF 2100
+
+Code Importer
+Level 2 LIGHT Cyberse/Effect Monster
+If a Cyberse monster would be used as Link Material for a "Code Talker" monster, this card in your hand can also be used as material. If this card is in your hand (Quick Effect): You can banish 1 other Cyberse monster from your hand; this card is also treated as being on the field for the rest of this turn, also immediately after this effect resolves, Link Summon 1 Cyberse Link Monster using both this card and materials you control. You can only use each effect of "Code Importer" once per turn.
+ATK 200/DEF 1800
