@@ -2,6 +2,7 @@
 --Cyber Dragon Web-Scrape
 local s,id,o=GetID()
 function s.initial_effect(c)
+	--"Cyber Dragon" + 1 Machine or "Cyber Dragon" monster Must first be Fusion Summoned. Gains ATK equal to the highest ATK on the field (except this card), while its original name is "Cyber Dragon Web-Scrape". Once per turn (Quick Effect): You can target 1 "Cyber Dragon" monster, or 1 monster that mentions "Cyber Dragon", in your GY or that is banished; Special Summon it. You can only control 1 "Cyber Dragon Web-Scrape". You can banish this card from your GY; this turn, while you control "Cyber Dragon", your opponent cannot activate cards or effects in response to your cards or effects that include an effect that Special Summons a Fusion Monster.
 	local tp=c:GetControler()
 	local e0=Effect.CreateEffect(c)
 	e0:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)

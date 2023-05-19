@@ -1,8 +1,8 @@
---created by Lyris, art from Shadowverse's "Cutthroat, Discord Convict"
---Psychic Hadoken
+--created by Lyris
+--Chimeratech Cyber Dragon
 local s,id,o=GetID()
 function s.initial_effect(c)
-	--2+ monsters with different Types Any card that would be banished is placed on the bottom of the Deck instead. Once per turn: You can place 1 "Hadoken" card from your GY or that is banished on the bottom of the Deck, then target 1 card your opponent controls; banish 1 card its owner controls.
+	--1 "Cyber Dragon" monster + 1+ monsters with 2100 or more ATK Cannot be used as Fusion Material. Must first be Special Summoned (from your Extra Deck) by Tributing the above cards from either field. Gains ATK equal to the combined original ATK of all non-"Cyber Dragon" materials used for its Special Summon. This card becomes LIGHT-Attribute while banished or in the GY.
 	local tp=c:GetControler()
 	local ef=Effect.CreateEffect(c)
 	ef:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)

@@ -2,6 +2,7 @@
 --天威の龍人霊
 local s,id,o=GetID()
 function s.initial_effect(c)
+	--1+ monsters You can also use both your opponent's monsters and the same number of non-Effect monsters on the field as material to Link Summon this card. If this card would leave the field, return it to the Extra Deck instead. You can only Link Summon "Draconic Spirit of the Tenyi(s)" once per turn.
 	c:EnableReviveLimit()
 	aux.AddLinkProcedure(c,aux.TRUE,1)
 	local e1=Effect.CreateEffect(c)

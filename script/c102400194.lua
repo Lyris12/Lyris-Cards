@@ -1,8 +1,8 @@
---created by Lyris, art from Shadowverse's "Cutthroat, Discord Convict"
---Psychic Hadoken
+--created by Lyris
+--Cyber Dragon Weiss
 local s,id,o=GetID()
 function s.initial_effect(c)
-	--2+ monsters with different Types Any card that would be banished is placed on the bottom of the Deck instead. Once per turn: You can place 1 "Hadoken" card from your GY or that is banished on the bottom of the Deck, then target 1 card your opponent controls; banish 1 card its owner controls.
+	--1 "Cyber Dragon" monster You can only Special Summon "Cyber Dragon Weiss(s)" once per turn. If this card is Link Summoned: Take 1 Machine monster in your possession, and either add it from your Deck to your hand or Special Summon it from your GY, then in either case, Tribute this card. If this card is Special Summoned: It either loses 500 ATK or cannot attack.
 	local tp=c:GetControler()
 	local ef=Effect.CreateEffect(c)
 	ef:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)

@@ -2,6 +2,7 @@
 --フォトンシック・タキオン
 local s,id,o=GetID()
 function s.initial_effect(c)
+	--When your opponent activates a monster effect: Discard 1 card, then reveal 1 Rank 8 Dragon Xyz Monster in your Extra Deck; Negate the activation, then, you can Special Summon the revealed monster using that opponent's monster as the material. (This is treated as an Xyz Summon. Transfer its materials to the Summoned monster.) You can only activate 1 "Photonsic Tachyon" per turn. If you control no monsters, or all monsters you control are LIGHT and/or Dragon monsters, you can activate this card from your hand.
 	local tp=c:GetControler()
 	local e0=Effect.CreateEffect(c)
 	e0:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)

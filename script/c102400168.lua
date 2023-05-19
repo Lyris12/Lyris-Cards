@@ -2,6 +2,7 @@
 --サイバー・ダーク・リーセプター
 local s,id,o=GetID()
 function s.initial_effect(c)
+	--If this card is Normal or Special Summoned: Target 1 Level 3 or lower Dragon monster in your GY; equip it to this card. Gains ATK equal to the original ATK of the monster equipped to it by this effect. If this card would be destroyed by battle, destroy that equipped monster, instead. During your Main Phase: You can send 1 Dragon "Cyberdark" monster from your Deck to the GY, and if you do, add 1 Machine "Cyberdark" monster from your Deck to your hand, except "Cyberdark Receptor". You can only use this effect of "Cyberdark Receptor" once per turn.
 	local e1=Effect.CreateEffect(c)
 	e1:SetDescription(1068)
 	e1:SetCategory(CATEGORY_EQUIP)
