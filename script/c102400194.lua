@@ -21,7 +21,7 @@ function s.initial_effect(c)
 	c:RegisterEffect(e2)
 end
 function s.filter(c,e,tp)
-	if not c:IsRace(RACE_MACHINE) then return false end
+	if not (c:IsAttribute(ATTRIBUTE_DARK+ATTRIBUTE_LIGHT) and c:IsRace(RACE_MACHINE)) then return false end
 	if c:IsLocation(LOCATION_GRAVE) then return Duel.GetLocationCount(tp,LOCATION_MZONE)>0
 		and c:IsCanBeSpecialSummoned(e,0,tp,false,false)
 	else return c:IsAbleToHand() end
@@ -32,7 +32,7 @@ function s.stg(e,tp,eg,ep,ev,re,r,rp,chk)
 end
 function s.sop(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_OPERATECARD)
-	local tc=Duel.SelectMatchingCard(tp,aux.NecroValleyFilter(s.filter),tp,LOCATION_DECK+LOCATION_GRAVE,0,1,1,nil):GetFirst()
+	local tc=Duel.SelectMatchingCard(tp,aux.NecroValleyFilter(s.filter),tp,LOCATION_DECK+LOCATION_GRAVE,0,1,1,nil,e,tp):GetFirst()
 	if not tc then return end
 	if tc:IsLocation(LOCATION_DECK) then
 		if Duel.SendtoHand(tc,nil,REASON_EFFECT)==0 then return end

@@ -295,7 +295,11 @@ end
 Auxiliary.kaiju_procs={}
 global_target_range_effect_table={}
 Effect.SetTargetRange=function(e,self,oppo)
-	global_target_range_effect_table[e]={self,oppo}
+	local table_oppo = oppo
+	if type(oppo)==nil then
+		table_oppo=false
+	end
+	global_target_range_effect_table[e]={self,table_oppo}
 	if e:GetCode()==EFFECT_SPSUMMON_PROC or e:GetCode()==EFFECT_SPSUMMON_PROC_G then
 		if oppo==1 then
 			table.insert(Auxiliary.kaiju_procs,e)
@@ -1415,47 +1419,7 @@ function Auxiliary.ResetEffectFunc(effect,functype,func,...)
 		e:Reset()
 	end
 end
---Custom Link Procedures Auxiliaries
-local l_check_goal = aux.LCheckGoal
 
-Auxiliary.LCheckGoal=function(sg,tp,lc,gf,lmat)
-	if lc:IsHasEffect(EFFECT_AVAILABLE_LMULTIPLE) then
-		return sg:CheckWithSumEqual(Auxiliary.GetMultipleLinkCount,lc:GetLink(),#sg,#sg,lc)
-			and Duel.GetLocationCountFromEx(tp,tp,sg,lc)>0 and (not gf or gf(sg))
-			and not sg:IsExists(Auxiliary.LUncompatibilityFilter,1,nil,sg,lc,tp)
-			and (not lmat or sg:IsContains(lmat))
-	else
-		return l_check_goal(sg,tp,lc,gf,lmat)
-	end
-end
-function Auxiliary.GetMultipleLinkCount(c,lc)
-	local egroup={lc:IsHasEffect(EFFECT_AVAILABLE_LMULTIPLE)}
-	for k,w in ipairs(egroup) do
-		local lab=w:GetLabel()
-		if c:IsHasEffect(EFFECT_MULTIPLE_LMATERIAL) then
-		local av_val={}
-		local lmat={c:IsHasEffect(EFFECT_MULTIPLE_LMATERIAL)}
-		for _,ec in ipairs(lmat) do
-				if ec:GetLabel()==lab then
-			table.insert(av_val,ec:GetValue())
-		end
-		for maxval=1,10 do
-			local val=av_val[maxval]
-			av_val[maxval]=nil
-			if c:IsType(TYPE_LINK) and c:GetLink()>1 then
-				return 1+0x10000*val and 1+0x10000*c:GetLink()
-			else
-				return 1+0x10000*val
-			end
-		end
-			end
-	elseif c:IsType(TYPE_LINK) and c:GetLink()>1 then
-		return 1+0x10000*c:GetLink()
-		else 
-			return 1 
-		end
-	end
-end
 --
 function Auxiliary.CheckKaijuProc(e)
 	local kaijuprocs=Auxiliary.kaiju_procs
@@ -1534,7 +1498,7 @@ function Group.Includes(g1,g2)
 end
 
 function Effect.GLGetTargetRange(e)
-	if not global_target_range_effect_table[e] then return 0,0 end
+	if not global_target_range_effect_table[e] then return false,false end
 	local s=global_target_range_effect_table[e][1]
 	local o=global_target_range_effect_table[e][2]
 	return s,o
@@ -2219,10 +2183,85 @@ end
 -----------------
 
 --EFFECT TABLES
+GLOBAL_EFFECT_RESET	= 92839884
 global_override_reason_effect_check = false
+if not global_resetted_card_effects_table then global_resetted_card_effects_table={} end
+if not global_resetted_duel_effects_table then global_resetted_duel_effects_table={} end
+
+local _Reset = Effect.Reset
+
+Effect.Reset = function(e)
+	if e:GLGetReset()==0 then
+		return _Reset(e)
+	else
+		local reset1={e:GetHandler():IsHasEffect(GLOBAL_EFFECT_RESET)}
+		local reset2={Duel.IsPlayerAffectedByEffect(e:GetOwnerPlayer(),GLOBAL_EFFECT_RESET)}
+		for _,r in ipairs(reset1) do
+			local obj=r:GetLabelObject()
+			if obj and obj==e then
+				_Reset(r)
+			end
+		end
+		for _,r in ipairs(reset2) do
+			local obj=r:GetLabelObject()
+			if obj and obj==e then
+				_Reset(r)
+			end
+		end
+		
+		return _Reset(e)
+	end
+end
+function Effect.WasReset(e,c)
+	if e:GLGetReset()==0 then return false end
+	local reset
+	if aux.GetValueType(c)=="Card" then
+		reset={c:IsHasEffect(GLOBAL_EFFECT_RESET)}
+	else
+		reset={Duel.IsPlayerAffectedByEffect(e:GetOwnerPlayer(),GLOBAL_EFFECT_RESET)}
+	end
+	for _,r in ipairs(reset) do
+		local obj=r:GetLabelObject()
+		if obj and obj==e then
+			return false
+		end
+	end
+	
+	return true
+end
+function Auxiliary.MarkResettedEffect(c,pos)
+	if aux.GetValueType(c)=="Card" then
+		global_resetted_card_effects_table[c]=pos
+	else
+		global_resetted_duel_effects_table[c]=pos
+	end
+end
+function Auxiliary.DeleteResettedEffects(c)
+	if aux.GetValueType(c)=="Card" and global_resetted_card_effects_table[c] then
+		local pos=global_resetted_card_effects_table[c]
+		if pos and pos~=0 then
+			table.remove(global_card_effect_table[c],pos)
+		end
+		global_resetted_card_effects_table[c]=0
+	else
+		local pos=global_resetted_duel_effects_table[c]
+		if pos and pos~=0 then
+			table.remove(global_duel_effect_table[c],pos)
+		end
+		global_resetted_duel_effects_table[c]=0
+	end
+end
 
 --Global Card Effect Table
 function Card.GetEffects(c)
+	local eset=global_card_effect_table[c]
+	local ct=#eset
+	for i = 1,ct do
+		local e=eset[i]
+		if e and e:WasReset(c) then
+			table.remove(global_card_effect_table[c],i)
+		end
+	end
 	return global_card_effect_table[c]
 end
 if not global_card_effect_table_global_check then
@@ -2258,6 +2297,17 @@ if not global_card_effect_table_global_check then
 				-- mt.checked_card_code_list=true
 			-- end
 		-- end
+		
+		local reset,rct=e:GLGetReset()
+		if reset~=0 then 					
+			local r=Effect.CreateEffect(self)
+			r:SetType(EFFECT_TYPE_SINGLE)
+			r:SetProperty(EFFECT_FLAG_CANNOT_DISABLE|EFFECT_FLAG_SET_AVAILABLE|EFFECT_FLAG_IGNORE_IMMUNE)
+			r:SetCode(GLOBAL_EFFECT_RESET)
+			r:SetLabelObject(e)
+			r:SetReset(reset,rct)
+			Card.register_global_card_effect_table(self,r,true)							
+		end
 		
 		if e:GetType()&(EFFECT_TYPE_ACTIONS)==0 then
 			local e = e:IsHasType(EFFECT_TYPE_GRANT) and e:GetLabelObject() or e
@@ -2485,20 +2535,21 @@ if not global_duel_effect_table_global_check then
 							table.insert(global_duel_effect_table[tp],e)
 							
 							local reset,rct=e:GLGetReset()
-							if reset then 
+							if reset~=0 then 
 								if not global_reset_duel_effect_table then
 									global_reset_duel_effect_table={}
 								end							
-								local r=Effect.GlobalEffect()
+								local r=Effect.CreateEffect(e:GetOwner())
+								r:SetType(EFFECT_TYPE_FIELD)
 								r:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
 								r:SetCode(GLOBAL_EFFECT_RESET)
 								r:SetTargetRange(1,0)
 								r:SetLabelObject(e)
 								r:SetReset(reset,rct)
+								r:GetOwnerPlayer(tp)
 								Duel.register_global_duel_effect_table(r,tp)
 								global_reset_duel_effect_table[e]=true								
 							end
-								
 							
 							if e:GetType()&(EFFECT_TYPE_ACTIONS)==0 then
 								local e = e:IsHasType(EFFECT_TYPE_GRANT) and e:GetLabelObject() or e
@@ -2519,10 +2570,10 @@ if not global_duel_effect_table_global_check then
 									
 								if e:GetCode()==EFFECT_EXTRA_SUMMON_COUNT or e:GetCode()==EFFECT_EXTRA_SET_COUNT then
 									local s,o=e:GLGetTargetRange()
-									if s~=0 and s&LOCATION_GRAVE==0 then
+									if s and s~=0 and s&LOCATION_GRAVE==0 then
 										s=s|LOCATION_GRAVE
 									end
-									if o~=0 and o&LOCATION_GRAVE==0 then
+									if o and o~=0 and o&LOCATION_GRAVE==0 then
 										o=o|LOCATION_GRAVE
 									end
 								
