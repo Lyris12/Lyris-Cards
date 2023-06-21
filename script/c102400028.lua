@@ -1,13 +1,16 @@
 --created & coded by Lyris, art from Shadowverse's Evolved "Cutthroat, Discord Convict"
 --Psychic Hadoken (Altered)
 local s,id,o=GetID()
-if not s.global_check then
-	s.global_check=true
-	local f=Card.IsHadoken
-	function Card.IsHadoken(c) return f and f(c) or c:IsCode(id) end
-end
 function s.initial_effect(c)
 	c:EnableReviveLimit()
+	aux.AddOrigSpatialType(c)
+	aux.AddSpatialProc(c,aux.drccheck,aux.TRUE,2,99)
+	local e0=Effect.CreateEffect(c)
+	e0:SetType(EFFECT_TYPE_SINGLE)
+	e0:SetCode(EFFECT_CHANGE_CODE)
+	e0:SetProperty(EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_UNCOPYABLE)
+	e0:SetValue(102400026)
+	c:RegisterEffect(e0)
 	aux.AddSpatialProc(c,aux.drccheck,aux.TRUE,2,99)
 	local e1=Effect.CreateEffect(c)
 	e1:SetType(EFFECT_TYPE_FIELD)
@@ -35,7 +38,9 @@ end
 function s.cost(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return Duel.IsExistingMatchingCard(s.cfilter,tp,LOCATION_GRAVE+LOCATION_REMOVED,0,1,nil) end
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TODECK)
-	Duel.SendtoDeck(Duel.SelectMatchingCard(tp,s.cfilter,tp,LOCATION_GRAVE+LOCATION_REMOVED,0,1,1,nil),nil,SEQ_DECKBOTTOM,REASON_COST)
+	local g=Duel.SelectMatchingCard(tp,s.cfilter,tp,LOCATION_GRAVE+LOCATION_REMOVED,0,1,1,nil)
+	Duel.HintSelection(g)
+	Duel.SendtoDeck(g,nil,SEQ_DECKBOTTOM,REASON_COST)
 end
 function s.filter(c)
 	return Duel.IsExistingMatchingCard(Card.IsAbleToGrave,c:GetOwner(),LOCATION_ONFIELD,0,1,nil)
