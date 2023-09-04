@@ -38,9 +38,6 @@ CARD_INLIGHTENED_PSYCHIC_HELMET		= 102400006
 CARD_BLACK_GARDEN					= 71645242
 CARD_EVIL_DRAGON_ANANTA				= 8400623
 CARD_ANONYMIZE						= 102400157
-CARD_LIMIERRE						= 19936278
-TOKEN_NEBULA						= 218201917
-TOKEN_DRAGON_EGG					= 20157305
 
 CARD_ALBAZ							= 68468459
 CARD_ARGYRO_SYSTEM					= 21887075
@@ -188,7 +185,7 @@ dofile("expansions/script/proc_relay.lua") --Relays					0 x 200 0000 0000
 dofile("expansions/script/proc_harmony.lua") --Harmonies			0 x 800 0000 0000
 dofile("expansions/script/proc_accent.lua") --Accents				0 x 1000 0000 0000
 dofile("expansions/script/proc_magick.lua") --Magick				0 x 8 0000 0000 0000
-dofile("expansions/script/proc_xros.lua") --Xroses					0 x 10 0000 0000 0000
+--dofile("expansions/script/proc_xros.lua") --Xroses					0 x 10 0000 0000 0000	(BREAKS TIMELEAP FUNCTIONS)
 dofile("expansions/script/proc_evolve.lua") --Evolves				0 x 20 0000 0000 0000
 dofile("expansions/script/proc_drive.lua") --Drive 					0 x 40 0000 0000 0000
 dofile("expansions/script/muse_proc.lua") --"Muse"
@@ -201,6 +198,8 @@ dofile("expansions/script/tables.lua") --Special Tables
 -- dofile("expansions/script/proc_corona.lua") --Coronas
 -- dofile("expansions/script/proc_perdition.lua") --Perditions
 -- dofile("expansions/script/proc_impure.lua") --Impures
+
+dofile("expansions/script/mods_pendulum.lua") --Generic Pendulum Procedure modifications
 
 --overwrite functions
 local is_type, card_remcounter, duel_remcounter, effect_set_target_range, effect_set_reset, add_xyz_proc, add_xyz_proc_nlv, duel_overlay, duel_set_lp, duel_select_target, duel_banish, card_check_remove_overlay_card, is_reason, duel_check_tribute, select_tribute,card_sethighlander,
@@ -1125,6 +1124,7 @@ function Auxiliary.XyzMaterialComplete(c,sc,lv,tp)
 end
 Duel.CheckXyzMaterial=function(sc,f,lv,min,max,mg)
 	local res=duel_check_xyz_mat(sc,f,lv,min,max,mg)
+	if mg~=nil then return res end
 	if res then
 		return true
 	else
@@ -1133,8 +1133,12 @@ Duel.CheckXyzMaterial=function(sc,f,lv,min,max,mg)
 	end
 end
 Duel.SelectXyzMaterial=function(p,sc,f,lv,min,max,mg)
-	local extramats=Duel.GetMatchingGroup(Auxiliary.XyzMaterialComplete,0,0xff,0xff,nil,sc,lv,p)
-	return duel_select_xyz_mat(p,sc,f,lv,min,max,extramats)
+	if mg~=nil then
+		return duel_select_xyz_mat(p,sc,f,lv,min,max,extramats)
+	else
+		local extramats=Duel.GetMatchingGroup(Auxiliary.XyzMaterialComplete,0,0xff,0xff,nil,sc,lv,p)
+		return duel_select_xyz_mat(p,sc,f,lv,min,max,extramats)
+	end
 end
 
 Duel.Recover = function(p,v,r,...)
@@ -1356,7 +1360,12 @@ function Auxiliary.CannotBeEDMaterial(c,f,range,isrule,reset,owner,prop,allow_cu
 				restrict:SetValue(Auxiliary.FilterToCannotValue(f))
 			end
 			if reset~=nil then
-				restrict:SetReset(reset)
+				local rct=1
+				if type(reset)=="table" then
+					rct=reset[2]
+					reset=reset[1]
+				end
+				restrict:SetReset(reset,rct)
 			end
 			c:RegisterEffect(restrict)
 		end
@@ -1444,25 +1453,6 @@ function Auxiliary.CheckPrevRandom(c)
 end
 function Auxiliary.RandomTargetFilter(c)
 	return c:GetFlagEffect(39759371)>0 and c:GetFlagEffectLabel(39759371)==999
-end
-
---Hardcode AZW Phalanx Unicorn (39510) allow equipped monster to activate its effect without detaching
-local ocheck,oremove=Card.CheckRemoveOverlayCard,Card.RemoveOverlayCard
-function Card.CheckRemoveOverlayCard(c,p,ct,r)
-	local tc=c:GetEquipGroup()
-	if tc and tc:FilterCount(Card.IsHasEffect,nil,39510)>0 and r and (r&REASON_COST>0) then
-		return true
-	else
-		return ocheck(c,p,ct,r)
-	end
-end
-function Card.RemoveOverlayCard(c,p,minct,maxct,r)
-	local tc=c:GetEquipGroup()
-	if tc and tc:FilterCount(Card.IsHasEffect,nil,39510)>0 and r and (r&REASON_COST>0) and (not ocheck(c,p,minct,r) or Duel.SelectYesNo(p,aux.Stringid(39510,0))) then
-		return 0
-	else
-		return oremove(c,p,minct,maxct,r)
-	end
 end
 
 --Glitchy's custom auxs and functions
@@ -2253,8 +2243,11 @@ function Auxiliary.DeleteResettedEffects(c)
 end
 
 --Global Card Effect Table
+EVENT_CHAIN_CREATED = 39419
+
 function Card.GetEffects(c)
 	local eset=global_card_effect_table[c]
+	if not eset then return {} end
 	local ct=#eset
 	for i = 1,ct do
 		local e=eset[i]
@@ -2311,8 +2304,9 @@ if not global_card_effect_table_global_check then
 		
 		if e:GetType()&(EFFECT_TYPE_ACTIONS)==0 then
 			local e = e:IsHasType(EFFECT_TYPE_GRANT) and e:GetLabelObject() or e
+			local code=e:GetCode()
 			
-			if e:GetCode()==EFFECT_UPDATE_LEVEL or e:GetCode()==EFFECT_CHANGE_LEVEL then
+			if code==EFFECT_UPDATE_LEVEL or code==EFFECT_CHANGE_LEVEL then
 				local ce=e:Clone()
 				if e:GetCode()==EFFECT_UPDATE_LEVEL then
 					ce:SetCode(EFFECT_UPDATE_RANK)
@@ -2330,9 +2324,8 @@ if not global_card_effect_table_global_check then
 					ce:SetTarget(function(eff,c) return (not tg or tg(eff,c)) and c:IsHasEffect(EFFECT_ORIGINAL_LEVEL_RANK_DUALITY) end)
 				end
 				self.register_global_card_effect_table(self,ce,forced)
-			end
 			
-			if e:GetCode()==EFFECT_DISABLE or e:GetCode()==EFFECT_DISABLE_EFFECT or e:GetCode()==EFFECT_DISABLE_CHAIN or e:GetCode()==EFFECT_DISABLE_TRAPMONSTER then
+			elseif code==EFFECT_DISABLE or code==EFFECT_DISABLE_EFFECT or code==EFFECT_DISABLE_CHAIN or code==EFFECT_DISABLE_TRAPMONSTER then
 				if e:GetType()==EFFECT_TYPE_SINGLE then
 					local cond=e:GetCondition()
 					if not cond then
@@ -2349,7 +2342,7 @@ if not global_card_effect_table_global_check then
 					end
 				end
 				
-			elseif e:GetCode()==EFFECT_EXTRA_SUMMON_COUNT or e:GetCode()==EFFECT_EXTRA_SET_COUNT then
+			elseif code==EFFECT_EXTRA_SUMMON_COUNT or code==EFFECT_EXTRA_SET_COUNT then
 				local s,o=e:GLGetTargetRange()
 				if s~=0 and s&LOCATION_GRAVE==0 then
 					s=s|LOCATION_GRAVE
@@ -2359,7 +2352,7 @@ if not global_card_effect_table_global_check then
 				end
 				e:SetTargetRange(s,o)
 				
-			elseif e:GetCode()==EFFECT_UPDATE_ATTACK or e:GetCode()==EFFECT_SET_ATTACK or e:GetCode()==EFFECT_SET_ATTACK_FINAL or e:GetCode()==EFFECT_SWAP_AD then
+			elseif code==EFFECT_UPDATE_ATTACK or code==EFFECT_SET_ATTACK or code==EFFECT_SET_ATTACK_FINAL or code==EFFECT_SWAP_AD then
 				if e:IsHasType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_XMATERIAL) then
 					if e:IsHasType(EFFECT_TYPE_SINGLE) and self:IsHasEffect(EFFECT_GLITCHY_CANNOT_CHANGE_ATK) then
 						for _,ce in ipairs({self:IsHasEffect(EFFECT_GLITCHY_CANNOT_CHANGE_ATK)}) do
@@ -2452,12 +2445,22 @@ if not global_card_effect_table_global_check then
 										current_reason_effect=x[6]
 									end
 								end
+								if #x>=9 and x[9]~=0 then
+									Duel.RaiseEvent(x[1]:GetHandler(),EVENT_CHAIN_CREATED,x[1],0,x[2],x[2],Duel.GetCurrentChain())
+								end
 								return cost(table.unpack(x))
 							end
 			e:SetCost(newcost)
 		end
 		if tg then
-			if e:GetCode()==EFFECT_SPSUMMON_PROC or e:GetCode()==EFFECT_SPSUMMON_PROC_G or not (e:GetType()==EFFECT_TYPE_FIELD or e:GetType()==EFFECT_TYPE_SINGLE or e:GetType()==EFFECT_TYPE_XMATERIAL or e:GetType()==EFFECT_TYPE_XMATERIAL+EFFECT_TYPE_FIELD or e:GetType()&EFFECT_TYPE_GRANT~=0) then
+			if e:GetCode()==EFFECT_CANNOT_SPECIAL_SUMMON then
+				local newtg =	function(...)
+									local x={...}
+									self_reference_effect=x[1]
+									return tg(table.unpack(x))
+								end
+				e:SetTarget(newtg)
+			elseif e:GetCode()==EFFECT_SPSUMMON_PROC or e:GetCode()==EFFECT_SPSUMMON_PROC_G or not (e:GetType()==EFFECT_TYPE_FIELD or e:GetType()==EFFECT_TYPE_SINGLE or e:GetType()==EFFECT_TYPE_XMATERIAL or e:GetType()==EFFECT_TYPE_XMATERIAL+EFFECT_TYPE_FIELD or e:GetType()&EFFECT_TYPE_GRANT~=0) then
 				local newtg =	function(...)
 									local x={...}
 									self_reference_effect=x[1]
@@ -2468,6 +2471,9 @@ if not global_card_effect_table_global_check then
 											x[6]=current_reason_effect:GetCheatCodeValue(GECC_OVERRIDE_REASON_EFFECT)
 											current_reason_effect=x[6]
 										end
+									end
+									if #x>=9 and x[9]~=0 and (#x<10 or not x[10]) and (not x[1]:GetCost() or not x[1]:IsCostChecked()) then
+										Duel.RaiseEvent(x[1]:GetHandler(),EVENT_CHAIN_CREATED,x[1],0,x[2],x[2],Duel.GetCurrentChain())
 									end
 									return tg(table.unpack(x))
 								end
@@ -2665,7 +2671,14 @@ if not global_duel_effect_table_global_check then
 								e:SetCost(newcost)
 							end
 							if tg then
-								if e:GetCode()==EFFECT_SPSUMMON_PROC or e:GetCode()==EFFECT_SPSUMMON_PROC_G or not (e:GetType()==EFFECT_TYPE_FIELD or e:GetType()==EFFECT_TYPE_SINGLE or e:GetType()&EFFECT_TYPE_GRANT~=0) then
+								if e:GetCode()==EFFECT_CANNOT_SPECIAL_SUMMON then
+									local newtg =	function(...)
+														local x={...}
+														self_reference_effect=x[1]
+														return tg(table.unpack(x))
+													end
+									e:SetTarget(newtg)
+								elseif e:GetCode()==EFFECT_SPSUMMON_PROC or e:GetCode()==EFFECT_SPSUMMON_PROC_G or not (e:GetType()==EFFECT_TYPE_FIELD or e:GetType()==EFFECT_TYPE_SINGLE or e:GetType()&EFFECT_TYPE_GRANT~=0) then
 									local newtg =	function(...)
 														local x={...}
 														self_reference_effect=x[1]

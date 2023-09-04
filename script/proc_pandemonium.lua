@@ -560,6 +560,9 @@ end
 function Auxiliary.PaCheckFilter(c)
 	return c:IsFaceup() and c:IsType(TYPE_PANDEMONIUM) and c:GetFlagEffect(726)>0
 end
+function Card.IsInPandemoniumZone(c)
+	return Auxiliary.PaCheckFilter(c)
+end
 function Auxiliary.PandActCon(actcon,card)
 	return	function(e,tp,eg,ep,ev,re,r,rp)
 				local c=e:GetHandler()
@@ -646,7 +649,7 @@ function Auxiliary.PandSSetCon(tc,player,...)
 							check=false
 						elseif tc and type(tc)=="function" then
 							local ct=0
-							local sg=Duel.GetMatchingGroup(tc,ttp,loc1,loc2,nil,e,ttp)
+							local sg=Duel.GetMatchingGroup(tc,ttp,loc1,loc2,nil,te,ttp)
 							local tsg=sg:GetFirst()
 							while tsg do
 								if tg(te,tsg) then
@@ -664,14 +667,10 @@ function Auxiliary.PandSSetCon(tc,player,...)
 					return (neglect_zone or Duel.GetLocationCount(ttp,LOCATION_SZONE)>0) and check
 				end
 	else
-		return	function(c,e,tp,eg,ep,ev,re,r,rp)
+		return	function()
 					local ttp=player
 					if not ttp or ttp<0 then
-						if aux.GetValueType(e)=="Effect" then
-							ttp=e:GetHandlerPlayer()
-						elseif tc then
-							ttp=tc:GetControler()
-						end
+						ttp=tc:GetControler()
 					end
 					local check=true
 					local egroup={Duel.IsPlayerAffectedByEffect(ttp,EFFECT_CANNOT_SSET)}
@@ -683,7 +682,7 @@ function Auxiliary.PandSSetCon(tc,player,...)
 							check=false
 						elseif tc and type(tc)=="function" then
 							local ct=0
-							local sg=Duel.GetMatchingGroup(tc,ttp,loc1,loc2,nil,e,tp,eg,ep,ev,re,r,rp)
+							local sg=Duel.GetMatchingGroup(tc,ttp,loc1,loc2,nil,te,ttp,e)
 							local tsg=sg:GetFirst()
 							while tsg do
 								if tg(te,tsg) then
@@ -704,12 +703,15 @@ function Auxiliary.PandSSetCon(tc,player,...)
 end	
 function Auxiliary.PandSSetFilter(f,...)
 	local params={...}
-	return	function(c,e,tp,eg,ep,ev,re,r,rp)
-				return (not f or f(c,e,tp,eg,ep,ev,re,r,rp)) and not c:IsForbidden() and Auxiliary.PandSSetCon(c,table.unpack(params))(nil,e,tp,eg,ep,ev,re,r,rp)
+	return	function(c,...)
+				return c:IsMonster(TYPE_PANDEMONIUM) and not c:IsForbidden() and (not f or f(c,...)) and Auxiliary.PandSSetCon(c,table.unpack(params))()
 			end
 end
 function Auxiliary.GetOriginalPandemoniumType(c)
 	return c:GetFlagEffectLabel(1074)
+end
+function Duel.PandSSet(tc,e,tp,reason,tpe)
+	return aux.PandSSet(tc,reason,tpe)(e,tp)
 end
 function Auxiliary.PandSSet(tc,reason,tpe)
 	return  function(e,tp,eg,ep,ev,re,r,rp,c)
@@ -748,7 +750,7 @@ function Auxiliary.PandSSet(tc,reason,tpe)
 					if #sg>0 then
 						res=Duel.SSet(tp,sg,tp,false)
 						for cc in aux.Next(sg) do
-							local tpe=tpe or aux.GetOriginalPandemoniumType(cc)
+							local tpe = tpe~=nil and tpe or aux.GetOriginalPandemoniumType(cc)
 							if cc:IsType(TYPE_PANDEMONIUM) then
 								cc:RegisterFlagEffect(706,RESET_EVENT+RESETS_STANDARD,EFFECT_FLAG_CANNOT_DISABLE+EFFECT_FLAG_SET_AVAILABLE,1)
 								if cc:IsPreviousLocation(LOCATION_HAND) then
@@ -763,7 +765,9 @@ function Auxiliary.PandSSet(tc,reason,tpe)
 						end
 					end
 				else
-					local tpe=tpe or aux.GetOriginalPandemoniumType(tc)
+					if not tpe then
+						tpe=aux.GetOriginalPandemoniumType(tc)
+					end
 					local hand_chk=true
 					if not tc:IsLocation(LOCATION_HAND) then
 						hand_chk=false
@@ -1025,136 +1029,136 @@ function Card.IsPandemoniumActivatable(c,tp,fp,neglect_loc,neglect_cond,neglect_
 end
 
 ----------EFFECT_PANDEPEND_SCALE-------------
-function Auxiliary.PandePendScale(c,seq)
-	return Auxiliary.PaCheckFilter(c) and c:IsHasEffect(EFFECT_PANDEPEND_SCALE) and c:GetSequence()==math.abs(4-seq)
-end
-Auxiliary.PendCondition=function()
-	return	function(e,c,og)
-				if c==nil then return true end
-				local tp=c:GetControler()
-				local eset={Duel.IsPlayerAffectedByEffect(tp,EFFECT_EXTRA_PENDULUM_SUMMON)}
-				--if PENDULUM_CHECKLIST&(0x1<<tp)~=0 and #eset==0 then return false end
-				if Auxiliary.PendulumChecklist&(0x1<<tp)~=0 and #eset==0 then return false end
-				local rpz=Duel.GetFieldCard(tp,LOCATION_PZONE,1)
-				if (rpz==nil or rpz:IsType(TYPE_PANDEMONIUM)) and Duel.IsExistingMatchingCard(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,1,c,c:GetSequence()) then
-					rpz=Duel.GetMatchingGroup(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,c,c:GetSequence()):GetFirst()
-				end
-				if rpz==nil or c==rpz then return false end
-				local lscale=c:GetLeftScale()
-				local rscale=rpz:GetRightScale()
-				if rpz:IsType(TYPE_PANDEMONIUM) and rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE) then
-					local val=0
-					if rpz:GetSequence()==0 then val=rpz:GetLeftScale() else val=rpz:GetRightScale() end
-					local pgroup={rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE)}
-					for _,te in ipairs(pgroup) do
-						local pval=te:GetValue()
-						if pval then
-							if type(pval)=='function' then
-								val=math.max(val,pval(te,tp))
-							else
-								val=math.max(val,pval)
-							end
-						end
-					end
-					rscale=val
-				end			
-				if lscale>rscale then lscale,rscale=rscale,lscale end
-				local loc=0
-				if Duel.GetLocationCount(tp,LOCATION_MZONE)>0 then loc=loc+LOCATION_HAND end
-				if Duel.GetLocationCountFromEx(tp)>0 then loc=loc+LOCATION_EXTRA end
-				if loc==0 then return false end
-				local g=nil
-				if og then
-					g=og:Filter(Card.IsLocation,nil,loc)
-				else
-					g=Duel.GetFieldGroup(tp,loc,0)
-				end
-				return g:IsExists(Auxiliary.PConditionFilter,1,nil,e,tp,lscale,rscale,eset)
-			end
-end
-Auxiliary.PendOperation=function()
-	return	function(e,tp,eg,ep,ev,re,r,rp,c,sg,og)
-				local rpz=Duel.GetFieldCard(tp,LOCATION_PZONE,1)
-				if (rpz==nil or rpz:IsType(TYPE_PANDEMONIUM)) and Duel.IsExistingMatchingCard(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,1,c,c:GetSequence()) then
-					rpz=Duel.GetMatchingGroup(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,c,c:GetSequence()):GetFirst()
-				end
-				local lscale=c:GetLeftScale()
-				local rscale=rpz:GetRightScale()
-				if rpz:IsType(TYPE_PANDEMONIUM) and rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE) then
-					local val=0
-					if rpz:GetSequence()==0 then val=rpz:GetLeftScale() else val=rpz:GetRightScale() end
-					local pgroup={rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE)}
-					for _,te in ipairs(pgroup) do
-						local pval=te:GetValue()
-						if pval then
-							if type(pval)=='function' then
-								val=math.max(val,pval(te,tp))
-							else
-								val=math.max(val,pval)
-							end
-						end
-					end
-					rscale=val
-				end			
-				if lscale>rscale then lscale,rscale=rscale,lscale end
-				local eset={Duel.IsPlayerAffectedByEffect(tp,EFFECT_EXTRA_PENDULUM_SUMMON)}
-				local tg=nil
-				local loc=0
-				local ft1=Duel.GetLocationCount(tp,LOCATION_MZONE)
-				local ft2=Duel.GetLocationCountFromEx(tp)
-				local ft=Duel.GetUsableMZoneCount(tp)
-				local ect=c29724053 and Duel.IsPlayerAffectedByEffect(tp,29724053) and c29724053[tp]
-				if ect and ect<ft2 then ft2=ect end
-				if Duel.IsPlayerAffectedByEffect(tp,59822133) then
-					if ft1>0 then ft1=1 end
-					if ft2>0 then ft2=1 end
-					ft=1
-				end
-				if ft1>0 then loc=loc|LOCATION_HAND end
-				if ft2>0 then loc=loc|LOCATION_EXTRA end
-				if og then
-					tg=og:Filter(Card.IsLocation,nil,loc):Filter(Auxiliary.PConditionFilter,nil,e,tp,lscale,rscale,eset)
-				else
-					tg=Duel.GetMatchingGroup(Auxiliary.PConditionFilter,tp,loc,0,nil,e,tp,lscale,rscale,eset)
-				end
-				local ce=nil
-				--local b1=PENDULUM_CHECKLIST&(0x1<<tp)==0
-				local b1=Auxiliary.PendulumChecklist&(0x1<<tp)==0
-				local b2=#eset>0
-				if b1 and b2 then
-					local options={1163}
-					for _,te in ipairs(eset) do
-						table.insert(options,te:GetDescription())
-					end
-					local op=Duel.SelectOption(tp,table.unpack(options))
-					if op>0 then
-						ce=eset[op]
-					end
-				elseif b2 and not b1 then
-					local options={}
-					for _,te in ipairs(eset) do
-						table.insert(options,te:GetDescription())
-					end
-					local op=Duel.SelectOption(tp,table.unpack(options))
-					ce=eset[op+1]
-				end
-				if ce then
-					tg=tg:Filter(Auxiliary.PConditionExtraFilterSpecific,nil,e,tp,lscale,rscale,ce)
-				end
-				Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_SPSUMMON)
-				Auxiliary.GCheckAdditional=Auxiliary.PendOperationCheck(ft1,ft2,ft)
-				local g=tg:SelectSubGroup(tp,aux.TRUE,true,1,math.min(#tg,ft))
-				Auxiliary.GCheckAdditional=nil
-				if not g then return end
-				if ce then
-					Duel.Hint(HINT_CARD,0,ce:GetOwner():GetOriginalCode())
-					ce:Reset()
-				else
-					--PENDULUM_CHECKLIST=PENDULUM_CHECKLIST|(0x1<<tp)
-					Auxiliary.PendulumChecklist=Auxiliary.PendulumChecklist|(0x1<<tp)
-				end
-				sg:Merge(g)
-				Duel.HintSelection(Group.FromCards(c))
-				Duel.HintSelection(Group.FromCards(rpz))
-			end
-end
+-- function Auxiliary.PandePendScale(c,seq)
+	-- return Auxiliary.PaCheckFilter(c) and c:IsHasEffect(EFFECT_PANDEPEND_SCALE) and c:GetSequence()==math.abs(4-seq)
+-- end
+-- Auxiliary.PendCondition=function()
+	-- return	function(e,c,og)
+				-- if c==nil then return true end
+				-- local tp=c:GetControler()
+				-- local eset={Duel.IsPlayerAffectedByEffect(tp,EFFECT_EXTRA_PENDULUM_SUMMON)}
+				-- --if PENDULUM_CHECKLIST&(0x1<<tp)~=0 and #eset==0 then return false end
+				-- if Auxiliary.PendulumChecklist&(0x1<<tp)~=0 and #eset==0 then return false end
+				-- local rpz=Duel.GetFieldCard(tp,LOCATION_PZONE,1)
+				-- if (rpz==nil or rpz:IsType(TYPE_PANDEMONIUM)) and Duel.IsExistingMatchingCard(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,1,c,c:GetSequence()) then
+					-- rpz=Duel.GetMatchingGroup(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,c,c:GetSequence()):GetFirst()
+				-- end
+				-- if rpz==nil or c==rpz then return false end
+				-- local lscale=c:GetLeftScale()
+				-- local rscale=rpz:GetRightScale()
+				-- if rpz:IsType(TYPE_PANDEMONIUM) and rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE) then
+					-- local val=0
+					-- if rpz:GetSequence()==0 then val=rpz:GetLeftScale() else val=rpz:GetRightScale() end
+					-- local pgroup={rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE)}
+					-- for _,te in ipairs(pgroup) do
+						-- local pval=te:GetValue()
+						-- if pval then
+							-- if type(pval)=='function' then
+								-- val=math.max(val,pval(te,tp))
+							-- else
+								-- val=math.max(val,pval)
+							-- end
+						-- end
+					-- end
+					-- rscale=val
+				-- end			
+				-- if lscale>rscale then lscale,rscale=rscale,lscale end
+				-- local loc=0
+				-- if Duel.GetLocationCount(tp,LOCATION_MZONE)>0 then loc=loc+LOCATION_HAND end
+				-- if Duel.GetLocationCountFromEx(tp)>0 then loc=loc+LOCATION_EXTRA end
+				-- if loc==0 then return false end
+				-- local g=nil
+				-- if og then
+					-- g=og:Filter(Card.IsLocation,nil,loc)
+				-- else
+					-- g=Duel.GetFieldGroup(tp,loc,0)
+				-- end
+				-- return g:IsExists(Auxiliary.PConditionFilter,1,nil,e,tp,lscale,rscale,eset)
+			-- end
+-- end
+-- Auxiliary.PendOperation=function()
+	-- return	function(e,tp,eg,ep,ev,re,r,rp,c,sg,og)
+				-- local rpz=Duel.GetFieldCard(tp,LOCATION_PZONE,1)
+				-- if (rpz==nil or rpz:IsType(TYPE_PANDEMONIUM)) and Duel.IsExistingMatchingCard(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,1,c,c:GetSequence()) then
+					-- rpz=Duel.GetMatchingGroup(Auxiliary.PandePendScale,tp,LOCATION_SZONE,0,c,c:GetSequence()):GetFirst()
+				-- end
+				-- local lscale=c:GetLeftScale()
+				-- local rscale=rpz:GetRightScale()
+				-- if rpz:IsType(TYPE_PANDEMONIUM) and rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE) then
+					-- local val=0
+					-- if rpz:GetSequence()==0 then val=rpz:GetLeftScale() else val=rpz:GetRightScale() end
+					-- local pgroup={rpz:IsHasEffect(EFFECT_PANDEPEND_SCALE)}
+					-- for _,te in ipairs(pgroup) do
+						-- local pval=te:GetValue()
+						-- if pval then
+							-- if type(pval)=='function' then
+								-- val=math.max(val,pval(te,tp))
+							-- else
+								-- val=math.max(val,pval)
+							-- end
+						-- end
+					-- end
+					-- rscale=val
+				-- end			
+				-- if lscale>rscale then lscale,rscale=rscale,lscale end
+				-- local eset={Duel.IsPlayerAffectedByEffect(tp,EFFECT_EXTRA_PENDULUM_SUMMON)}
+				-- local tg=nil
+				-- local loc=0
+				-- local ft1=Duel.GetLocationCount(tp,LOCATION_MZONE)
+				-- local ft2=Duel.GetLocationCountFromEx(tp)
+				-- local ft=Duel.GetUsableMZoneCount(tp)
+				-- local ect=c29724053 and Duel.IsPlayerAffectedByEffect(tp,29724053) and c29724053[tp]
+				-- if ect and ect<ft2 then ft2=ect end
+				-- if Duel.IsPlayerAffectedByEffect(tp,59822133) then
+					-- if ft1>0 then ft1=1 end
+					-- if ft2>0 then ft2=1 end
+					-- ft=1
+				-- end
+				-- if ft1>0 then loc=loc|LOCATION_HAND end
+				-- if ft2>0 then loc=loc|LOCATION_EXTRA end
+				-- if og then
+					-- tg=og:Filter(Card.IsLocation,nil,loc):Filter(Auxiliary.PConditionFilter,nil,e,tp,lscale,rscale,eset)
+				-- else
+					-- tg=Duel.GetMatchingGroup(Auxiliary.PConditionFilter,tp,loc,0,nil,e,tp,lscale,rscale,eset)
+				-- end
+				-- local ce=nil
+				-- --local b1=PENDULUM_CHECKLIST&(0x1<<tp)==0
+				-- local b1=Auxiliary.PendulumChecklist&(0x1<<tp)==0
+				-- local b2=#eset>0
+				-- if b1 and b2 then
+					-- local options={1163}
+					-- for _,te in ipairs(eset) do
+						-- table.insert(options,te:GetDescription())
+					-- end
+					-- local op=Duel.SelectOption(tp,table.unpack(options))
+					-- if op>0 then
+						-- ce=eset[op]
+					-- end
+				-- elseif b2 and not b1 then
+					-- local options={}
+					-- for _,te in ipairs(eset) do
+						-- table.insert(options,te:GetDescription())
+					-- end
+					-- local op=Duel.SelectOption(tp,table.unpack(options))
+					-- ce=eset[op+1]
+				-- end
+				-- if ce then
+					-- tg=tg:Filter(Auxiliary.PConditionExtraFilterSpecific,nil,e,tp,lscale,rscale,ce)
+				-- end
+				-- Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_SPSUMMON)
+				-- Auxiliary.GCheckAdditional=Auxiliary.PendOperationCheck(ft1,ft2,ft)
+				-- local g=tg:SelectSubGroup(tp,aux.TRUE,true,1,math.min(#tg,ft))
+				-- Auxiliary.GCheckAdditional=nil
+				-- if not g then return end
+				-- if ce then
+					-- Duel.Hint(HINT_CARD,0,ce:GetOwner():GetOriginalCode())
+					-- ce:Reset()
+				-- else
+					-- --PENDULUM_CHECKLIST=PENDULUM_CHECKLIST|(0x1<<tp)
+					-- Auxiliary.PendulumChecklist=Auxiliary.PendulumChecklist|(0x1<<tp)
+				-- end
+				-- sg:Merge(g)
+				-- Duel.HintSelection(Group.FromCards(c))
+				-- Duel.HintSelection(Group.FromCards(rpz))
+			-- end
+-- end
