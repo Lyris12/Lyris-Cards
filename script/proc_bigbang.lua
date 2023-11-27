@@ -11,21 +11,25 @@ VIBE_NEUTRAL  = 0x4
 VIBE_ALL	  = 0x7
 
 FLAG_BIGBANG_VIBE 				= 11110642
+FLAG_BIGBANG_ATTACK				= 100000147
+FLAG_BIGBANG_DEFENSE			= 100000148
 
-STRING_DO_NOT_USE_BIGBANG_VIBE_EFFECT	= 717
-STRING_POSITIVE_VIBE				  	= 718
-STRING_NEGATIVE_VIBE					= 719
-STRING_NEUTRAL_VIBE						= 720
+STRING_DO_NOT_USE_BIGBANG_VIBE_EFFECT					= 717
+STRING_POSITIVE_VIBE				  					= 718
+STRING_NEGATIVE_VIBE									= 719
+STRING_NEUTRAL_VIBE										= 720
+STRING_DO_NOT_USE_BIGBANG_CUSTOM_MATERIAL_STATS_EFFECT	= 750
 
-EFFECT_CANNOT_BE_BIGBANG_MATERIAL	=624
-EFFECT_MUST_BE_BIGBANG_MATERIAL		=625
-EFFECT_EXTRA_BIGBANG_MATERIAL		=626
-EFFECT_IGNORE_BIGBANG_SUMREQ		=627
-EFFECT_BASE_BIGBANG_ATTACK 			=628
-EFFECT_BASE_BIGBANG_DEFENSE   		=629
-EFFECT_UPDATE_BIGBANG_ATTACK		=630
-EFFECT_UPDATE_BIGBANG_DEFENSE   	=631
-EFFECT_EXTRA_BIGBANG_VIBE			=632
+EFFECT_CANNOT_BE_BIGBANG_MATERIAL		=624
+EFFECT_MUST_BE_BIGBANG_MATERIAL			=625
+EFFECT_EXTRA_BIGBANG_MATERIAL			=626
+EFFECT_IGNORE_BIGBANG_SUMREQ			=627
+EFFECT_BASE_BIGBANG_ATTACK 				=628
+EFFECT_BASE_BIGBANG_DEFENSE   			=629
+EFFECT_UPDATE_BIGBANG_ATTACK			=630
+EFFECT_UPDATE_BIGBANG_DEFENSE   		=631
+EFFECT_EXTRA_BIGBANG_VIBE				=632
+EFFECT_MATERIAL_CUSTOM_BIGBANG_STATS	=633
 
 TYPE_BIGBANG						=0x8000000000
 TYPE_CUSTOM							=TYPE_CUSTOM|TYPE_BIGBANG
@@ -163,7 +167,7 @@ function Card.GetVibe(c)
 		end
 	end
 	
-	if not c:IsDefenseAbove(0) then return nil end
+	if not c:HasAttack() or not c:HasDefense() then return nil end
 	local stat=c:GetAttack()-c:GetDefense()
 	if stat==0 then
 		return stat
@@ -172,13 +176,23 @@ function Card.GetVibe(c)
 	end
 end
 function Card.IsPositive(c)
-	return c:GetVibe()==1
+	local vb=c:GetVibe()
+	if not vb then return false end
+	return vb==1
 end
 function Card.IsNegative(c)
-	return c:GetVibe()==-1
+	local vb=c:GetVibe()
+	if not vb then return false end
+	return vb==-1
 end
 function Card.IsNeutral(c)
-	return c:GetVibe()==0
+	local vb=c:GetVibe()
+	if not vb then return false end
+	return vb==0
+end
+function Card.IsNonNeutral(c)
+	local vb=c:GetVibe()
+	return not vb or vb~=0
 end
 function Card.HasVibe(c)
 	return c:GetVibe()
@@ -186,8 +200,15 @@ end
 function Card.HasNoVibe(c)
 	return not c:GetVibe()
 end
+function Card.IsOppositeVibe(c1,c2)
+	local vb1,vb2=c1:GetVibe(),c2:GetVibe()
+	return vb1 and vb2 and vb1*vb2==-1
+end
 
 function Card.GetBigbangAttack(c,bc,mg)
+	if c:HasFlagEffect(FLAG_BIGBANG_ATTACK) then
+		return c:GetFlagEffectLabel(FLAG_BIGBANG_ATTACK)
+	end
 	local vibe=c:GetVibe()
 	if c:HasFlagEffect(FLAG_BIGBANG_VIBE) then
 		local val=c:GetFlagEffectLabel(FLAG_BIGBANG_VIBE)
@@ -238,6 +259,9 @@ function Card.GetBigbangAttack(c,bc,mg)
 	return val*math.abs(vibe) + extraval_base + extraval_update
 end
 function Card.GetBigbangDefense(c,bc,mg)
+	if c:HasFlagEffect(FLAG_BIGBANG_DEFENSE) then
+		return c:GetFlagEffectLabel(FLAG_BIGBANG_DEFENSE)
+	end
 	local vibe=c:GetVibe()
 	if c:HasFlagEffect(FLAG_BIGBANG_VIBE) then
 		local val=c:GetFlagEffectLabel(FLAG_BIGBANG_VIBE)
@@ -344,6 +368,11 @@ function Auxiliary.AddBigbangProc(c,...)
 end
 function Auxiliary.BigbangCondition(gf,ignore_sumreq,...)
 	local funs={...}
+	local min,max=0,0
+	for i=1,#funs do
+		min=min+funs[i][2]
+		max=max+funs[i][3]
+	end
 	return  function(e,c,matg,mustg)
 				if c==nil then return true end
 				if (c:IsType(TYPE_PENDULUM) or c:IsType(TYPE_PANDEMONIUM)) and c:IsFaceup() then return false end
@@ -419,7 +448,7 @@ function Auxiliary.BigbangCondition(gf,ignore_sumreq,...)
 					return false
 				end
 				--Duel.SetSelectedCard(fg)
-				local res=mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,nil,tp,Group.CreateGroup(),mg,fg,c,gf,0,table.unpack(funs))
+				local res=mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,nil,tp,Group.CreateGroup(),mg,fg,c,gf,0,min,max,table.unpack(funs))
 				if ignore_sumreq_effect then
 					ignore_sumreq_effect:Reset()
 					ignore_sumreq_effect=nil
@@ -456,17 +485,32 @@ function Auxiliary.BigbangExtraFilter(c,lc,tp,...)
 	if c:IsLocation(LOCATION_ONFIELD) and not c:IsFaceup() then return false end
 	return c:IsCanBeBigbangMaterial(lc) and (not flist or #flist<=0 or check)
 end
-function Auxiliary.BigbangRecursiveFilter(c,tp,sg,mg,fg,bc,gf,ct,...)
+function Auxiliary.BigbangRecursiveFilter(c,tp,sg,mg,fg,bc,gf,ct,min,max,...)
 	sg:AddCard(c)
 	ct=ct+1
-	local funs,max,chk={...},0,false
-	for i=1,#funs do
-		max=max+funs[i][3]
-		if funs[i][1](c,sg) then
-			chk=true
+	
+	local chk=false
+	
+	local funs={...}
+	for i,ftab in ipairs(funs) do
+		local f,fmax=ftab[1],ftab[3]
+		if f(c,sg) then
+			if sg:FilterCount(f,nil,sg)>fmax then
+				for i2,ftab2 in ipairs(funs) do
+					local f2,fmax2=ftab2[1],ftab2[3]
+					if i2~=i and sg:FilterCount(f2,nil,sg)<fmax2 then
+						chk=true
+					end
+				end
+			else
+				chk=true
+			end
+			if chk then
+				break
+			end
 		end
 	end
-	if max>99 then max=99 end
+	if not chk then sg:RemoveCard(c) ct=ct-1 return false end
 	
 	local res,resVibe=false,false
 	
@@ -475,11 +519,63 @@ function Auxiliary.BigbangRecursiveFilter(c,tp,sg,mg,fg,bc,gf,ct,...)
 		aux.BigbangMaterialSelectionStep = false
 		restorestep=true
 	end
-	res = (chk and (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,...))))
+
+	local res=(ct>=min and Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...)) or (ct<=max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,min,max,...))
+	
 	if restorestep then
 		aux.BigbangMaterialSelectionStep = true
 	end
 	
+	--Check whether the Summon can be conducted with EFFECT_MATERIAL_CUSTOM_BIGBANG_ATTACK, and gather all usable instances
+	if (chk and ct>=min and not res) or aux.BigbangMaterialSelectionStep then
+		local eset={bc:IsHasEffect(EFFECT_MATERIAL_CUSTOM_BIGBANG_STATS)}
+		for _,e in ipairs(eset) do
+			local mcmax=e:GetLabel()
+			if mcmax>0 then
+				local tg=e:GetTarget()
+				if not tg or tg(e,c,bc,mg) then
+					e:SetLabel(mcmax-1)
+					local val=e:GetValue()
+					if val then
+						local mcatk,mcdef=val(e,c,bc,mg)
+						
+						if mcatk then
+							c:RegisterFlagEffect(FLAG_BIGBANG_ATTACK,0,0,1,mcatk)
+						end
+						if mcdef then
+							c:RegisterFlagEffect(FLAG_BIGBANG_DEFENSE,0,0,1,mcdef)
+						end
+						if not aux.BigbangMaterialSelectionStep then
+							res = (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,min,max,...)))
+							if res then
+								e:SetLabel(mcmax)
+								c:ResetFlagEffect(FLAG_BIGBANG_ATTACK)
+								c:ResetFlagEffect(FLAG_BIGBANG_DEFENSE)
+								break
+							end
+						
+						else
+							aux.BigbangMaterialSelectionStep = false
+							if (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,min,max,...))) then
+								if not aux.BigbangCustomMaterialStatEffects[c] then
+									aux.BigbangCustomMaterialStatEffects[c]={}
+								end
+								aux.BigbangDoesNotNeedCustomMaterialStat[c] = res
+								table.insert(aux.BigbangCustomMaterialStatEffects[c],e)
+								res=true
+							end
+							aux.BigbangMaterialSelectionStep = true
+						end
+					end
+					e:SetLabel(mcmax)
+					c:ResetFlagEffect(FLAG_BIGBANG_ATTACK)
+					c:ResetFlagEffect(FLAG_BIGBANG_DEFENSE)
+				end
+			end
+		end
+	end
+	
+	--Check whether the Summon can be conducted with EFFECT_EXTRA_BIGBANG_VIBE, and gather all usable instances
 	if not res or aux.BigbangMaterialSelectionStep then
 		local eset={c:IsHasEffect(EFFECT_EXTRA_BIGBANG_VIBE)}
 		for _,e in ipairs(eset) do
@@ -495,7 +591,7 @@ function Auxiliary.BigbangRecursiveFilter(c,tp,sg,mg,fg,bc,gf,ct,...)
 						for i=1,#funs do
 							if funs[i][1](c,sg) then
 								if not aux.BigbangMaterialSelectionStep then
-									resVibe = (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,...)))
+									resVibe = (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,min,max,...)))
 									if resVibe then
 										c:ResetFlagEffect(FLAG_BIGBANG_VIBE)
 										BreakWhile=true
@@ -505,7 +601,7 @@ function Auxiliary.BigbangRecursiveFilter(c,tp,sg,mg,fg,bc,gf,ct,...)
 								else
 									aux.BigbangMaterialSelectionStep = false
 									local BreakFor=false
-									if (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,...))) then
+									if (Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...) or (ct<max and mg:IsExists(Auxiliary.BigbangRecursiveFilter,1,sg,tp,sg,mg,fg,bc,gf,ct,min,max,...))) then
 										LegalVibes=LegalVibes|CheckingVibe
 										BreakFor=true
 									end
@@ -540,13 +636,16 @@ function Auxiliary.BigbangRecursiveFilter(c,tp,sg,mg,fg,bc,gf,ct,...)
 	ct=ct-1
 	return res or resVibe
 end
+
 function Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...)
 	if fg and fg:IsExists(aux.NOT(Card.IsContained),1,nil,sg) then return false end
 	
-	local funs,min={...},0
-	for i=1,#funs do
-		if not sg:IsExists(funs[i][1],funs[i][2],nil,sg) or sg:IsExists(funs[i][1],funs[i][3]+1,nil,sg) then return false end
-		min=min+funs[i][2]
+	local funs={...}
+	for i,ftab in ipairs(funs) do
+		local f,fmin=ftab[1],ftab[2]
+		if sg:FilterCount(f,nil,sg)<fmin then
+			return false
+		end
 	end
 	
 	local bigbang_stats_res = false
@@ -558,8 +657,7 @@ function Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...)
 	end
 	
 	--LEAVE THIS FOR DEBUGGING PURPOSES IN CASE A BIGBANG MONSTER IS NOT BEING ABLE TO BE SUMMONED
-	-- if bc:IsCode(CODE_OF_THE_BUGGED_BIGBANG) then
-		-- Debug.Message(ct>=min)
+	-- if bc:IsCode(100000147,true) then
 		-- Debug.Message(Duel.GetLocationCountFromEx(tp,tp,sg,bc)>0)
 		-- Debug.Message(not gf or gf(sg,bc,tp))
 		-- Debug.Message(tostring(sg:CheckWithSumGreater(Card.GetBigbangAttack,bc:GetAttack(),bc,sg))..": "..tostring(bc:GetAttack()))
@@ -567,7 +665,7 @@ function Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...)
 		-- Debug.Message(not sg:IsExists(Auxiliary.BigbangUncompatibilityFilter,1,nil,sg,bc,tp))
 		-- local atk,def=0,0
 		-- for tc in aux.Next(sg) do
-			-- Debug.Message(tc:GetCode())
+			-- Debug.Message(tostring(tc:GetCode())..": "..tostring(tc:GetBigbangAttack(bc,sg)).."|"..tostring(tc:GetBigbangDefense(bc,sg)))
 			-- atk=atk+tc:GetBigbangAttack(bc,sg)
 			-- def=def+tc:GetBigbangDefense(bc,sg)
 		-- end
@@ -576,7 +674,7 @@ function Auxiliary.BigbangCheckGoal(tp,sg,fg,bc,gf,ct,...)
 		-- Debug.Message("--------------------------")
 	-- end
 	
-	return ct>=min and Duel.GetLocationCountFromEx(tp,tp,sg,bc)>0 and (not gf or gf(sg,bc,tp))
+	return Duel.GetLocationCountFromEx(tp,tp,sg,bc)>0 and (not gf or gf(sg,bc,tp))
 		and bigbang_stats_res
 		and not sg:IsExists(Auxiliary.BigbangUncompatibilityFilter,1,nil,sg,bc,tp)
 end
@@ -595,9 +693,12 @@ end
 
 Auxiliary.BigbangMaterialSelectionStep = false
 function Auxiliary.BigbangTarget(gf,ignore_sumreq,...)
-	local funs,min,max={...},0,0
-	for i=1,#funs do min=min+funs[i][2] max=max+funs[i][3] end
-	if max>99 then max=99 end
+	local funs={...}
+	local min,max=0,0
+	for i=1,#funs do
+		min=min+funs[i][2]
+		max=max+funs[i][3]
+	end
 	return  function(e,tp,eg,ep,ev,re,r,rp,chk,c)
 				if bigbang_limit_mats_operation and bigbang_limit_mats_operation.SetLabelObject then
 					Duel.RegisterEffect(bigbang_limit_mats_operation,tp)
@@ -640,12 +741,15 @@ function Auxiliary.BigbangTarget(gf,ignore_sumreq,...)
 				
 				local sg=Group.CreateGroup()
 				aux.BigbangMaterialSelectionStep = true
+				aux.BigbangCustomMaterialStatEffects = {}
+				aux.BigbangDoesNotNeedCustomMaterialStat = {}
+				aux.BigbangCustomMaterialStatMax = {}
 				aux.BigbangExtraVibeEffects = {}
 				aux.BigbangDoesNotNeedExtraVibe = {}
 				local finish=false
 				while #sg<max do
 					finish=Auxiliary.BigbangCheckGoal(tp,sg,fg,c,gf,#sg,table.unpack(funs))
-					local cg=mg:Filter(Auxiliary.BigbangRecursiveFilter,sg,tp,sg,mg,fg,c,gf,#sg,table.unpack(funs))
+					local cg=mg:Filter(Auxiliary.BigbangRecursiveFilter,sg,tp,sg,mg,fg,c,gf,#sg,min,max,table.unpack(funs))
 					if #cg==0 then break end
 					local cancel=Duel.IsSummonCancelable() and not finish
 					Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_TOGRAVE)
@@ -655,6 +759,47 @@ function Auxiliary.BigbangTarget(gf,ignore_sumreq,...)
 					end
 				
 					if not sg:IsContains(tc) then
+						if aux.BigbangCustomMaterialStatEffects[tc] then
+							local Descriptions={}
+							local opt=1
+							if aux.BigbangDoesNotNeedCustomMaterialStat[tc]==true then
+								table.insert(Descriptions,STRING_DO_NOT_USE_BIGBANG_CUSTOM_MATERIAL_STATS_EFFECT)
+								opt=0
+							end
+							
+							local map={}
+							for i,effect in ipairs(aux.BigbangCustomMaterialStatEffects[tc]) do
+								if effect:GetLabel()>0 then
+									table.insert(map,i)
+									table.insert(Descriptions,effect:GetDescription())
+								end
+							end
+							opt = opt + Duel.SelectOption(tp,table.unpack(Descriptions))
+							if opt>0 then
+								local tab=aux.BigbangCustomMaterialStatEffects[tc]
+								local effect=tab[map[opt]]
+								
+								if not aux.BigbangCustomMaterialStatMax[tc] then
+									aux.BigbangCustomMaterialStatMax[tc]={}
+								end
+								if not aux.BigbangCustomMaterialStatMax[tc][effect] then
+									aux.BigbangCustomMaterialStatMax[tc][effect]=0
+								end
+								aux.BigbangCustomMaterialStatMax[tc][effect]=aux.BigbangCustomMaterialStatMax[tc][effect]+1
+								effect:SetLabel(effect:GetLabel()-1)
+								
+								local val=effect:GetValue()
+								local mcatk,mcdef=val(effect,c,bc,mg)
+								
+								if mcatk then
+									tc:RegisterFlagEffect(FLAG_BIGBANG_ATTACK,0,0,1,mcatk)
+								end
+								if mcdef then
+									tc:RegisterFlagEffect(FLAG_BIGBANG_DEFENSE,0,0,1,mcdef)
+								end
+							end
+						end
+						
 						if aux.BigbangExtraVibeEffects[tc] then
 							local Descriptions={}
 							local opt=1
@@ -681,15 +826,25 @@ function Auxiliary.BigbangTarget(gf,ignore_sumreq,...)
 								tc:RegisterFlagEffect(FLAG_BIGBANG_VIBE,0,0,1,VibeFlag)
 							end
 						end
+						
 						sg:AddCard(tc)
 						if #sg>=max then
 							finish=true
 						end
 					else
 						sg:RemoveCard(tc)
+						if aux.BigbangCustomMaterialStatMax[tc] then
+							for effect,restore in pairs(aux.BigbangCustomMaterialStatMax[tc]) do
+								effect:SetLabel(effect:GetLabel()+restore)
+							end
+						end
+						tc:ResetFlagEffect(FLAG_BIGBANG_ATTACK)
+						tc:ResetFlagEffect(FLAG_BIGBANG_DEFENSE)
 						tc:ResetFlagEffect(FLAG_BIGBANG_VIBE)
 					end
 					
+					aux.BigbangCustomMaterialStatEffects = {}
+					aux.BigbangDoesNotNeedCustomMaterialStat = {}
 					aux.BigbangExtraVibeEffects = {}
 					aux.BigbangDoesNotNeedExtraVibe = {}
 						
@@ -705,12 +860,24 @@ function Auxiliary.BigbangTarget(gf,ignore_sumreq,...)
 						-- return false
 					--end
 				end
+				
 				aux.BigbangMaterialSelectionStep = false
+				aux.BigbangCustomMaterialStatEffects = {}
+				aux.BigbangDoesNotNeedCustomMaterialStat = {}
 				aux.BigbangExtraVibeEffects = {}
 				aux.BigbangDoesNotNeedExtraVibe = {}
 				for tc in aux.Next(sg) do
+					if aux.BigbangCustomMaterialStatMax[tc] then
+						for effect,restore in pairs(aux.BigbangCustomMaterialStatMax[tc]) do
+							effect:SetLabel(effect:GetLabel()+restore)
+						end
+					end
+					tc:ResetFlagEffect(FLAG_BIGBANG_ATTACK)
+					tc:ResetFlagEffect(FLAG_BIGBANG_DEFENSE)
 					tc:ResetFlagEffect(FLAG_BIGBANG_VIBE)
 				end
+				aux.BigbangCustomMaterialStatMax = {}
+				
 				if finish then
 					if ignore_sumreq_effect then
 						ignore_sumreq_effect:Reset()

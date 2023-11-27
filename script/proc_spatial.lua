@@ -126,8 +126,9 @@ function Card.SwitchSpace(c)
 	local ospc=c.spt_other_space
 	if not ospc or ospc==0 then return false end
 	c:SetEntityCode(ospc,true)
-	c:ReplaceEffect(ospc,0,0)
 	Duel.SetMetatable(c,_G["c"..ospc])
+	c:ReplaceEffect(ospc,0,0)
+	-- _G["c"..ospc].initial_effect(c)
 	return true
 end
 function Card.IsCanBeSpaceMaterial(c,sptc)
@@ -186,8 +187,7 @@ function Auxiliary.SpaceMatFilter(c,sptc,tp,...)
 	return false
 end
 function Auxiliary.SptCheckRecursive(c,tp,sg,mg,fg,sptc,ct,djn,sptcheck,...)
-	if not c:IsLevelAbove(1) and not c:IsRankAbove(1)
-		or c:IsLevelAbove(djn+1) or c:IsRankAbove(djn+1) then return false end
+	if not c:IsLevelAbove(1) and not c:IsRankAbove(1) then return false end
 	sg:AddCard(c)
 	ct=ct+1
 	local funs,max,min,chk={...},0,0
@@ -258,7 +258,7 @@ function Auxiliary.SpaceExtraFilter(c,lc,tp,...)
 	end
 	if not ValidSubstitute then return false end
 	if c:IsLocation(LOCATION_ONFIELD) and not c:IsFaceup() then return false end
-	return c:IsCanBeSpaceMaterial(lc) and (not flist or #flist<=0 or check)
+	return c:IsCanBeSpaceMaterial(lc) and (not flist or #flist<1 or check)
 end
 function Auxiliary.SpatialCondition(sptcheck,...)
 	local funs={...}

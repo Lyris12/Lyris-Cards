@@ -1,8 +1,8 @@
 --created & coded by Lyris, art from Shadowverse's "Vyrmedea, Synthetic Voice"
 --人造の波動拳
 local s,id,o=GetID()
-Card.IsHadoken=Card.IsHadoken or function(c) return c:GetCode()>102400019 and c:GetCode()<102400034 end
 function s.initial_effect(c)
+	c:RegisterSetCardString("Hadouken")
 	local e1=Effect.CreateEffect(c)
 	e1:SetType(EFFECT_TYPE_IGNITION)
 	e1:SetRange(LOCATION_GRAVE+LOCATION_HAND+LOCATION_REMOVED)
@@ -29,11 +29,14 @@ function s.filter(c,e,tp)
 	end end
 	return res
 end
+function s.xfilter(c)
+	return c:IsSetCard("Hadouken") and c:IsType(TYPE_MONSTER)
+end
 function s.spttg(e,tp,eg,ep,ev,re,r,rp,chk)
-	if chk==0 then return Duel.IsPlayerCanSpecialSummon(tp) and not Duel.IsPlayerAffectedByEffect(tp,63060238) and Duel.IsExistingMatchingCard(Card.IsHadoken,tp,LOCATION_DECK,0,1,nil) end
+	if chk==0 then return Duel.IsPlayerCanSpecialSummon(tp) and not Duel.IsPlayerAffectedByEffect(tp,63060238) and Duel.IsExistingMatchingCard(s.xfilter,tp,LOCATION_DECK,0,1,nil) end
 end
 function s.sptop(e,tp,eg,ep,ev,re,r,rp)
-	local g=Duel.GetMatchingGroup(Card.IsHadoken,tp,LOCATION_DECK,0,nil)
+	local g=Duel.GetMatchingGroup(s.xfilter,tp,LOCATION_DECK,0,nil)
 	local dcount=Duel.GetFieldGroupCount(tp,LOCATION_DECK,0)
 	local seq=dcount+1
 	local thcard=nil
@@ -63,8 +66,14 @@ function s.sptop(e,tp,eg,ep,ev,re,r,rp)
 	local e2=e1:Clone()
 	e2:SetType(EFFECT_TYPE_FIELD)
 	e2:SetTargetRange(LOCATION_HAND,0)
-	e2:SetTarget(aux.TargetBoolFunction(Card.IsHadoken))
+	e2:SetTarget(aux.TargetBoolFunction(Card.IsSetCard,"Hadouken"))
 	Duel.RegisterEffect(e2,tp)
+	local e0=Effect.CreateEffect(c)
+	e0:SetType(EFFECT_TYPE_FIELD)
+	e0:SetCode(EFFECT_CANNOT_BE_SPACE_MATERIAL)
+	e0:SetTargetRange(0xff,0)
+	e0:SetTarget(aux.TargetBoolFunction(aux.NOT(Card.IsSetCard),"Hadouken"))
+	Duel.RegisterEffect(e1,tp)
 	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_SPSUMMON)
 	local sc=Duel.SelectMatchingCard(tp,s.filter,tp,LOCATION_EXTRA,0,1,1,nil,e,tp):GetFirst()
 	if sc then
@@ -78,15 +87,18 @@ function s.sptop(e,tp,eg,ep,ev,re,r,rp)
 		e3:SetReset(RESET_EVENT+RESETS_STANDARD)
 		thcard:RegisterEffect(e3)
 		local e4=Effect.CreateEffect(c)
-		e4:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
+		e4:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)	
 		e4:SetCode(EVENT_SPSUMMON)
-		e4:SetOperation(function(_,p,sg) e1:Reset() e2:Reset() e3:Reset() e4:Reset() end)
 		Duel.RegisterEffect(e4,tp)
+		local e5=e4:Clone()
+		e4:SetOperation(function() for _,ef in ipairs{e0,e1,e2,e3,e4,e5} do if ef then ef:Reset() end end end)
+		e5:SetCode(EVENT_CHAIN_SOLVED)
+		e5:SetOperation(function() for _,ef in ipairs{e0,e1,e2,e3,e4,e5} do if ef then ef:Reset() end end end)
+		Duel.RegisterEffect(e5,tp)
 		if Duel.SetSummonCancelable then Duel.SetSummonCancelable(false) end
 		Duel.SpecialSummonRule(tp,sc)
-		Duel.DisableShuffleCheck()
 	end
 end
 function s.mattg(e,c)
-	return c:IsHadoken() and c:IsLocation(LOCATION_HAND) or c==e:GetLabelObject()
+	return c:IsSetCard("Hadouken") and c:IsLocation(LOCATION_HAND) or c==e:GetLabelObject()
 end
