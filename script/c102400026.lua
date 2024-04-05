@@ -2,7 +2,7 @@
 --サイコ波動拳
 local s,id,o=GetID()
 function s.initial_effect(c)
-	c:RegisterSetCardString("Hadouken")
+	c:RegisterSetCardString"Hadouken"
 	c:EnableReviveLimit()
 	aux.AddOrigSpatialType(c)
 	aux.AddSpatialProc(c,aux.drccheck,aux.TRUE,2,99)
@@ -12,6 +12,7 @@ function s.initial_effect(c)
 	e1:SetRange(LOCATION_MZONE)
 	e1:SetCode(EFFECT_REMOVE_REDIRECT)
 	e1:SetTargetRange(0xfe,0xfe)
+	e1:SetCondition(s.condition)
 	e1:SetValue(LOCATION_DECKBOT)
 	c:RegisterEffect(e1)
 	local e2=Effect.CreateEffect(c)
@@ -26,8 +27,11 @@ function s.initial_effect(c)
 	c:RegisterEffect(e2)
 end
 s.spt_other_space=102400028
+function s.condition(e)
+	return Duel.GetFieldGroupCount(e:GetHandlerPlayer(),LOCATION_DECK,0)%2<1
+end
 function s.cfilter(c)
-	return c:IsFaceupEx() and c:IsSetCard("Hadouken") and c:IsAbleToDeckAsCost()
+	return c:IsFaceupEx() and c:IsSetCard"Hadouken" and c:IsAbleToDeckAsCost()
 end
 function s.cost(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return Duel.IsExistingMatchingCard(s.cfilter,tp,LOCATION_GRAVE+LOCATION_REMOVED,0,1,nil) end

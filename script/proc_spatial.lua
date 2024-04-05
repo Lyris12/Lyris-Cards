@@ -122,13 +122,15 @@ end
 --Custom Functions
 function Card.SwitchSpace(c)
 	if not Auxiliary.Spatials[c] then return false end
-	Auxiliary.Spatials[c]=nil
 	local ospc=c.spt_other_space
 	if not ospc or ospc==0 then return false end
 	c:SetEntityCode(ospc,true)
+	Duel.CreateToken(0,ospc)
 	Duel.SetMetatable(c,_G["c"..ospc])
 	c:ReplaceEffect(ospc,0,0)
-	-- _G["c"..ospc].initial_effect(c)
+	c:ResetEffect(c:GetOriginalCode(),RESET_CARD)
+	c:ResetEffect(c:GetOriginalCode(),RESET_CARD)
+	_G["c"..ospc].initial_effect(c)
 	return true
 end
 function Card.IsCanBeSpaceMaterial(c,sptc)
@@ -328,6 +330,19 @@ function Auxiliary.SpatialTarget(sptcheck,...)
 end
 function Auxiliary.SpatialOperation(e,tp,eg,ep,ev,re,r,rp,c,smat,mg)
 	if Duel.SetSummonCancelable then Duel.SetSummonCancelable(true) end
+	local ospc=Duel.CreateToken(tp,c.spt_other_space)
+	if Duel.IsPlayerCanSpecialSummonMonster(tp,c:GetOriginalCode(),nil,c:GetType(),ospc:GetAttack(),ospc:GetDefense(),c:GetLevel(),ospc:GetRace(),ospc:GetAttribute()) then
+		Duel.ConfirmCards(tp,ospc)
+		if not c:IsCanBeSpecialSummoned(e,SUMMON_TYPE_SPATIAL,tp,false,false)
+				or Duel.SelectEffectYesNo(tp,c,aux.Stringid(c:GetOriginalCode(),15)) then
+			local e1=Effect.CreateEffect(c)
+			e1:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_CONTINUOUS)
+			e1:SetCode(EVENT_LEAVE_DECK)
+			e1:SetProperty(EFFECT_FLAG_CANNOT_DISABLE)
+			e1:SetOperation(function() c:SwitchSpace() e1:Reset() end)
+			c:RegisterEffect(e1,true)
+		end
+	end
 	local g=e:GetLabelObject()
 	c:SetMaterial(g)
 	local rg=Group.CreateGroup()
@@ -343,14 +358,4 @@ function Auxiliary.SpatialOperation(e,tp,eg,ep,ev,re,r,rp,c,smat,mg)
 	end
 	Duel.SendtoGrave(rg,REASON_MATERIAL+REASON_SPATIAL)
 	g:DeleteGroup()
-	local ospc=Duel.CreateToken(tp,c.spt_other_space)
-	Duel.Hint(HINT_SELECTMSG,tp,HINTMSG_SPSUMMON)
-	Duel.ConfirmCards(tp,ospc)
-	if Duel.SelectYesNo(tp,aux.Stringid(c:GetOriginalCode(),15)) then
-		local e1=Effect.CreateEffect(c)
-		e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
-		e1:SetCode(EVENT_SPSUMMON)
-		e1:SetOperation(function() c:SwitchSpace() e1:Reset() end)
-		Duel.RegisterEffect(e1,tp)
-	end
 end
